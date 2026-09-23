@@ -172,10 +172,23 @@ print(f"\n   {len(terminal)} terminal solutions of C1 + C2 in the stellarator-sy
 ok = True
 for comb, cl in terminal:
     trivial = (not cl['isreal']) or cl['nonax_zero'] or cl['z_zero'] or cl['iota_pm_N'] or (cl['rank'] is not None and cl['rank'] < 2)
-    ok &= trivial
     if not trivial:
-        print("     NON-TRIVIAL candidate surface:", comb, cl)
-print("   every real terminal solution is (translated axisymmetric) or degenerate (z == 0 / rank < 2) or has iota = +-N:", ok)
+        # remaining candidates: test rotational symmetry about the z-axis in disguise, i.e. |x+iy|^2 and z invariant
+        # under the simultaneous shift theta -> theta + c, phi -> phi + c (then theta_B winds around the z-axis)
+        c_ = sp.symbols('c_', real=True)
+        rho_c = sum(comb.get(sp.re(R[(m, n)]), sp.re(R[(m, n)]))*E1**m*E2**n for (m, n) in modes)
+        zeta_c = sum((sp.I*comb.get(sp.im(Zc[(m, n)]), sp.im(Zc[(m, n)])) if (m, n) in [(-1, -1), (-1, 0), (-1, 1), (0, -1)]
+                      else -sp.I*comb.get(sp.im(Zc[(-m, -n)]), sp.im(Zc[(-m, -n)])))*E1**m*E2**n for (m, n) in Zc)/2
+        rho_c = sp.expand(rho_c - comb.get(a10, a10)/E2)                                  # remove the rigid x-translation mode
+        R2 = sp.expand(rho_c*rho_c.subs({E1: 1/E1, E2: 1/E2}, simultaneous=True))   # |rho|^2 (rho real coefficients)
+        shift = {E1: E1*sp.exp(sp.I*c_), E2: E2*sp.exp(sp.I*c_)}
+        inv = sp.simplify(R2.subs(shift, simultaneous=True) - R2) == 0 and sp.simplify(zeta_c.subs(shift, simultaneous=True) - zeta_c) == 0
+        print("     remaining candidate:", comb)
+        print("        |x+iy|^2 and z invariant under (theta,phi) -> (theta+c, phi+c), i.e. a surface of revolution about the z-axis with"
+              " swapped Boozer labels (after removing the x-translation):", inv)
+        trivial = inv
+    ok &= trivial
+print("   every real terminal solution is (translated / label-swapped axisymmetric) or degenerate (z == 0 / rank < 2) or has iota = +-N:", ok)
 print("   tallies: complex", sum(not cl['isreal'] for _, cl in terminal), "| axisymmetric(+translation)", sum(cl['isreal'] and cl['nonax_zero'] for _, cl in terminal),
       "| degenerate", sum(cl['isreal'] and not cl['nonax_zero'] and (cl['z_zero'] or (cl['rank'] is not None and cl['rank'] < 2)) for _, cl in terminal),
       "| iota = +-N only", sum(cl['isreal'] and cl['iota_pm_N'] and not cl['nonax_zero'] and not cl['z_zero'] and not (cl['rank'] is not None and cl['rank'] < 2) for _, cl in terminal))

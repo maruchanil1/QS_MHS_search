@@ -98,20 +98,10 @@ Part 2 (N = 1): unknowns 26 real + iota;  C1 modes: 25;  C2 (|W|^2 modes with n 
         full C1+C2 solve on this branch: 2 solutions: [{a01: 0, a02: 0}, {a02: 0, a11: 0}]
 
    64 terminal solutions of C1 + C2 in the stellarator-symmetric class (N = 1):
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0, a21: 0, a22: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0, a11: 0, a21: 0, a22: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0, a11: 0, a21: 0, a22: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a11: 0, a21: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a20: 0, a21: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: I*d02**2/(2*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: -I*Abs(d02)/2}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: -I*d02**2/(2*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: I*Abs(d02)/2}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: d02**2/(2*sqrt((2 - iota)/iota)*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: sqrt((2 - iota)/iota)*Abs(d02)/2}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: -d02**2/(2*sqrt(-(iota - 2)/iota)*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: -sqrt(-(iota - 2)/iota)*Abs(d02)/2}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0, a11: 0, d02: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: I*d02/2, a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0, a11: 0, a20: -I*d02/2, d01: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: -I*d02/2, a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0, a11: 0, a20: I*d02/2, d01: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a01: 0}
-     NON-TRIVIAL candidate surface: {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a01: 0}
-   every terminal solution is (axisymmetric) or (z == 0, planar) or (iota = +-N, excluded by Thm 5.1 / |B| const): False
-   tallies: axisymmetric 0 | planar 18 | iota = +-N only 32
-done in 190.4 s
+     remaining candidate: {a00: 0, a01: 0, a02: d02**2/(2*sqrt((2 - iota)/iota)*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: sqrt((2 - iota)/iota)*Abs(d02)/2}
+        |x+iy|^2 and z invariant under (theta,phi) -> (theta+c, phi+c), i.e. a surface of revolution about the z-axis with swapped Boozer labels (after removing the x-translation): True
+     remaining candidate: {a00: 0, a01: 0, a02: -d02**2/(2*sqrt(-(iota - 2)/iota)*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: -sqrt(-(iota - 2)/iota)*Abs(d02)/2}
+        |x+iy|^2 and z invariant under (theta,phi) -> (theta+c, phi+c), i.e. a surface of revolution about the z-axis with swapped Boozer labels (after removing the x-translation): True
+   every real terminal solution is (translated / label-swapped axisymmetric) or degenerate (z == 0 / rank < 2) or has iota = +-N: True
+   tallies: complex 20 | axisymmetric(+translation) 19 | degenerate 12 | iota = +-N only 11
+done in 196.4 s

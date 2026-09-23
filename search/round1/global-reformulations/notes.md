@@ -109,16 +109,16 @@ metric, so C1, C2 are finite Fourier systems.
   40 real polynomial equations. The extreme modes (|m| = 2 or |n| = 2N) are isotropy (null-vector) conditions, e.g.
   (ι+1)[ρ₋₁,₋ₙ ρ̄₁,ₙ + ζ₋₁,₋ₙ²/4] = 0, (ι−1)[ρ₋₁,ₙ ρ̄₁,₋ₙ + ζ₋₁,ₙ²/4] = 0, (2ι±1)[…] = 0, ι[…] = 0. The full
   26-unknown system is beyond sympy's solve in the time box; with **stellarator symmetry** (ρ real, ζ imaginary:
-  14 unknowns incl. ι) the extreme modes give 21 branches and the full C1+C2 system 64 terminal solutions. Every real
-  terminal solution is one of: (i) axisymmetric about the z-axis or about a translated axis (the mode ρ₀,₋₁ is a
-  rigid x-translation) — this includes ι ≠ 0 surfaces of revolution whose Boozer labels are swapped (θ_B winds
-  around the z-axis, e.g. x+iy = e^{iθ}(a + b e^{2i(φ−θ)}), z = c sin(θ−φ) with a = √((2−ι)/ι)|c|/2, b = c²/(4a)),
-  (ii) degenerate (z ≡ 0, a cylinder, or a curve: rank of the parametrization < 2), or (iii) ι = ±N (the
-  isodynamic case excluded by handoff Thm 5.1; these are relabelled axisymmetric ι = 0 tori or |B|-constant
-  surfaces). **No non-axisymmetric embedded torus in this class satisfies even the two ψ-frozen surface
-  conditions.** (Automatic classification in the script: reality, translation mode, z ≡ 0, rank test; the swapped-label
-  axisymmetric branches were identified by hand — see `boozer_finite_surface.log`.) Status: verified_symbolically for
-  the stellarator-symmetric subclass; the non-stellarator-symmetric subclass is open.
+  14 unknowns incl. ι) the extreme modes give 21 branches and the full C1+C2 system 64 terminal solutions:
+  20 complex (discarded), 19 axisymmetric about the z-axis or about a translated axis (the mode ρ₀,₋₁ is a rigid
+  x-translation), 12 degenerate (z ≡ 0, a cylinder, or a curve: rank of the parametrization < 2), 11 with ι = ±N
+  (the isodynamic case excluded by handoff Thm 5.1; relabelled axisymmetric ι = 0 tori or |B|-constant surfaces),
+  and 2 surfaces of revolution with swapped Boozer labels (θ_B winds around the z-axis:
+  x+iy = e^{iθ}(a + b e^{2i(φ−θ)}), z = c sin(θ−φ), a = √((2−ι)/ι)|c|/2, b = c²/(4a), 0 < ι ≤ 2; checked by
+  invariance under (θ,φ) → (θ+c, φ+c)). **No non-axisymmetric embedded torus in this class satisfies even the two
+  ψ-frozen surface conditions.** (All classification steps are automatic in the script; see
+  `boozer_finite_surface.log`.) Status: verified_symbolically for the stellarator-symmetric subclass; the
+  non-stellarator-symmetric subclass (26 unknowns) is open.
 
 Remark on sign conventions: for the screw pinch, (4) with K = 0 gives p′ = −ιI′ = −4ψ² for ι = ψ, r = √(2ψ),
 which agrees with the direct pinch force balance d/dr(p + B²/2) + B_θ²/r = 0 (dp/dψ = −r⁴ = −4ψ²): (4) as written
