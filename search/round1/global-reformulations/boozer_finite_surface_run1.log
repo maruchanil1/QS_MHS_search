@@ -1,0 +1,117 @@
+Part 1: C1 Fourier modes (m,n): [(-2, 0), (-1, 0), (0, 0), (1, 0), (2, 0)]
+   mode (-2, 0) : -iota*(4*r1a*rma + 4*I*r1a*rmb - 4*I*r1b*rma + 4*r1b*rmb + z1a**2 - 2*I*z1a*z1b - z1b**2)/4
+   mode (-1, 0) : (r0a*r1a - I*r0a*r1b - r0a*rma - I*r0a*rmb + I*r0b*r1a + r0b*r1b + I*r0b*rma - r0b*rmb)/2
+   mode (0, 0) : (2*iota*r1a**2 + 2*iota*r1b**2 + 2*iota*rma**2 + 2*iota*rmb**2 + iota*z1a**2 + iota*z1b**2 + 2*r1a**2 + 2*r1b**2 - 2*rma**2 - 2*rmb**2)/2
+   mode (1, 0) : (r0a*r1a + I*r0a*r1b - r0a*rma + I*r0a*rmb - I*r0b*r1a + r0b*r1b - I*r0b*rma - r0b*rmb)/2
+   mode (2, 0) : -iota*(4*r1a*rma - 4*I*r1a*rmb + 4*I*r1b*rma + 4*r1b*rmb + z1a**2 + 2*I*z1a*z1b - z1b**2)/4
+   C2 automatic for axisymmetric surfaces (|W|^2 has n = 0 modes only): True
+   solutions of C1 for (r1, rm, iota) given r0, z1:
+      {iota: 0, r1a: (r0a**2*r1b + r0a**2*rmb - r0b**2*r1b + r0b**2*rmb)/(2*r0a*r0b), rma: (r0a**2*(r1b + rmb) + r0b**2*(r1b - rmb))/(2*r0a*r0b)}
+   => every branch has iota = 0 or z1 = 0 (degenerate: z-independent 'surface');  Part 1 THEOREM holds: True
+
+Part 2 (N = 1): unknowns 26 real + iota;  C1 modes: 25;  C2 (|W|^2 modes with n != -N m): 20
+   real polynomial equations: C1: 49, C2: 40
+   extreme C1 modes: [(-2, -2), (-2, -1), (-2, 0), (-2, 1), (-2, 2), (-1, -2), (-1, 2), (0, -2), (0, 2), (1, -2), (1, 2), (2, -2), (2, -1), (2, 0), (2, 1), (2, 2)] 
+   extreme C2 modes: [(-2, -2), (-2, -1), (-2, 0), (-2, 1), (-1, -2), (-1, 2), (0, -2), (0, 2), (1, -2), (1, 2), (2, -1), (2, 0), (2, 1), (2, 2)]
+     C1 (-2, -2) : -(iota + 1)*(4*a00*a22 - 4*I*a00*b22 + 4*I*a22*b00 + 4*b00*b22 + c00**2 + 2*I*c00*d00 - d00**2)/4
+     C1 (-2, -1) : -(2*iota + 1)*(2*a00*a21 - 2*I*a00*b21 + 2*a01*a22 - 2*I*a01*b22 + 2*I*a21*b00 + 2*I*a22*b01 + 2*b00*b21 + 2*b01*b22 + c00*c01 + I*c00*d01 + I*c01*d00 - d00*d01)/4
+     C1 (-2, 0) : -iota*(4*a00*a20 - 4*I*a00*b20 + 4*a01*a21 - 4*I*a01*b21 + 4*a02*a22 - 4*I*a02*b22 + 4*I*a20*b00 + 4*I*a21*b01 + 4*I*a22*b02 + 4*b00*b20 + 4*b01*b21 + 4*b02*b22 + 2*c00*c02 + 2*I*c00*d02 + c01**2 + 2*I*c01*d01 + 2*I*c02*d00 - 2*d00*d02 - d01**2)/4
+     C1 (-2, 1) : -(2*iota - 1)*(2*a01*a20 - 2*I*a01*b20 + 2*a02*a21 - 2*I*a02*b21 + 2*I*a20*b01 + 2*I*a21*b02 + 2*b01*b20 + 2*b02*b21 + c01*c02 + I*c01*d02 + I*c02*d01 - d01*d02)/4
+     C1 (-2, 2) : -(iota - 1)*(4*a02*a20 - 4*I*a02*b20 + 4*I*a20*b02 + 4*b02*b20 + c02**2 + 2*I*c02*d02 - d02**2)/4
+     C1 (-1, -2) : -(4*a00*a12 - 4*I*a00*b12 + 4*I*a12*b00 + 4*b00*b12 + c00*c10 + I*c00*d10 + I*c10*d00 - d00*d10)/4
+     C1 (-1, 2) : (4*a12*a20 - 4*I*a12*b20 + 4*I*a20*b12 + 4*b12*b20 + c02*c10 - I*c02*d10 + I*c10*d02 + d02*d10)/4
+     C1 (0, -2) : (2*a00*a02*iota - 2*a00*a02 - 2*I*a00*b02*iota + 2*I*a00*b02 + 2*I*a02*b00*iota - 2*I*a02*b00 + 2*a20*a22*iota + 2*a20*a22 - 2*I*a20*b22*iota - 2*I*a20*b22 + 2*I*a22*b20*iota + 2*I*a22*b20 + 2*b00*b02*iota - 2*b00*b02 + 2*b20*b22*iota + 2*b20*b22 + c00*c02*iota - I*c00*d02*iota + I*c02*d00*iota + d00*d02*iota)/2
+     C1 (0, 2) : (2*a00*a02*iota - 2*a00*a02 + 2*I*a00*b02*iota - 2*I*a00*b02 - 2*I*a02*b00*iota + 2*I*a02*b00 + 2*a20*a22*iota + 2*a20*a22 + 2*I*a20*b22*iota + 2*I*a20*b22 - 2*I*a22*b20*iota - 2*I*a22*b20 + 2*b00*b02*iota - 2*b00*b02 + 2*b20*b22*iota + 2*b20*b22 + c00*c02*iota + I*c00*d02*iota - I*c02*d00*iota + d00*d02*iota)/2
+     C1 (1, -2) : (4*a12*a20 + 4*I*a12*b20 - 4*I*a20*b12 + 4*b12*b20 + c02*c10 + I*c02*d10 - I*c10*d02 + d02*d10)/4
+     C1 (1, 2) : -(4*a00*a12 + 4*I*a00*b12 - 4*I*a12*b00 + 4*b00*b12 + c00*c10 - I*c00*d10 - I*c10*d00 - d00*d10)/4
+     C1 (2, -2) : -(iota - 1)*(4*a02*a20 + 4*I*a02*b20 - 4*I*a20*b02 + 4*b02*b20 + c02**2 - 2*I*c02*d02 - d02**2)/4
+     C1 (2, -1) : -(2*iota - 1)*(2*a01*a20 + 2*I*a01*b20 + 2*a02*a21 + 2*I*a02*b21 - 2*I*a20*b01 - 2*I*a21*b02 + 2*b01*b20 + 2*b02*b21 + c01*c02 - I*c01*d02 - I*c02*d01 - d01*d02)/4
+     C1 (2, 0) : -iota*(4*a00*a20 + 4*I*a00*b20 + 4*a01*a21 + 4*I*a01*b21 + 4*a02*a22 + 4*I*a02*b22 - 4*I*a20*b00 - 4*I*a21*b01 - 4*I*a22*b02 + 4*b00*b20 + 4*b01*b21 + 4*b02*b22 + 2*c00*c02 - 2*I*c00*d02 + c01**2 - 2*I*c01*d01 - 2*I*c02*d00 - 2*d00*d02 - d01**2)/4
+     C1 (2, 1) : -(2*iota + 1)*(2*a00*a21 + 2*I*a00*b21 + 2*a01*a22 + 2*I*a01*b22 - 2*I*a21*b00 - 2*I*a22*b01 + 2*b00*b21 + 2*b01*b22 + c00*c01 - I*c00*d01 - I*c01*d00 - d00*d01)/4
+     C1 (2, 2) : -(iota + 1)*(4*a00*a22 + 4*I*a00*b22 - 4*I*a22*b00 + 4*b00*b22 + c00**2 - 2*I*c00*d00 - d00**2)/4
+   stellarator-symmetric class: 14 unknowns [a00, a01, a02, a10, a11, a12, a20, a21, a22, d00, d01, d02, d10, iota];  15 extreme-mode equations
+   21 solution branches in 14.8 s
+   non-axisymmetric amplitudes: [a00, a02, a10, a12, a20, a22, d00, d02, d10]
+   branches with ALL non-axisymmetric amplitudes forced to zero: 0 of 21
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d01: 0, d02: 0, d10: 0}
+        7 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 5 solutions: [{a21: 0, a22: 0}, {a11: 0, a21: 0, a22: 0}, {a11: 0, a21: 0, a22: 0}, {a11: 0, a21: 0, iota: -2}, {a11: 0, a22: 0, iota: -1}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d01: 0, d10: 0, iota: 1}
+        7 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 3 solutions: [{a21: 0, a22: 0}, {a11: 0, a21: 0, a22: 0}, {a11: 0, a21: 0, a22: 0}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0}
+        7 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 3 solutions: [{a21: 0, a22: 0}, {a11: 0, a21: 0, a22: 0}, {a11: 0, a21: 0, a22: 0}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a20: d10**2/(4*a22), d00: 0, d01: 0, d02: 0, iota: -1}
+        6 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, a22: -d10/2}, {a11: 0, a22: d10/2}, {a11: 0, a21: 0, a22: -I*d10/2}, {a11: 0, a21: 0, a22: I*d10/2}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a20: d10**2/(4*a22), d00: 0, d01: 0, d02: 0, iota: -1}
+        6 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, a22: -d10/2}, {a11: 0, a22: d10/2}, {a11: 0, a21: 0, a22: -I*d10/2}, {a11: 0, a21: 0, a22: I*d10/2}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d01: 0, d02: 0, d10: 0}
+        6 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 5 solutions: [{a20: 0, a21: 0}, {a11: 0, a20: 0, a21: 0}, {a11: 0, a20: 0, a21: 0}, {a11: 0, a20: 0, iota: -1}, {a11: 0, a21: 0, iota: 0}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: 1}
+        6 remaining C1/C2 equations ; e.g. a11*a21/2
+        full C1+C2 solve on this branch: 3 solutions: [{a20: 0, a21: 0}, {a11: 0, a20: 0, a21: 0}, {a11: 0, a20: 0, a21: 0}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0}
+        5 remaining C1/C2 equations ; e.g. a21**2
+        full C1+C2 solve on this branch: 2 solutions: [{a11: 0, a21: 0}, {a20: 0, a21: 0}]
+     surviving branch {a00: 0, a01: 0, a02: d02**2/(4*a20), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0}
+        2 remaining C1/C2 equations ; e.g. a11*(2*a20 - d02)*(2*a20 + d02)/(8*a20)
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, a20: -I*Abs(d02)/2}, {a11: 0, a20: I*Abs(d02)/2}, {a11: 0, a20: sqrt((2 - iota)/iota)*Abs(d02)/2}, {a11: 0, a20: -sqrt(-(iota - 2)/iota)*Abs(d02)/2}]
+     surviving branch {a00: 0, a01: 0, a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: 1}
+        2 remaining C1/C2 equations ; e.g. -(a02 - a20)*(a02 + a20)
+        full C1+C2 solve on this branch: 3 solutions: [{a02: a20}, {a02: 0, a20: 0}, {a02: -a20, a11: 0}]
+     surviving branch {a00: 0, a01: d01*d02/(2*a20), a02: d02**2/(4*a20), a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0}
+        6 remaining C1/C2 equations ; e.g. -a11*d01*d02/(4*a20)
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, d02: 0}, {a11: 0, a20: -I*d02/2, d01: 0}, {a11: 0, a20: I*d02/2, d01: 0}, {a11: 0, d01: 0, d02: 0}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: 1}
+        2 remaining C1/C2 equations ; e.g. a20**2
+        full C1+C2 solve on this branch: 1 solutions: [{a20: 0}]
+     surviving branch {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d01: 0, d02: 0, d10: 0, iota: -1}
+        4 remaining C1/C2 equations ; e.g. -a20**2
+        full C1+C2 solve on this branch: 2 solutions: [{a11: 0, a20: 0}, {a20: 0, a21: 0}]
+     surviving branch {a00: 0, a01: 0, a02: d02**2/(4*a20), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: -1}
+        2 remaining C1/C2 equations ; e.g. a11*(2*a20 - d02)*(2*a20 + d02)/(8*a20)
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, a20: -I*d02/2}, {a11: 0, a20: I*d02/2}, {a11: 0, a20: -sqrt(3)*I*d02/2}, {a11: 0, a20: sqrt(3)*I*d02/2}]
+     surviving branch {a00: 0, a01: 0, a02: d02**2/(4*a20), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: -1}
+        2 remaining C1/C2 equations ; e.g. a11*(2*a20 - d02)*(2*a20 + d02)/(8*a20)
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, a20: -I*d02/2}, {a11: 0, a20: I*d02/2}, {a11: 0, a20: -sqrt(3)*I*d02/2}, {a11: 0, a20: sqrt(3)*I*d02/2}]
+     surviving branch {a00: 0, a01: 0, a02: d02**2/(4*a20), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: -1}
+        2 remaining C1/C2 equations ; e.g. a11*(2*a20 - d02)*(2*a20 + d02)/(8*a20)
+        full C1+C2 solve on this branch: 4 solutions: [{a11: 0, a20: -I*d02/2}, {a11: 0, a20: I*d02/2}, {a11: 0, a20: -sqrt(3)*I*d02/2}, {a11: 0, a20: sqrt(3)*I*d02/2}]
+     surviving branch {a00: 0, a01: 0, a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d02: 0, d10: 0, iota: 1}
+        2 remaining C1/C2 equations ; e.g. -(a02 - a20)*(a02 + a20)
+        full C1+C2 solve on this branch: 3 solutions: [{a02: a20}, {a02: 0, a20: 0}, {a02: -a20, a11: 0}]
+     surviving branch {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, iota: 1}
+        1 remaining C1/C2 equations ; e.g. -a01*a11/2
+        full C1+C2 solve on this branch: 2 solutions: [{a01: 0}, {a11: 0}]
+     surviving branch {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0}
+        3 remaining C1/C2 equations ; e.g. -a01**2
+        full C1+C2 solve on this branch: 1 solutions: [{a01: 0}]
+     surviving branch {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0}
+        3 remaining C1/C2 equations ; e.g. -a01**2
+        full C1+C2 solve on this branch: 1 solutions: [{a01: 0}]
+     surviving branch {a00: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d01: 0, d02: 0, d10: 0, iota: 1}
+        4 remaining C1/C2 equations ; e.g. -a02**2
+        full C1+C2 solve on this branch: 2 solutions: [{a01: 0, a02: 0}, {a02: 0, a11: 0}]
+
+   64 terminal solutions of C1 + C2 in the stellarator-symmetric class (N = 1):
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0, a21: 0, a22: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0, a11: 0, a21: 0, a22: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a20: 0, d00: 0, d02: 0, d10: 0, iota: 0, a11: 0, a21: 0, a22: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a11: 0, a21: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a20: 0, a21: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: I*d02**2/(2*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: -I*Abs(d02)/2}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: -I*d02**2/(2*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: I*Abs(d02)/2}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: d02**2/(2*sqrt((2 - iota)/iota)*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: sqrt((2 - iota)/iota)*Abs(d02)/2}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: -d02**2/(2*sqrt(-(iota - 2)/iota)*Abs(d02)), a12: 0, a21: 0, a22: 0, d00: 0, d01: 0, d10: 0, a11: 0, a20: -sqrt(-(iota - 2)/iota)*Abs(d02)/2}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: 0, a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0, a11: 0, d02: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: I*d02/2, a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0, a11: 0, a20: -I*d02/2, d01: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a01: 0, a02: -I*d02/2, a12: 0, a21: 0, a22: 0, d00: 0, d10: 0, iota: 0, a11: 0, a20: I*d02/2, d01: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a01: 0}
+     NON-TRIVIAL candidate surface: {a00: 0, a02: 0, a12: 0, a20: 0, a21: 0, a22: 0, d00: 0, d02: 0, d10: 0, iota: 0, a01: 0}
+   every terminal solution is (axisymmetric) or (z == 0, planar) or (iota = +-N, excluded by Thm 5.1 / |B| const): False
+   tallies: axisymmetric 0 | planar 18 | iota = +-N only 32
+done in 190.4 s

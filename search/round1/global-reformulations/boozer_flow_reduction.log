@@ -1,0 +1,35 @@
+setup done at 0.1 s
+[A] residual of (1) W.x_p - G sqrtg      divisible by C1 : True
+[A] residual of (2) W.x_t - I sqrtg      divisible by C1 : True
+[A] residual of (4') W.x_psi - K sqrtg   divisible by C1 : True
+[A] |W|^2 - (G + iota I) sqrtg           divisible by C1 : True
+[A] a.Y == C1 exactly : True
+d_psi f assembled at 14.5 s
+[B] coeff of mu_theta in d_psi f  ==  2 iota C1/(G+iota I) : True
+[B] coeff of mu_phi   in d_psi f  ==  2 C1/(G+iota I)      : True
+[B] coeff of mu in d_psi f == 2 (W.Da)/(G+iota I) : True
+    => mu_alg = [ (G+iota I) f_psi - (rest) ] / (2 W.Da),  W.Da = -(G+iota I)(G+N I) f'(chi)/2 on the surface
+       (D does not act on the flux constants; W.Da = (I/2) d_phi|W|^2 - (G/2) d_theta|W|^2 with |W|^2 = (G+iota I) f(chi))
+       => mu is undetermined exactly where f'(chi) = 0 (|B| extrema on the surface, or |B| constant on the surface)
+    (W.Da closed form is verified on the explicit tests below)
+d_psi C1 assembled at 15.0 s
+[B] d_psi C1 linear in (mu, mu_t, mu_p): True
+    coeff(mu_phi)   =  G**2*x0_10**2 + G**2*x1_10**2 + G**2*x2_10**2 - G*I*iota*x0_10**2 - G*I*iota*x1_10**2 - G*I*iota*x2_10**2 - 3*G*I*x0_01*x0_10 - 3*G*I*x1_01*x1_10 - 3*G*I*x2_01*x2_10 + I**2*iota*x0_01*x0_10 + I**2*iota*x1_01*x1_10 + I**2*iota*x2_01*x2_10 + 2*I**2*x0_01**2 + 2*I**2*x1_01**2 + 2*I**2*x2_01**2
+    coeff(mu_theta) =  2*G**2*iota*x0_10**2 + 2*G**2*iota*x1_10**2 + 2*G**2*iota*x2_10**2 + G**2*x0_01*x0_10 + G**2*x1_01*x1_10 + G**2*x2_01*x2_10 - 3*G*I*iota*x0_01*x0_10 - 3*G*I*iota*x1_01*x1_10 - 3*G*I*iota*x2_01*x2_10 - G*I*x0_01**2 - G*I*x1_01**2 - G*I*x2_01**2 + I**2*iota*x0_01**2 + I**2*iota*x1_01**2 + I**2*iota*x2_01**2
+[B] COMPAT := d_psi C1 |_(mu = mu_alg)  is evaluated lazily at test points (15.2 s)
+[C vacuum iota=0] (1),(2),(4') residuals: 0, 0, 0 | force balance (4): 0 | u(sqrt g) = 0 | K = 0
+[C vacuum iota=0] |B|^2 = (psi + sqrt(psi**2 - 1)*cos(theta))**(-2)
+[C vacuum iota=0] x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0] ,  mu_true = 16/15
+[C vacuum iota=0] C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = 51/50
+[C vacuum iota=0] mu_alg - mu_true = 0;  COMPAT = 0   (51.6 s)
+[C vacuum iota=0 (2nd point)] (1),(2),(4') residuals: 0, 0, 0 | force balance (4): 0 | u(sqrt g) = 0 | K = 0
+[C vacuum iota=0 (2nd point)] |B|^2 = (psi + sqrt(psi**2 - 1)*cos(theta))**(-2)
+[C vacuum iota=0 (2nd point)] x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0] ,  mu_true = 144/65
+[C vacuum iota=0 (2nd point)] C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = 485/1014
+[C vacuum iota=0 (2nd point)] mu_alg - mu_true = 0;  COMPAT = 0   (84.5 s)
+[D screw pinch] (1),(2),(4') residuals: 0, 0, 0 | force balance (4): 0 | u(sqrt g) = 0 | K = 0
+[D screw pinch] |B|^2 = 2*psi**3 + 1
+[D screw pinch] x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0] ,  mu_true = 0
+[D screw pinch] C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = 0
+[D screw pinch] W.Da = 0 (|B| constant on the surface): mu is not determined algebraically here -- degenerate case, COMPAT not testable   (84.9 s)
+done in 84.9 s
