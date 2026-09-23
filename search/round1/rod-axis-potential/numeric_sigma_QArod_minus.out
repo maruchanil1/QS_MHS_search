@@ -1,0 +1,5 @@
+target iota0 = -0.4232 (NOTE: this rod is the MIRROR IMAGE of the VMEC axis: tau, z_s have opposite signs; so mirror the fits: tau->-tau, z_s->-z_s, P_NB->-P_NB), k = -0.399438; vacuum j = 0; rod quarter length L/4 = 1.664241 (kappa max at 0, min at L/4)
+eta values giving a stellarator-symmetric periodic sigma with iota0 = 0.4232: [1.919733]
+
+=== eta = 1.919733: sigma range [-2796.931, 2796.931], sigma(L/2) = 5.88e-11 (periodicity), Hill multiplier phi(L)/phi(0) = 1.0000 ===
+   (sigma has a pole: discard)

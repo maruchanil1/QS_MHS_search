@@ -1,0 +1,34 @@
+Hess Pi . T = [-kappa(s)**2, Derivative(kappa(s), s), kappa(s)*tau(s)]   (expected [-kappa^2, kappa', kappa tau])
+(L1) T-equation: -2*X(s)*Derivative(kappa(s), s) - 2*kappa(s)*Derivative(X(s), s) + Derivative(xi(s), (s, 2))   == d/ds (xi' - 2 kappa X) ? True
+(L2) xi drops out of N,B equations: (False, False)
+     N-eq (dE=0) matches claim: True | dE enters N-eq as: 2*kappa(s)
+     B-eq (dE=0) matches claim: True | dE enters B-eq as: 0
+(L3) flux conservation Im(conj(X) Y) = -1  (constant)
+     P_BB = -2*eta**2*k*tau/kappa**2 - k**2 - 2*k*sigma1 - 2*k*kappa1*sigma/kappa - tau**2 + kappa2/kappa
+     P_NB (from N-eq) = 2*eta**2*k*kappa1/kappa**3 + 2*k*sigma*tau - tau1 - 2*kappa1*tau/kappa
+     P_NN = -k**2 - 2*k*kappa1*sigma/kappa + 3*kappa**2 - tau**2 - kappa2/kappa + 2*kappa1**2/kappa**2 - 2*k*kappa**2*sigma**2*tau/eta**2 - 2*k*kappa**2*tau/eta**2 - 2*kappa**2*sigma1*tau/eta**2
+     compatibility (P_NB from B-eq minus from N-eq) = 0 :
+         -2*eta**4*k*kappa1/kappa**5 + 2*eta**2*tau1/kappa**2 + 2*k*kappa1*sigma**2/kappa + 2*k*kappa1/kappa + sigma1*(2*k*sigma + 2*kappa1/kappa) + sigma2
+(L4) on-axis parallel current density j = (curl B).T = G_BN - G_NB = eta**2*k/kappa**2 + 2*tau + k*kappa**2*sigma**2/eta**2 + k*kappa**2/eta**2 + kappa**2*sigma1/eta**2
+     => Riccati:  sigma' = -eta**4*k/kappa**4 + eta**2*j/kappa**2 - 2*eta**2*tau/kappa**2 - k*sigma**2 - k
+     compatibility ODE / (dj/ds) = 1    (nonzero => compat <=> j = const)
+     Laplacian Pi on axis = -2*eta**2*k*tau/kappa**2 - 2*k**2 - 4*k*kappa1*sigma/kappa + 2*kappa**2 + sigma1*(-2*k - 2*kappa**2*tau/eta**2) - 2*tau**2 + 2*kappa1**2/kappa**2 - 2*k*kappa**2*sigma**2*tau/eta**2 - 2*k*kappa**2*tau/eta**2
+
+==== EXACT on-axis Hessian of Pi for a first-order-QS field (units B0^2, arclength; k = 2pi(iota0-N)/L) ====
+  P_NN = 2*eta**2*k*tau/kappa**2 - 2*j*tau - k**2 - 2*k*kappa1*sigma/kappa + 3*kappa**2 + 3*tau**2 - kappa2/kappa + 2*kappa1**2/kappa**2
+  P_NB = 2*eta**2*k*kappa1/kappa**3 + 2*k*sigma*tau - tau1 - 2*kappa1*tau/kappa
+  P_BB = -2*eta**2*j*k/kappa**2 + 2*eta**2*k*tau/kappa**2 + 2*k**2*sigma**2 + k**2*(2*eta**4/kappa**4 + 1) - 2*k*kappa1*sigma/kappa - tau**2 + kappa2/kappa
+  Lap Pi = 2*eta**4*k**2/kappa**4 + 4*eta**2*k*tau/kappa**2 + j*(-2*eta**2*k/kappa**2 - 2*tau) + 2*k**2*sigma**2 - 4*k*kappa1*sigma/kappa + 2*kappa**2 + 2*tau**2 + 2*kappa1**2/kappa**2
+  P_TT = -kappa^2,  P_TN = kappa',  P_TB = kappa tau
+  Lap Pi (vacuum j=0) as sum of squares: True
+
+  P_BB - P_BB^hel = -2*eta**2*j*k/kappa**2 + 2*eta**2*k*tau/kappa**2 + 2*k**2*sigma**2 + k**2*(2*eta**4/kappa**4 + 1) - 2*k*kappa1*sigma/kappa + lambda2*tau/lambda3 - tau**2 - z_s/lambda3 + kappa2/kappa
+  P_NB - P_NB^hel = 2*eta**2*k*kappa1/kappa**3 + 2*k*sigma*tau - tau1 + kappa1*lambda2/(kappa*lambda3) - 2*kappa1*tau/kappa
+
+(L5) numerical checks of the transverse system (L2) on explicit potentials
+  [helix, V(r,z)] orbit residual gamma''+gradV: [0, 0, 0]  |T|^2-1: 0
+  [helix, V(r,z)] Hess Pi Frenet components: TT-(-k^2)=0, TN-k'=0, TB-k tau=0
+  [helix, V(r,z)] max |true - Frenet-system| over 3 random ICs, 6 times, (xi,X,Y): 3.62e-12
+  [catenary (kappa'!=0, P_NB!=0), V(x,y,z)] orbit residual gamma''+gradV: [0, 0, 0]  |T|^2-1: 0
+  [catenary (kappa'!=0, P_NB!=0), V(x,y,z)] Hess Pi Frenet components: TT-(-k^2)=0, TN-k'=0, TB-k tau=0
+  [catenary (kappa'!=0, P_NB!=0), V(x,y,z)] max |true - Frenet-system| over 3 random ICs, 6 times, (xi,X,Y): 3.94e-12

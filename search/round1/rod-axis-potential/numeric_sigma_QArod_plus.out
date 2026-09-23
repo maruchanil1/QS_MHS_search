@@ -1,0 +1,31 @@
+target iota0 = 0.4232 (NOTE: this rod is the MIRROR IMAGE of the VMEC axis: tau, z_s have opposite signs; so mirror the fits: tau->-tau, z_s->-z_s, P_NB->-P_NB), k = 0.399438; vacuum j = 0; rod quarter length L/4 = 1.664241 (kappa max at 0, min at L/4)
+eta values giving a stellarator-symmetric periodic sigma with iota0 = 0.4232: [0.574747 0.853616 1.860531]
+
+=== eta = 0.574747: sigma range [-0.753, 0.753], sigma(L/2) = -3.51e-13 (periodicity), Hill multiplier phi(L)/phi(0) = 1.0000 ===
+   (a) fits in the functional forms of handoff §6.4 [VMEC QA: P_NN = 3.19 k^2 - 0.86 tau + 0.93; P_BB = -1.56 z_s + 0.86 tau - 0.11; P_NB = 0.78 k'/k + 0.29 k'; Lap = 1.71 k^2 + 1.36]:
+   P_NN = +3.133 kappa^2 + +0.413 tau + +1.238 1   (rel. rms residual 1.3e-03)
+   P_BB = +1.279 z_s + -0.976 tau + -0.150 1   (rel. rms residual 1.6e-03)
+   P_NB = -1.184 kappa'/kappa + +0.022 kappa'   (rel. rms residual 2.7e-03)
+   LapPi = +1.255 kappa^2 + +2.143 1   (rel. rms residual 8.1e-02)
+   ranges: P_NN [1.251,8.374] P_BB [-1.082,1.897] P_NB [-1.399,1.399]  (VMEC table: P_NN 0.30..8.26, P_BB -1.03..1.69, P_NB -1.05..0)
+   helical predictions: P_BB^hel range [-1.310,3.056], P_NB^hel range [-1.823,1.823]
+   (b) sigma*q' ~ Laurent poly in q, i=-2..2: rel. max residual 1.3e-03
+   (b) sigma*q' ~ Laurent poly in q, i=-3..3: rel. max residual 6.5e-05
+   (b) sigma*q' ~ Laurent poly in q, i=-4..4: rel. max residual 3.9e-06
+   sigma samples at s/L = 0, .05, .1, .15, .2, .25: [ 0.0000e+00 -1.8957e-01 -3.9562e-01 -6.2388e-01 -7.4444e-01 -2.6477e-12]
+
+=== eta = 0.853616: sigma range [-1.224, 1.224], sigma(L/2) = -4.27e-13 (periodicity), Hill multiplier phi(L)/phi(0) = 1.0000 ===
+   (a) fits in the functional forms of handoff §6.4 [VMEC QA: P_NN = 3.19 k^2 - 0.86 tau + 0.93; P_BB = -1.56 z_s + 0.86 tau - 0.11; P_NB = 0.78 k'/k + 0.29 k'; Lap = 1.71 k^2 + 1.36]:
+   P_NN = +2.921 kappa^2 + +1.682 tau + +1.097 1   (rel. rms residual 3.0e-03)
+   P_BB = +1.293 z_s + -1.055 tau + -0.007 1   (rel. rms residual 6.1e-04)
+   P_NB = -0.204 kappa'/kappa + -0.566 kappa'   (rel. rms residual 1.5e-02)
+   LapPi = +2.045 kappa^2 + +0.896 1   (rel. rms residual 5.1e-02)
+   ranges: P_NN [-1.184,8.448] P_BB [-0.981,2.172] P_NB [-0.763,0.763]  (VMEC table: P_NN 0.30..8.26, P_BB -1.03..1.69, P_NB -1.05..0)
+   helical predictions: P_BB^hel range [-1.310,3.056], P_NB^hel range [-1.823,1.823]
+   (b) sigma*q' ~ Laurent poly in q, i=-2..2: rel. max residual 3.2e-04
+   (b) sigma*q' ~ Laurent poly in q, i=-3..3: rel. max residual 4.1e-05
+   (b) sigma*q' ~ Laurent poly in q, i=-4..4: rel. max residual 3.4e-06
+   sigma samples at s/L = 0, .05, .1, .15, .2, .25: [ 0.0000e+00 -2.6598e-01 -5.7196e-01 -9.5098e-01 -1.2199e+00  4.4596e-12]
+
+=== eta = 1.860531: sigma range [-18520.256, 18520.256], sigma(L/2) = -1.19e-11 (periodicity), Hill multiplier phi(L)/phi(0) = 1.0000 ===
+   (sigma has a pole: discard)

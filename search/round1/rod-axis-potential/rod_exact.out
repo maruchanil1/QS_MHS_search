@@ -1,0 +1,23 @@
+(R1) zN = -lambda3*Derivative(kappa(s), s) ,  zB = (lambda2 - lambda3*tau(s))*kappa(s)
+(R2) zT' - kappa zN = 0
+(R3) tau = (-alpha + c*lambda2 + lambda2*lambda3*kappa(s)**2/2)/(lambda3**2*kappa(s)**2)  == l2/(2 l3) + C/kappa^2 : True
+(R5) |e_z|^2 = 1  <=>  q'^2 = P(q): True
+     zB' + tau zN = 0 identically: True
+     zN' + kappa zT - tau zB = 0 given q'^2 = P(q): True
+(R4) r^2 = |I|^2 - alpha^2 = l2^2 + l3^2 kappa^2 - alpha^2  (|I|^2 = alpha^2 + r^2 for the screw field)
+     P(q) =  -4*alpha**2/lambda3**4 + 8*alpha*c*lambda2/lambda3**4 - 4*c**2*lambda2**2/lambda3**4 - q**3 + q**2*(4*c/lambda3 - lambda2**2/lambda3**2) + q*(-4*alpha*lambda2/lambda3**3 - 4*c**2/lambda3**2 + 4*c*lambda2**2/lambda3**3 + 4/lambda3**2)
+
+Exact (1,2) rod: alpha = 0.561636, beta = -0.340808, quarter length = 1.664241, L = 6.65696 (handoff: 0.561636, -0.340808, L=6.65696)
+closure |x(L)-x(0)|, |T(L)-T(0)|: 2.1585313809950853e-12 1.8680063429435514e-12
+T.I = lambda2: mean 0.955130775, std 1.2e-13;  Bn.I/kappa = lambda3: mean 0.628300, std 1.2e-16;  N.I rms 6.3e-17
+(R2) z_s - (c - l3 q/2): c = -0.360927590, residual max 6.7e-01
+(R3) tau - (l2/(2l3) + C/q): C = -2.295995013, residual max 9.4e+00
+(R4) r^2 - (l2^2 - alpha^2 + l3^2 q): residual max 1.9e-12
+(R5) q'^2 - P(q): residual max 1.8e+01  (max q'^2 = 3.695)
+     roots of P: q3 = -5.187229 (<0), q1 = 0.966016 = kappa_min^2 (0.222842), q2 = 4.208061 = kappa_max^2 (2.212881)
+     rod moduli in this parametrisation: lambda2 = 0.955131, lambda3 = -0.6283, alpha = 0.561636, c = -0.360928; tau0 = l2/(2 l3) = -0.760091, C = -2.295995
+     kappa range [0.4721, 1.4876], tau range [-1.7056, 0.5118], z_s at kappa max -0.3342, at kappa min 0.2909
+
+Killing fields with N.xi = 0 along the rod: singular values of the 6-column sample matrix: [3.285e+01 2.588e+01 2.157e+01 8.000e+00 6.712e+00 6.436e-15]
+   => null space dimension 1 (only the screw I = alpha e_z + e_z x x): True
+z_s at the curvature extrema (must vanish for a separable V_h(x,y)+V_z(z) to have the rod as orbit): -0.3342490324202529 0.2909216327135053

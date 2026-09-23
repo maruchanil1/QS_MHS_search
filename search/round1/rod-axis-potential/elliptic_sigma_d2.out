@@ -1,0 +1,27 @@
+
+=== d=0, e3=0, m=0 (e0=0): 3 coefficient eqs; after eliminating (a,b): 1 eqs for [k] (+ q1,q2,q3 free)
+    no solution with k != 0
+    [0.1s]
+
+=== d=0, e3=0, m=-1/2 (e0=-1/2): 3 coefficient eqs; after eliminating (a,b): 1 eqs for [k] (+ q1,q2,q3 free)
+    SOLUTION: {'k': -sqrt(-q1 - q2 - q3)/2, 'a': (q1*q2 + q1*q3 + q2*q3)/sqrt(-q1 - q2 - q3), 'b': 3*q1*q2*q3/(2*sqrt(-q1 - q2 - q3))}
+      R(q) = 1/(q*sqrt(-q1 - q2 - q3))   (sigma = R(kappa^2) (kappa^2)')
+    SOLUTION: {'k': sqrt(-q1 - q2 - q3)/2, 'a': (-q1*q2 - q1*q3 - q2*q3)/sqrt(-q1 - q2 - q3), 'b': -3*q1*q2*q3/(2*sqrt(-q1 - q2 - q3))}
+      R(q) = -1/(q*sqrt(-q1 - q2 - q3))   (sigma = R(kappa^2) (kappa^2)')
+    [0.2s]
+
+=== d=0, e3=1/2, m=0 (e0=-1/2): 4 coefficient eqs; after eliminating (a,b): 2 eqs for [k] (+ q1,q2,q3 free)
+    SOLUTION: {'k': -sqrt(-q3)/2, 'a': sqrt(-q3)*(-q1 - q2), 'b': -3*q1*q2*sqrt(-q3)/2}
+      R(q) = sqrt(-q3)/(q*(q - q3))   (sigma = R(kappa^2) (kappa^2)')
+    SOLUTION: {'k': sqrt(-q3)/2, 'a': sqrt(-q3)*(q1 + q2), 'b': 3*q1*q2*sqrt(-q3)/2}
+      R(q) = -sqrt(-q3)/(q*(q - q3))   (sigma = R(kappa^2) (kappa^2)')
+    [0.2s]
+
+=== d=0, e3=1/2, m=-1/2 (e0=-1): 4 coefficient eqs; after eliminating (a,b): 2 eqs for [k] (+ q1,q2,q3 free)
+    SOLUTION: {'k': -sqrt(-q1 - q2 - 4*q3)/2, 'a': (q1*q2 + 3*q1*q3 + 3*q2*q3)/sqrt(-q1 - q2 - 4*q3), 'b': 4*q1*q2*q3/sqrt(-q1 - q2 - 4*q3)}
+      R(q) = (q - 2*q3)/(q*(q - q3)*sqrt(-q1 - q2 - 4*q3))   (sigma = R(kappa^2) (kappa^2)')
+    SOLUTION: {'k': sqrt(-q1 - q2 - 4*q3)/2, 'a': (-q1*q2 - 3*q1*q3 - 3*q2*q3)/sqrt(-q1 - q2 - 4*q3), 'b': -4*q1*q2*q3/sqrt(-q1 - q2 - 4*q3)}
+      R(q) = (-q + 2*q3)/(q*(q - q3)*sqrt(-q1 - q2 - 4*q3))   (sigma = R(kappa^2) (kappa^2)')
+    [0.3s]
+
+=== d=1, e3=0, m=0 (e0=-1): 5 coefficient eqs; after eliminating (a,b): 3 eqs for [k, s0] (+ q1,q2,q3 free)

@@ -1,0 +1,21 @@
+rod: q1=0.222842 q2=2.212881 q3=-2.448875  p2=-0.013151 p1=5.471658 p0=-1.207599  C=-0.549454 tau0=0.760091 L=6.65696
+
+=== k = +0.057339 (iota0 - N = kL/2pi = +0.06075), eta^2 = 28.74749 (eta = 5.3617), j = 3.17991 ===
+  (1) Riccati residual max |sigma' - RHS| = 4.62e-06   (scale |sigma'| max 104.026)
+  (2) pointwise residual of (L2) for the claimed (X,Y): N-eq 1.31e-06 (scale 124.5), B-eq 5.88e-04 (scale 40.6)
+      kappa*X = eta e^(iks) exactly harmonic by construction; |X| range [3.604,11.358]; flux Im(conj(X)Y) = -1.000000 +- 4.5e-16
+  (3) transverse monodromy over L: |ev| = [2.70893e+04 3.71151e-05 1.00000e+00 1.00000e+00], rotation numbers = [ 0.       0.       0.06075 -0.06075]; expected +-0.06075 for the field-line pair; det M = 1.005425
+  (4) P_NN as Laurent poly in q (i=-2..2): coeffs [-2.4152e+00  8.9661e+00 -3.1140e+00  2.5000e+00  8.8940e-12], rel. residual 2.4e-08
+  (4) P_NB/q' as Laurent poly in q (i=-2..2): coeffs [ 2.1978e+00 -1.5202e+00 -4.3032e-14 -2.4596e-13  1.3156e-13], rel. residual 7.0e-12
+  (4) P_BB as Laurent poly in q (i=-2..2): coeffs [ 2.4152e+00 -1.6705e+00 -5.9089e-01 -1.5000e+00 -7.8352e-12], rel. residual 6.6e-09
+      P_NN range [-10.958,6.621], P_BB range [-4.172,40.214], P_NB range [-12.434,12.434]
+
+=== k = -0.057339 (iota0 - N = kL/2pi = -0.06075), eta^2 = 9.58250 (eta = 3.0956), j = -3.45900 ===
+  (1) Riccati residual max |sigma' - RHS| = 4.62e-06   (scale |sigma'| max 104.026)
+  (2) pointwise residual of (L2) for the claimed (X,Y): N-eq 2.27e-06 (scale 24.5), B-eq 1.02e-03 (scale 14.9)
+      kappa*X = eta e^(iks) exactly harmonic by construction; |X| range [2.081,6.558]; flux Im(conj(X)Y) = -1.000000 +- 4.4e-16
+  (3) transverse monodromy over L: |ev| = [9.22264e+05 6.97244e-07 1.00001e+00 1.00001e+00], rotation numbers = [ 0.       0.       0.06075 -0.06075]; expected +--0.06075 for the field-line pair; det M = 0.643006
+  (4) P_NN as Laurent poly in q (i=-2..2): coeffs [ 2.5486e-12 -1.6705e+00  6.9784e+00  2.5000e+00  8.7921e-12], rel. residual 2.3e-08
+  (4) P_NB/q' as Laurent poly in q (i=-2..2): coeffs [-1.8627e-12 -1.5202e+00 -4.1963e-14 -2.4745e-13  1.3196e-13], rel. residual 3.8e-11
+  (4) P_BB as Laurent poly in q (i=-2..2): coeffs [ 4.0728e-12  1.6705e+00 -5.9089e-01 -1.5000e+00 -7.7704e-12], rel. residual 4.0e-08
+      P_NN range [0.039,11.756], P_BB range [-3.155,6.571], P_NB range [-3.646,3.646]
