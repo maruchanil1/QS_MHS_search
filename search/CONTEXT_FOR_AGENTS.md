@@ -72,7 +72,11 @@ and `φ` is the scalar potential (`B = G∇φ`).
 ### 2.3 Weak vs strong QS
 Weak QS: ∃ `u ≠ 0` with `∇·u = 0`, `[u, B] = 0`, `u·∇|B| = 0`. Strong QS adds `L_u(B♭) = 0`
 (`B♭ = g(B,·)`). For MHS with nested surfaces and isotropic p, weak ⇒ strong
-(Rodriguez–Helander–Bhattacharjee 2020). The symmetry vector is `u = (G̃B + B×∇ψ)/B²` in Boozer form.
+(Rodriguez–Helander–Bhattacharjee 2020). **Normalisation matters for the strong condition**: `L_u B♭ = 0`
+is not invariant under `u → c(ψ)u`. The correctly normalised symmetry vector is the Boozer coordinate
+vector `u = e_φ + N e_θ = [(G + NI)B + (N − ι)B×∇ψ]/B²` (a 2π-periodic circle action); the often-quoted
+`(G̃B + B×∇ψ)/B²` differs by the flux function `1/(N−ι)` and gives a spurious `ι′ = 0` if inserted into
+`L_u B♭ = 0` (coordinator, round 1). Weak-QS statements are unaffected.
 Sato (Sci. Rep. 2022; and Sato–Yamada) constructed **weakly QS fields with ι = 0 in asymmetric toroidal
 domains, but only with anisotropic pressure**, not isotropic MHS. Rodriguez–Bhattacharjee: anisotropic
 pressure removes the GB overdetermination. So isotropic p is exactly where the difficulty lives.
