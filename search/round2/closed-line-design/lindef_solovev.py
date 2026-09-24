@@ -32,7 +32,7 @@ print(f"  columns built, {time.time()-T0:.0f} s")
 M = assemble(cols, ['dJ_s', 'dJ_t', 'W', 'M1', 'M2_s', 'M2_t'], len(fields))
 Ms = assemble(cols, ['SQ_ts', 'SQ_tl'], len(fields))
 print(f"  system {M.shape[0]} x {M.shape[1]}; strong-QS block {Ms.shape[0]} rows; {time.time()-T0:.0f} s")
-ns = M.nullspace()
+ns = fast_nullspace(M)
 print(f"  rank {len(fields)-len(ns)}, nullspace dim {len(ns)}, {time.time()-T0:.0f} s")
 trivial = [sp.Matrix([X, Y, 0]), sp.Matrix([0, 0, Z]), sp.Matrix([0, 0, X**2 + Y**2])]
 print("  solutions:")

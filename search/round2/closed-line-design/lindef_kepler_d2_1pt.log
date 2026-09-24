@@ -1,1 +1,12 @@
 Kepler force-free congruence, DEG = 2 (30 coefficients)
+  point (C,eps)=(5/4,3/5): system 2339 x 30, rank 24, 880 s
+  combined rank 24, nullspace dim 6, 887 s
+   xi = [1, 0, 0]  | Killing: True | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [0, 1, 0]  | Killing: True | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [-y, x, 0]  | Killing: True | div = 0 | s-modes [0, 1] | strong-QS: True | trivial: True
+   xi = [0, 0, 1]  | Killing: True | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [0, -z, y]  | Killing: True | div = 0 | s-modes [0, 1] | strong-QS: True | trivial: True
+   xi = [-z, 0, x]  | Killing: True | div = 0 | s-modes [0, 1] | strong-QS: True | trivial: True
+
+  RESULT DEG=2: nullspace 6; non-trivial (beyond Killing and dilation): 0
+done in 887 s

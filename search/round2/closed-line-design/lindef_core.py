@@ -99,3 +99,15 @@ def s_modes(f, x0):
 def clean_vec(v):
     den = sp.lcm([sp.fraction(sp.Rational(a))[1] for a in v if a != 0]) if any(a != 0 for a in v) else 1
     return v*den
+
+
+def fast_nullspace(M):
+    """nullspace via DomainMatrix (exact, much faster than Matrix.nullspace for large systems); falls back if needed."""
+    try:
+        from sympy.polys.matrices import DomainMatrix
+        dM = DomainMatrix.from_Matrix(M).to_field()
+        ns = dM.nullspace().to_Matrix()          # rows = basis vectors
+        return [ns.row(i).T for i in range(ns.rows)]
+    except Exception as e:
+        print("  (DomainMatrix nullspace failed:", e, "-> falling back to Matrix.nullspace)")
+        return M.nullspace()
