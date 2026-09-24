@@ -1,0 +1,49 @@
+[A] generic identities in orbit coordinates
+   x_tt.x_psi == d_t g_tpsi - d_psi g_tt/2 : True
+   x_tt.x_s == d_t g_ts - d_s g_tt/2 : True
+   x_tt.x_t == d_t g_tt - d_t g_tt/2 : True
+   (L_u B^flat)_a == d_s g_ta : True
+
+[B] Boozer-type covariant form on a closed-line surface: B_theta = I + k(alpha), B_phi = G - iota k(alpha)
+   sqrt(g) J^psi = d_theta B_phi - d_phi B_theta = 0
+   B_phi + iota B_theta = iota*I(psi) + G(psi)   (=> sqrt g = (G+iota I)/B^2 unchanged)
+   sqrt(g)(J x B)_psi = (d_phi + iota d_theta)K - (G' + iota I') : True  (k dropped out)
+   extra parallel current  sqrt(g) dJ^phi = d_psi k ,  sqrt(g) dJ^theta = iota d_psi k  => dJ = (d_psi k) B
+
+[C] Solov'ev congruence (1:1:2 oscillator), x = R_z(s) y0(lam,t)
+   rho^2 - S - 2 m cos 2t == 0 : True
+   J = -S**2*kappa*(-cos(delta - 4*lambda) + cos(delta + 4*lambda))/4
+   d_s J == 0, d_t J == 0 : True True
+   g_tt = S*(S*kappa**2*sin(delta + 2*t)**2*cos(2*lambda)**2 + 2*sin(lambda)**2*sin(s)**2*cos(t)**2 + 2*sin(lambda)**2*cos(s)**2*cos(t)**2 + 2*sin(s)**2*sin(t)**2*cos(lambda)**2 + 2*sin(t)**2*cos(lambda)**2*cos(s)**2)
+   d_s g_tt == d_s g_ts == d_s g_tlam == 0 (strong QS, u = rotation) : True True True
+   (M1) d_t g_ts == 0 : True    g_ts = I(lam) = -S*sin(2*lambda)
+   (M2) d_t g_tlam - d_lam g_tt = S**2*kappa**2*sin(4*lambda)   t,s-independent: True True
+   p'(lam) from GS (p = p0 - S - 2 kappa^2 m^2): S**2*kappa**2*sin(4*lambda)  match: True
+   closedness d_a alpha_b - d_b alpha_a == 0 for (lam,s),(lam,t),(s,t): [True, True, True]
+   alpha_s = x_tt.x_s == 0 (u.grad Pi = 0): True
+   alpha_lam - d_lam g_tt/2 == p'(lam): True
+   Cartesian/GS check J x B = grad p with p = p0 - S - 2 kappa^2 m^2 : [True, True, True]
+   [C] done, 5 s
+
+[D] Kepler force-free congruence, psi-derivative at fixed t; label psi = eccentricity eps
+   point C = 5/4, eps = 3/5:  sin i = 3/5, cos i = 4/5
+     J = -12/25  (eta-independent)
+     |x|^2 == a^2(1 - eps cos eta)^2 : True
+     g_tt - (2 mu/rho - mu/a) == 0 : True
+     d_s g_tt, d_s g_ts, d_s g_tpsi == 0 : [True, True, True]
+     (M1) d_t g_ts == 0 : True   g_ts = I = 16/25
+     (M2) d_t g_tpsi - d_psi g_tt = p' = 0  (force-free: 0)
+     closedness of x_tt.dx for (psi,s),(psi,t),(s,t): [True, True, True]
+     alpha_s == 0: True  | alpha_psi - d_psi g_tt/2 == 0: True
+     x_tt + mu x/|x|^3 == 0 : True
+   point C = 25/36, eps = 5/13:  sin i = 3/5, cos i = 4/5
+     J = -36/65  (eta-independent)
+     |x|^2 == a^2(1 - eps cos eta)^2 : True
+     g_tt - (2 mu/rho - mu/a) == 0 : True
+     d_s g_tt, d_s g_ts, d_s g_tpsi == 0 : [True, True, True]
+     (M1) d_t g_ts == 0 : True   g_ts = I = 48/65
+     (M2) d_t g_tpsi - d_psi g_tt = p' = 0  (force-free: 0)
+     closedness of x_tt.dx for (psi,s),(psi,t),(s,t): [True, True, True]
+     alpha_s == 0: True  | alpha_psi - d_psi g_tt/2 == 0: True
+     x_tt + mu x/|x|^3 == 0 : True
+done in 16 s

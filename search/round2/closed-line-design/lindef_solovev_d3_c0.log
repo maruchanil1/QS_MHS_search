@@ -1,0 +1,17 @@
+Solov'ev congruence, DEG = 3 (60 coefficients), case 0: S=2, kappa=3/2, (cos,sin)delta=(3/5,4/5)
+  columns built, 196 s
+  system 1348 x 60; strong-QS block 650 rows; 196 s
+  rank 51, nullspace dim 9, 272 s
+  solutions:
+   xi = [1, 0, 0]  | Killing: True | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [0, 1, 0]  | Killing: True | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [x, y, 0]  | Killing: False | div = 2 | s-modes [0, 1] | strong-QS: True | trivial: True
+   xi = [-y, x, 0]  | Killing: True | div = 0 | s-modes [0, 1] | strong-QS: True | trivial: True
+   xi = [0, 0, 1]  | Killing: True | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [0, 0, z]  | Killing: False | div = 1 | s-modes [0] | strong-QS: True | trivial: True
+   xi = [0, -z, y]  | Killing: True | div = 0 | s-modes [0, 1] | strong-QS: True | trivial: True
+   xi = [-z, 0, x]  | Killing: True | div = 0 | s-modes [0, 1] | strong-QS: True | trivial: True
+   xi = [0, 0, x**2 + y**2]  | Killing: False | div = 0 | s-modes [0] | strong-QS: True | trivial: True
+
+  RESULT DEG=3: nullspace 9 = 6 Killing + 3 others; non-trivial (beyond Killing, S-, kappa-scaling, z-shear): 0
+done in 272 s

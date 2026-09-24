@@ -1,0 +1,9 @@
+mode n = 1, Dl = 2, Dt = 3, case 0: 105 complex unknowns; expressions built 26 s
+  system 414 x 105, 30 s
+  rank 103, nullspace dim 2, 65 s
+  solutions (as complex vector fields Xi(L,T) in the rotating frame):
+   Xi = [-I, 1, 0] | Killing: True | strong-QS: True
+   Xi = [-21*L**2*T**2/40 - 3*I*L**2*T**2/40 + 3*L**2/(40*T**2) + 21*I*L**2/(40*T**2) - 21*T**2/(40*L**2) - 3*I*T**2/(40*L**2) + 3/(40*L**2*T**2) + 21*I/(40*L**2*T**2), 3*L**2*T**2/40 - 21*I*L**2*T**2/40 - 21*L**2/(40*T**2) + 3*I*L**2/(40*T**2) + 3*T**2/(40*L**2) - 21*I*T**2/(40*L**2) - 21/(40*L**2*T**2) + 3*I/(40*L**2*T**2), L*T - I*L/T - I*T/L + 1/(L*T)] | Killing: True | strong-QS: True
+
+  RESULT mode n=1, (Dl,Dt)=(2,3): nullspace 2, non-Killing solutions: 0
+done in 67 s

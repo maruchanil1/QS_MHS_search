@@ -1,0 +1,73 @@
+
+=== (b1) two-centre  mu1=1, mu2=1/2, c=1, l=0.3, E=-0.6 ===
+  ratio 1:1 not in range (np.float64(0.0), np.float64(0.9500967721654682)); trying 1:2
+  resonance P1:P2 = 1:2 at beta = 0.732058389357  (P1 = 2.882832, P2 = 5.765664); q1 in (0.2385377226960897, 1.52291036729588), q2 in (0.19487243974246357, 1.8082832335525825)
+    delta = 0.00: T = 14.793009559  <V>,<V^2>,<V^3>,<V^4> = [-0.8742732   1.01584721 -2.01789165  6.76988766]  closure err 8.4e-14
+    delta = 0.13: T = 14.793009559  <V>,<V^2>,<V^3>,<V^4> = [-0.8742732   0.87903535 -1.10526473  1.8414005 ]  closure err 1.4e-11
+    delta = 0.29: T = 14.793009559  <V>,<V^2>,<V^3>,<V^4> = [-0.8742732   0.82450621 -0.84243939  0.93126377]  closure err 4.1e-12
+    delta = 0.41: T = 14.793009559  <V>,<V^2>,<V^3>,<V^4> = [-0.8742732   0.92431436 -1.38272642  3.20954705]  closure err 1.7e-12
+    spread of <V^k> over transverse phases: [5.69211345e-13 1.91341003e-01 1.17545225e+00 5.83862389e+00]  (numerical noise ~1e-10)
+    => profile NOT constant on the resonant torus: fibre = rotation orbits only => only axisymmetric QS tori
+  resonance P1:P2 = 2:3 at beta = 0.620208872160  (P1 = 2.773190, P2 = 4.159785); q1 in (0.22338571562133305, 1.5582729623436662), q2 in (0.20510325334383261, 1.5236605280144442)
+    delta = 0.00: T = 21.643746066  <V>,<V^2>,<V^3>,<V^4> = [-0.91120753  1.0303276  -1.76269719  5.0851232 ]  closure err 2.5e-13
+    delta = 0.13: T = 21.643746066  <V>,<V^2>,<V^3>,<V^4> = [-0.91120753  0.99143762 -1.43418435  2.9480728 ]  closure err 1.1e-11
+    delta = 0.29: T = 21.643746066  <V>,<V^2>,<V^3>,<V^4> = [-0.91120753  1.01155278 -1.57234066  3.68773169]  closure err 3.6e-12
+    delta = 0.41: T = 21.643746066  <V>,<V^2>,<V^3>,<V^4> = [-0.91120753  1.00179107 -1.5162961   3.52693871]  closure err 1.4e-12
+    spread of <V^k> over transverse phases: [6.57141008e-13 3.88899791e-02 3.28512839e-01 2.13705040e+00]  (numerical noise ~1e-10)
+    => profile NOT constant on the resonant torus: fibre = rotation orbits only => only axisymmetric QS tori
+
+=== (b2) Kepler-Stark  mu=1, F=0.02, l=0.3, E=-0.5 ===
+  ratio 1:1 not in range (np.float64(1.058470549437734), np.float64(1.0666854449010725)); trying 17:16
+  resonance P1:P2 = 17:16 at beta = -0.021574667875  (P1 = 3.247452, P2 = 3.056426); q1 in (0.21223030876487803, 1.4446980638894862), q2 in (0.21709068870431827, 1.3565454240929213)
+    delta = 0.00: T = 104.517818042  <V>,<V^2>,<V^3>,<V^4> = [-0.84736978  0.91703217 -1.4801342   3.70169268]  closure err 3.0e-13
+    delta = 0.13: T = 104.517818042  <V>,<V^2>,<V^3>,<V^4> = [-0.84736978  0.91702541 -1.48015068  3.70219648]  closure err 6.6e-12
+    delta = 0.29: T = 104.517818042  <V>,<V^2>,<V^3>,<V^4> = [-0.84736978  0.9169426  -1.48034874  3.70845286]  closure err 1.2e-12
+    delta = 0.41: T = 104.517818042  <V>,<V^2>,<V^3>,<V^4> = [-0.84736978  0.91692661 -1.48038624  3.70968049]  closure err 3.7e-12
+    spread of <V^k> over transverse phases: [2.25297558e-12 1.05564913e-04 2.52037184e-04 7.98781300e-03]  (numerical noise ~1e-10)
+    => profile NOT constant on the resonant torus: fibre = rotation orbits only => only axisymmetric QS tori
+  ratio 1:2 not in range (np.float64(1.058470549437734), np.float64(1.0666854449010725)); trying 17:16
+  ratio 2:3 not in range (np.float64(1.058470549437734), np.float64(1.0666854449010725)); trying 17:16
+
+=== (a) Landreman Family-2 horizontal Staeckel system + vertical pendulum ===
+  E_h = 0.0: P_u/P_v range (np.float64(0.47506693509375003), np.float64(0.48987698403944363)), using 10/21
+  E_h = 0.0: horizontal resonance P_u:P_v = 10:21 at beta = 0.120507482015, u in (0.6293826888516426, 0.8011430329786396), physical period T_h = 133.157022
+  pendulum resonance T_z = (1/9) T_h = 14.795225 at z_max = 1.470950 (E_z = 0.495032); total closed period 133.1570
+  moments at (delta_h, delta_z) = [0.23 0.37]: [0.23721943 0.08501207 0.02910147 0.01064955]
+  Jacobian d<V^k>/d(delta_h, delta_z):
+[[-2.90739655e-10  3.58740815e-10]
+ [-8.99665922e-05  3.26997241e-05]
+ [-2.15074692e-04  9.60491224e-05]
+ [-6.33119993e-05 -2.60882375e-07]]
+  singular values [2.60764013e-04 2.56207645e-05]  => rank 2
+  at [0.05, 0.6]: singular values [2.92146623e-04 1.89078775e-05] => rank 2
+  at [0.5, 0.1]: singular values [3.83804749e-04 2.30291450e-05] => rank 2
+  at [0.8, 0.8]: singular values [2.71802930e-04 2.60537594e-05] => rank 2
+  rank 2 at generic points => profile fibres are 0-dimensional => no closed-line QS torus in this potential (this resonance)
+  E_h = -0.02: P_u/P_v range (np.float64(0.4132162626500453), np.float64(0.462984940735213)), using 3/7
+  E_h = -0.02: horizontal resonance P_u:P_v = 3:7 at beta = 0.044241114492, u in (0.06691903232807439, 0.975694322283917), physical period T_h = 54.433652
+  pendulum resonance T_z = (1/4) T_h = 13.608413 at z_max = 1.435707 (E_z = 0.490931); total closed period 54.4337
+  moments at (delta_h, delta_z) = [0.23 0.37]: [0.24262572 0.10049738 0.01278145 0.11763331]
+  Jacobian d<V^k>/d(delta_h, delta_z):
+[[-9.50628465e-11 -1.70835568e-10]
+ [-3.76029713e-02 -2.79774360e-02]
+ [-3.43984963e-01 -2.20166856e-02]
+ [ 3.96525908e+00 -7.95299575e-02]]
+  singular values [3.98107502 0.04066128]  => rank 2
+  at [0.05, 0.6]: singular values [4.6457721  0.04240617] => rank 2
+  at [0.5, 0.1]: singular values [0.37404949 0.06076928] => rank 2
+  at [0.8, 0.8]: singular values [3.76125216 0.04267791] => rank 2
+  rank 2 at generic points => profile fibres are 0-dimensional => no closed-line QS torus in this potential (this resonance)
+  E_h = -0.01: P_u/P_v range (np.float64(0.44661518791528987), np.float64(0.4753616345450987)), using 5/11
+  E_h = -0.01: horizontal resonance P_u:P_v = 5:11 at beta = 0.042974842289, u in (0.05588813716089626, 1.0043592685815004), physical period T_h = 86.553667
+  pendulum resonance T_z = (1/6) T_h = 14.425611 at z_max = 1.461125 (E_z = 0.494010); total closed period 86.5537
+  moments at (delta_h, delta_z) = [0.23 0.37]: [0.25495598 0.10776817 0.00421084 0.24633586]
+  Jacobian d<V^k>/d(delta_h, delta_z):
+[[-5.47617507e-10 -8.88178420e-12]
+ [-5.08608499e-02 -3.06825329e-02]
+ [-3.42966530e-02  1.46978801e-02]
+ [ 7.21075698e-01 -3.97532590e-01]]
+  singular values [0.82477198 0.05151738]  => rank 2
+  at [0.05, 0.6]: singular values [2.24270962 0.03533236] => rank 2
+  at [0.5, 0.1]: singular values [0.41436713 0.00924616] => rank 2
+  at [0.8, 0.8]: singular values [2.86431091 0.02892534] => rank 2
+  rank 2 at generic points => profile fibres are 0-dimensional => no closed-line QS torus in this potential (this resonance)

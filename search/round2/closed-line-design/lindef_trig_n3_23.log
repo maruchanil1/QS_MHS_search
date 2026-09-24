@@ -1,0 +1,7 @@
+mode n = 3, Dl = 2, Dt = 3, case 0: 105 complex unknowns; expressions built 26 s
+  system 414 x 105, 30 s
+  rank 105, nullspace dim 0, 68 s
+  solutions (as complex vector fields Xi(L,T) in the rotating frame):
+
+  RESULT mode n=3, (Dl,Dt)=(2,3): nullspace 0, non-Killing solutions: 0
+done in 68 s
