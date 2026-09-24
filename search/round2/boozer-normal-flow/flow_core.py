@@ -129,7 +129,7 @@ BUILD_TIME = time.time() - _t0
 
 def ev(expr, sub):
     """exact evaluation of expr at the point sub (all symbols numeric)."""
-    return sp.nsimplify(sp.simplify(expr.xreplace(sub)))
+    return sp.simplify(expr.xreplace(sub))
 
 
 def mu_alg_jets(sub):
@@ -144,14 +144,14 @@ def mu_alg_jets(sub):
             mu_th += d*rt.xreplace(sub)
         if rp not in (None, 0):
             mu_ph += d*rp.xreplace(sub)
-    return sp.nsimplify(sp.simplify(mu_v)), sp.nsimplify(sp.simplify(mu_th)), sp.nsimplify(sp.simplify(mu_ph))
+    return sp.simplify(mu_v), sp.simplify(mu_th), sp.simplify(mu_ph)
 
 
 def COMPAT_at(sub):
     """(COMPAT, mu_alg) at the point sub: d_psi C1 with mu -> mu_alg, mu_theta -> d_theta mu_alg, mu_phi -> d_phi mu_alg."""
     mu_v, mu_th, mu_ph = mu_alg_jets(sub)
     val = dpsi_C1.xreplace(sub).xreplace({Ms[(1, 0)]: mu_th, Ms[(0, 1)]: mu_ph, mu: mu_v})
-    return sp.nsimplify(sp.simplify(val)), mu_v
+    return sp.simplify(val), mu_v
 
 
 if __name__ == '__main__':

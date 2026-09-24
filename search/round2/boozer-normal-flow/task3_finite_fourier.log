@@ -1,0 +1,30 @@
+Part A: axisymmetric surface x+iy = E rho(v), z = zeta(v), N = 0, degree 1 in v
+  C2 (E^k, k != 0) equations: 0   C1 (E^k, k != 0) equations: 0
+  E^0 of W.x_chi (vacuum C1 = 0 requires all v-modes to vanish):
+     v^-2: -iota*(r1*rm + zm**2)
+     v^-1: r0*(r1 - rm)/2
+     v^0: iota*r1**2 + iota*rm**2 + 2*iota*z1*zm + r1**2 - rm**2
+     v^1: r0*(r1 - rm)/2
+     v^2: -iota*(r1*rm + z1**2)
+  => v^2 mode: iota*(r1*rm' + z1^2)... exactly the round-1 isotropy/iota*|z1|^2 structure; with rm = conj(r1)-partner the v^0 mode forces iota*|z1|^2 = 0 (round-1 theorem).
+
+Part B: top-mode lemma
+  J = 2:  W_J.X_J - (i/2) D_2J(X_J.X_J) == 0 : True |  W_J.X_J = -i W_J.W_J/J ... check: J W_J.X_J == -i W_J.W_J - (iota-N) W_J.vX_J' : True
+         D_2J eigenvalues on v^m, m=-1..1: [53/11, 4, 35/11] (all nonzero)
+         identity  W_J.W_J = -[J^2 s + J(iota-N) v s' + (iota-N)^2 v^2 X_J'.X_J']  : True
+         => top equations  <=>  D_2J s = 0 and X_J'.X_J' = 0  <=>  (generic iota) X_J.X_J = 0 = X_J'.X_J'
+  J = 3:  W_J.X_J - (i/2) D_2J(X_J.X_J) == 0 : True |  W_J.X_J = -i W_J.W_J/J ... check: J W_J.X_J == -i W_J.W_J - (iota-N) W_J.vX_J' : True
+         D_2J eigenvalues on v^m, m=-1..1: [75/11, 6, 57/11] (all nonzero)
+         identity  W_J.W_J = -[J^2 s + J(iota-N) v s' + (iota-N)^2 v^2 X_J'.X_J']  : True
+         => top equations  <=>  D_2J s = 0 and X_J'.X_J' = 0  <=>  (generic iota) X_J.X_J = 0 = X_J'.X_J'
+  null-cone parametrisation: nu.nu = 0 ,  X'.X' = lam(v)**2*Derivative(w(v), v)**2  => X'.X' = 0 forces w' = 0: the null direction is fixed.
+
+Part C: J = 2, D = 1, iota = 2/11, N = 1   (1 s)
+  E^4 equations (should be none: X_2 isotropic): 0
+  E^3 (C2): [-26*be1_1*lam_1/121, -(13*be1_0*lam_1 + 4*be1_1*lam_0)/11] ...
+  impose beta_1 = 0, alpha_{-1} = 0  =>  all E^{+-3} equations vanish: True
+  remaining: 28 unknowns, 45 equations (E^+-2, E^+-1, E^0)
+  E^+-2 level solved for (gamma_1, gamma_-1, beta_0, alpha_0): 1 branches (0 s)
+      {al0_1: 0, al0_m1: 0, be0_1: 0, be0_m1: 0, ga1_0: 0, ga1_1: 0, ga1_m1: 0, gam1_0: 0, gam1_1: 0, gam1_m1: 0}
+  E^+-1 level on branch {al0_1: 0, al0_m1: 0, be0_1: 0, be0_m1: 0, ga1_0: 0, ga1_1: 0, ga1_m1: 0, gam1_0: 0, gam1_1: 0, gam1_m1: 0}: 20 equations, solve for [al1_m1, al1_0, al1_1, bem1_m1, bem1_0, bem1_1, al0_0, be0_0, ga0_m1, ga0_0, ga0_1] -> 1 solutions (0 s)
+     X_1 = [0, 0, 0], X_-1 = [0, 0, 0],  (x+iy)-part of X_0 = al0_0

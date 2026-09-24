@@ -1,0 +1,22 @@
+J = 3, D = 1, iota = 0, N = 1, lambda symbolic: 52 complex unknowns; C2 equations 50, C1 equations 53  (6 s)
+resonant (j, m) with D_j v^m = 0 in range: [(-3, -3), (-2, -2), (-1, -1), (1, 1), (2, 2), (3, 3)]
+
+E^5 equations: [-2*be2_1*lam_1, -4*be2_0*lam_1 - 3*be2_1*lam_0, -2*(3*be2_0*lam_0 + 2*be2_1*lam_m1 + 3*be2_m1*lam_1)] ...
+impose beta_2 = 0, alpha_-2 = 0 => E^+-5 equations all vanish: True
+
+E^+-4: 20 equations; solve for beta_1, alpha_-1 (linear, coefficient D_3 lam) and the constraints on (lam, gamma_2):
+   1 branches (0 s)
+    {alm1_0: 0, alm1_1: 0, alm1_m1: 0, be1_0: 0, be1_1: 0, be1_m1: 0, ga2_0: 0, ga2_1: 0, ga2_m1: 0, gam2_0: 0, gam2_1: 0, gam2_m1: 0}
+
+   branch {alm1_0: 0, alm1_1: 0, alm1_m1: 0, be1_0: 0, be1_1: 0, be1_m1: 0, ga2_0: 0, ga2_1: 0, ga2_m1: 0, gam2_0: 0, gam2_1: 0, gam2_m1: 0}: E^+-3: 20 equations -> 1 solutions (0 s)
+       {al0_1: 0, al0_m1: 0, be0_1: 0, be0_m1: 0}
+         E^+-2: 18 equations -> 1 solutions (0 s)
+             {al1_0: 0, al1_1: 0, al1_m1: 0, bem1_0: 0, bem1_1: 0, bem1_m1: 0, ga1_0: 0, ga1_m1: 0, gam1_0: 0, gam1_1: 0}
+            E^+-1: 20 equations -> 4 solutions (0 s)
+               X_2 = [0, 0, 0], X_1 = [0, 0, ga1_1*v], X_-1 = [0, 0, gam1_m1/v], X_-2 = [0, 0, 0]; (x+iy) of X_0 = al0_0
+               X_2 = [0, 0, 0], X_1 = [0, 0, 0], X_-1 = [0, 0, 0], X_-2 = [0, 0, 0]; (x+iy) of X_0 = al0_0
+               X_2 = [0, 0, 0], X_1 = [0, 0, 0], X_-1 = [0, 0, 0], X_-2 = [0, 0, 0]; (x+iy) of X_0 = al0_0
+               X_2 = [0, 0, 0], X_1 = [0, 0, 0], X_-1 = [0, 0, 0], X_-2 = [0, 0, 0]; (x+iy) of X_0 = al0_0
+
+RESULT J = 3, D = 1 (iota = 0, N = 1): 4 terminal solutions of the E^5..E^1 hierarchy with lambda != 0; all have X_2 = X_1 = X_-1 = X_-2 = 0 and X_0 = const + gamma_0(v) e_z (x+iy = c + lambda(v) E^3, triply covered surface of revolution): False
+done in 8 s

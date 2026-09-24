@@ -15,14 +15,20 @@ Jets: theta, phi, psi act as derivations on functions of (lam, s, tau):
     d_psi  = (dlam/dpsi) [ d_lam - (F_lam/F_tau) d_tau ]        (theta, phi fixed; iota constant).
 Then G = B.x_phi = B.x_s (= angular momentum), I = (Lambda - G)/iota, K = B.x_psi, f = sqrt g = Lambda/B^2.
 
+Caveat (1:1:2): the orbit is invariant under rotation by pi, x(s, t+pi) = x(s+pi, t); the label s is defined mod pi
+on the quotient torus, and (theta_B, phi_B) -> (theta_B + 2 pi, phi_B + 2 pi) under (s,t) -> (s+pi, t+pi) since
+F(pi) = pi (B^2 is pi-periodic).  All local (jet) statements are unaffected.
+
 class AxisymCongruence(X0, lam, s, tau, dt_dtau, Fint, iota, Vpot)
     X0      : sympy 3-vector in (lam, tau) (before the rotation R_z(s))
     dt_dtau : dt/dtau (expression in lam, tau)
     Fint    : an antiderivative in tau of B^2 dt/dtau = |x_tau|^2/(dt/dtau)   (must be exact; checked)
     Vpot(x) : potential V (for p = -E = -(B^2/2 + V))
-Methods: check_identities(point), jets(point) -> dict for flow_core symbols.
+Methods: check_identities(point)  (direct symbolic derivations, ~30 s),
+         jets(point, ORD)         (exact truncated-series jets in (psi, theta, phi); seconds)  -> dict for flow_core.
 """
 import sympy as sp
+from series_jets import TSeries, series_of_ad, invert_map, const_eval, dP, dT, dF, dl, ds, dt
 
 
 def Rz(s):
@@ -33,6 +39,7 @@ class AxisymCongruence:
     def __init__(self, X0, lam, s, tau, dt_dtau, Fint, iota_val, Vpot, simp=sp.simplify):
         self.lam, self.s, self.tau, self.iota = lam, s, tau, sp.Integer(iota_val)
         self.simp = simp
+        self.X0 = X0
         self.x = Rz(s)*X0
         self.dt = dt_dtau
         self.B = self.x.diff(tau)/dt_dtau
@@ -54,7 +61,7 @@ class AxisymCongruence:
         self.E = simp(self.B2/2 + self.V)
         self.p = -self.E
 
-    # derivations (theta, phi, psi at fixed other Boozer coordinates)
+    # ---------------- direct derivations (slow but independent) ----------------
     def d_phi(self, E):
         return sp.diff(E, self.s)
 
@@ -81,7 +88,7 @@ class AxisymCongruence:
         x_th, x_ph, x_ps = self.x_th, self.x_ph, self.x_ps
         Wv = x_ph + self.iota*x_th
         sg = sp.Matrix.hstack(x_ps, x_th, x_ph).det()
-        ev = lambda e: sp.nsimplify(self.simp(sp.sympify(e).xreplace(point)))
+        ev = lambda e: self.simp(sp.sympify(e).xreplace(point))
         out = {}
         out['Fint exact'] = self.Fint_ok
         out['J const in (s,tau)'] = self.J_const
@@ -98,32 +105,63 @@ class AxisymCongruence:
                              sqrtg=ev(sg), B2=ev(self.B2), psi_prime=ev(self.dpsi_dlam))
         return out
 
-    def jets(self, point, ORD=3):
-        """dict {flow_core symbol: exact value} at the point (lam, s, tau values), for N = 0 (chi = theta)."""
+    # ---------------- exact series jets ----------------
+    def series_data(self, point, order=4):
+        """Taylor series (exact) of x, B, f, p, G in the Boozer displacements (dP, dT, dF) at the point."""
+        lam, s, tau = self.lam, self.s, self.tau
+        vars_ = (lam, s, tau)
+        ser = lambda e: series_of_ad(e, vars_, point, order)
+        # forward map
+        Fser = ser(self.F)
+        Fser = Fser - Fser.const()           # removes the only irrational constant (c*tau0)
+        assert all(v.is_Rational for v in Fser.d.values()), 'non-rational F coefficients'
+        # psi(lam): Taylor coefficients from derivatives of psi' = dpsi/dlam (no antiderivative needed)
+        dpsi_d = {}
+        dk = self.dpsi_dlam
+        for k in range(1, order + 1):
+            dpsi_d[(k, 0, 0)] = const_eval(dk.subs(point))/sp.factorial(k)
+            dk = sp.diff(dk, lam)
+        psi_ser = TSeries((dl, ds, dt), order, dpsi_d)
+        theta_ser = Fser*self.iota
+        phi_ser = TSeries((dl, ds, dt), order, {(0, 1, 0): 1}) + Fser
+        inv = invert_map([psi_ser, theta_ser, phi_ser])
+        comp = lambda S: S.compose(inv)
+        X = [comp(ser(self.x[i])) for i in range(3)]
+        Bv = [comp(ser(self.B[i])) for i in range(3)]
+        f_ser = comp(ser(self.Lam/self.B2))
+        p_ser = comp(ser(self.p))
+        Lam_ser = comp(ser(self.Lam))
+        # derived series
+        Xpsi = [X[i].deriv(0) for i in range(3)]
+        Xphi = [X[i].deriv(2) for i in range(3)]
+        K_ser = sum((Bv[i]*Xpsi[i] for i in range(3)), TSeries((dP, dT, dF), order - 1, 0))
+        G_ser = sum((Bv[i]*Xphi[i] for i in range(3)), TSeries((dP, dT, dF), order - 1, 0))
+        I_ser = (Lam_ser.truncate(order - 1) - G_ser)*(1/self.iota)
+        self.series = dict(x=X, B=Bv, f=f_ser, p=p_ser, K=K_ser, G=G_ser, I=I_ser, inv=inv, order=order)
+        return self.series
+
+    def jets(self, point, ORD=3, order=4):
+        """dict {flow_core symbol: exact value} at the point (lam, s, tau values), for N = 0 (chi = theta),
+        plus the true x_psi (key 'xpsi_true') and the flux-function checks (key 'checks')."""
         from flow_core import Xs, Ks, Fp, iota, iotap, G, Gp, I, Ip, pp, N
-        self.boozer_data()
-        ev = lambda e: sp.nsimplify(self.simp(sp.sympify(e).xreplace(point)))
+        S = self.series_data(point, order)
+        X, K_ser, f_ser, p_ser, G_ser, I_ser = S['x'], S['K'], S['f'], S['p'], S['G'], S['I']
         sub = {}
-        # x-jets by repeated derivations (cache along theta first, then phi)
-        cache = {(0, 0): self.x}
-        for a_ in range(ORD + 1):
-            for b_ in range(ORD + 1 - a_):
-                if (a_, b_) == (0, 0):
-                    continue
-                if b_ == 0:
-                    cache[(a_, 0)] = cache[(a_ - 1, 0)].applyfunc(self.d_theta)
-                else:
-                    cache[(a_, b_)] = cache[(a_, b_ - 1)].applyfunc(self.d_phi)
         for (i, a_, b_), sym in Xs.items():
-            sub[sym] = ev(cache[(a_, b_)][i])
-        Kn = self.Kf
+            sub[sym] = X[i].jet((0, a_, b_))
         for n, sym in enumerate(Ks):
-            sub[sym] = ev(Kn)
-            Kn = self.d_theta(Kn)
-        fps = self.d_psi(self.f)
+            sub[sym] = K_ser.jet((0, n, 0)) if n <= K_ser.order else sp.Symbol(f'K{n}_unavailable')
+        fpsi = f_ser.deriv(0)
         for n, sym in enumerate(Fp):
-            sub[sym] = ev(fps)
-            fps = self.d_theta(fps)
-        sub.update({iota: self.iota, iotap: 0, G: ev(self.Gf), Gp: ev(self.d_psi(self.Gf)), I: ev(self.If),
-                    Ip: ev(self.d_psi(self.If)), pp: ev(self.d_psi(self.p)), N: 0})
-        return sub
+            sub[sym] = fpsi.jet((0, n, 0)) if n <= fpsi.order else sp.Symbol(f'fpsi{n}_unavailable')
+        sub.update({iota: self.iota, iotap: 0, G: G_ser.const(), Gp: G_ser.jet((1, 0, 0)), I: I_ser.const(),
+                    Ip: I_ser.jet((1, 0, 0)), pp: p_ser.jet((1, 0, 0)), N: 0})
+        xpsi_true = sp.Matrix([X[i].jet((1, 0, 0)) for i in range(3)])
+        # checks: G, I, p, K have no (theta, phi) dependence at the orders available; K is theta-only
+        chk = {}
+        z_ = lambda e: sp.simplify(sp.expand(e)) == 0
+        chk['G flux function (all theta,phi jets vanish)'] = all(z_(v) for k, v in G_ser.d.items() if k[1] + k[2] > 0)
+        chk['p flux function'] = all(z_(v) for k, v in p_ser.d.items() if k[1] + k[2] > 0)
+        chk['K phi-independent (K = K(psi, theta))'] = all(z_(v) for k, v in K_ser.d.items() if k[2] > 0)
+        chk['f = sqrt g phi-independent'] = all(z_(v) for k, v in f_ser.d.items() if k[2] > 0)
+        return sub, xpsi_true, chk

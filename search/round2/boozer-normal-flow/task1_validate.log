@@ -1,6 +1,13 @@
-Solov'ev: m = 1  B^2(t) = 17*(17*lam**4*sin(2*tau + atan(4/3))**2 + (lam**4 + 1)*(lam**4 + 4*lam**2*sin(tau)**2 - 2*lam**2 + 1))/(4*(lam**4 + 1)**2)  Lambda = G + iota I = 17*(2*lam**8 + 21*lam**4 + 2)/(8*(lam**8 + 2*lam**4 + 1))  J = 289*lam**3*(lam**4 - 1)/(5*(lam**12 + 3*lam**8 + 3*lam**4 + 1))
+flow_core built (0.8 s)
+[task 2 structure] A_phi   == |a|^2 + I C1      : True
+[task 2 structure] A_theta == iota|a|^2 - G C1  : True
+[task 2 structure] A_0     == (I d_phi - G d_theta) C1 : True
+   => on a surface with C1 == 0:  d_psi C1 = |a|^2 D(mu) + R   (magnetic differential equation for the Boozer gauge mu)
 
-===== (i) Solov'ev via 1:1:2 (iota = 2) =====
+Solov'ev: m = 1  B^2(t) = 17*(17*lam**4*sin(2*tau + atan(4/3))**2 + (lam**4 + 1)*(lam**4 + 4*lam**2*sin(tau)**2 - 2*lam**2 + 1))/(4*(lam**4 + 1)**2) 
+  Lambda = G + iota I = 17*(2*lam**8 + 21*lam**4 + 2)/(8*(lam**8 + 2*lam**4 + 1))   J = 289*lam**3*(lam**4 - 1)/(5*(lam**12 + 3*lam**8 + 3*lam**4 + 1))
+
+===== (i) Solov'ev via 1:1:2 (iota = 2), point 1 =====
   Fint exact: True
   J const in (s,tau): True
   G flux function (d_s, d_tau): (True, True)
@@ -12,4 +19,73 @@ Solov'ev: m = 1  B^2(t) = 17*(17*lam**4*sin(2*tau + atan(4/3))**2 + (lam**4 + 1)
   (4) iota d_theta K - (G'+iota I'+p' sqrt g): 0
   B = W/sqrt g: [0, 0, 0]
   values: {'G': -15/4, 'I': 5, 'K': -6/5, 'iota': 2, 'Gp': 4/3, 'Ip': 11/6, 'pp': -5, 'sqrtg': 1, 'B2': 25/4, 'psi_prime': -12/17}
-  (34.7 s)
+  (direct derivations done, 48.3 s)
+  G flux function (all theta,phi jets vanish): True
+  p flux function: True
+  K phi-independent (K = K(psi, theta)): True
+  f = sqrt g phi-independent: True
+  jets by exact series (48.8 s); x_theta = [-32/65, -126/65, -4/5], x_phi = [4/65, 57/26, 0], x_psi = [1151/3250, 7628/8125, -1107/2500]
+  flux data: {'iota': 2, 'G': -15/4, 'I': 5, 'Gp': 4/3, 'Ip': 11/6, 'pp': -5, 'K': -6/5, 'Kp': 0, 'f_psi': -17966/78125}
+  sqrt g = 1,  |W|^2/(G+iota I) = 1,  (1): 0, (2): 0, (4'): 0, (4): 0
+  x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0],  mu_true = 17/100
+  C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = 18/5
+  mu_alg - mu_true = 0;  COMPAT = 0   (54.4 s)
+
+===== (i) Solov'ev, point 2 (lam = 3) =====
+  G flux function (all theta,phi jets vanish): True
+  p flux function: True
+  K phi-independent (K = K(psi, theta)): True
+  f = sqrt g phi-independent: True
+  jets by exact series (54.7 s); x_theta = [73501805295*sqrt(1394)/5352799599472, -1167828020415*sqrt(1394)/21411198397888, -400579876125/823507630688], x_phi = [-10*sqrt(1394)/533, 30*sqrt(1394)/533, 0], x_psi = [605618008590389*sqrt(1394)/41951832482867970, 1766644798686622*sqrt(1394)/62927748724301955, -6703748103841774/16040406537567165]
+  flux data: {'iota': 2, 'G': -170/41, 'I': 475065/107584, 'Gp': 41/34, 'Ip': 129/68, 'pp': -5, 'K': -596412978/423416825, 'Kp': -2713223205/20085551968, 'f_psi': -395164403402356918110500477875/1286387247073326579745509135798}
+  sqrt g = 10585420625/10042775984,  |W|^2/(G+iota I) = 10585420625/10042775984,  (1): 0, (2): 0, (4'): 0, (4): 0
+  x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0],  mu_true = 11296289165269072/53787023736845625
+  C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = -3404019797533704379235702783203125/3405328672704634014741182126645248
+  mu_alg - mu_true = 0;  COMPAT = 0   (56.0 s)
+
+Kepler: B^2 = -(lam*cos(tau) + 1)/(lam*cos(tau) - 1)  Lambda = 1  J = -4*lam/5
+
+===== (ii) Kepler force-free (iota = 1), point 1 =====
+  Fint exact: True
+  J const in (s,tau): True
+  G flux function (d_s, d_tau): (True, True)
+  K s-independent: True
+  sqrt g - Lam/B^2: 0
+  (1) W.x_phi - G sqrt g: 0
+  (2) W.x_theta - I sqrt g: 0
+  (4') W.x_psi - K sqrt g: 0
+  (4) iota d_theta K - (G'+iota I'+p' sqrt g): 0
+  B = W/sqrt g: [0, 0, 0]
+  values: {'G': 16/25, 'I': 9/25, 'K': 0, 'iota': 1, 'Gp': -205/64, 'Ip': 205/64, 'pp': 0, 'sqrtg': 13/37, 'B2': 37/13, 'psi_prime': 12/25}
+  (direct derivations done, 60.2 s)
+  G flux function (all theta,phi jets vanish): True
+  p flux function: True
+  K phi-independent (K = K(psi, theta)): True
+  f = sqrt g phi-independent: True
+  jets by exact series (60.4 s); x_theta = [-351/4625, 117/925, 48/185], x_phi = [-701/1625, 12/325, 0], x_psi = [-16925/30784, -64175/23088, 25/37]
+  flux data: {'iota': 1, 'G': 16/25, 'I': 9/25, 'Gp': -205/64, 'Ip': 205/64, 'pp': 0, 'K': 0, 'Kp': 0, 'f_psi': -546875/303918}
+  sqrt g = 13/37,  |W|^2/(G+iota I) = 13/37,  (1): 0, (2): 0, (4'): 0, (4): 0
+  x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0],  mu_true = 553125/179008
+  C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = -3600/50653
+  mu_alg - mu_true = 0;  COMPAT = 0   (61.4 s)
+
+===== (ii) Kepler, point 2 (eps = 5/13, C = 25/36) =====
+  G flux function (all theta,phi jets vanish): True
+  p flux function: True
+  K phi-independent (K = K(psi, theta)): True
+  f = sqrt g phi-independent: True
+  jets by exact series (63.6 s); x_theta = [-100992/409825, 51006/409825, 18/97], x_phi = [-2304/4225, -1728/4225, 0], x_psi = [515411/349200, -59878/21825, 1014/485]
+  flux data: {'iota': 1, 'G': 48/65, 'I': 17/65, 'Gp': -24973/8640, 'Ip': 24973/8640, 'pp': 0, 'K': 0, 'Kp': 0, 'f_psi': -120670225/65712456}
+  sqrt g = 72/97,  |W|^2/(G+iota I) = 72/97,  (1): 0, (2): 0, (4'): 0, (4): 0
+  x_psi - (Y x a/|a|^2 + mu_true a) = [0, 0, 0],  mu_true = 54925/10368
+  C1 = 0, C2 = 0, W.Da - closed form = 0, W.Da = -158184/912673
+  mu_alg - mu_true = 0;  COMPAT = 0   (64.3 s)
+
+SUMMARY (COMPAT, mu_alg-mu_true, C1, C2, W.Da-closedform):
+  Solov'ev pt1: 0, 0, 0, 0, 0
+  Solov'ev pt2: 0, 0, 0, 0, 0
+  Kepler pt1: 0, 0, 0, 0, 0
+  Kepler pt2: 0, 0, 0, 0, 0
+ALL RESIDUALS EXACTLY ZERO: True
+done in 64.3 s
+EXIT 0
