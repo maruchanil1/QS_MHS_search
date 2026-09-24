@@ -1,0 +1,52 @@
+M (transverse block of grad B on axis, rows N,Bn; columns d_N, d_Bn):
+   M_NN = k*sigma(s) - Derivative(kappa(s), s)/kappa(s)
+   M_NB = -eta**2*k/kappa(s)**2 - tau(s)
+   M_BN = (eta**2*tau(s) + k*kappa(s)**2*sigma(s)**2 + k*kappa(s)**2 + kappa(s)**2*Derivative(sigma(s), s))/eta**2
+   M_BB = -k*sigma(s) + Derivative(kappa(s), s)/kappa(s)
+   j = M_BN - M_NB = eta**2*k/kappa(s)**2 + 2*tau(s) + k*kappa(s)**2*sigma(s)**2/eta**2 + k*kappa(s)**2/eta**2 + kappa(s)**2*Derivative(sigma(s), s)/eta**2    tr M = 0
+
+u/G0 to first order (Frenet components):
+   u_T = -X*kappa(s) + 1
+   u_N = -X*Derivative(kappa(s), s)/kappa(s) - Y*tau(s)
+   u_B = X*(tau(s) + kappa(s)**2*Derivative(sigma(s), s)/eta**2) + Y*Derivative(kappa(s), s)/kappa(s)
+
+div u on axis (must vanish): 0
+
+S(u) B on the axis (O(1)): [0, 0, 0]
+   O(r) coefficient of X in (S B)_T: 0
+   O(r) coefficient of Y in (S B)_T: 0
+   O(r) coefficient of X in (S B)_N: (-eta**4*(2*k*sigma(s)*Derivative(kappa(s), s) + Derivative(kappa(s), (s, 2)))*kappa(s) + eta**4*a0(s)*kappa(s)**2 + 3*eta**4*Derivative(kappa(s), s)**2 + (k*sigma(s)**2 + k + Derivative(sigma(s), s))*kappa(s)**6*Derivative(sigma(s), s))/(2*eta**4*kappa(s)**2)
+   O(r) coefficient of Y in (S B)_N: (2*eta**4*k*Derivative(kappa(s), s) + eta**2*(b0(s) - Derivative(tau(s), s))*kappa(s)**3 + (-k*kappa(s)*sigma(s) + Derivative(kappa(s), s))*kappa(s)**4*Derivative(sigma(s), s))/(2*eta**2*kappa(s)**3)
+   O(r) coefficient of X in (S B)_B: (eta**2*(b0(s) + Derivative(tau(s), s)) + k*kappa(s)**2*sigma(s)*Derivative(sigma(s), s) + 2*k*kappa(s)*sigma(s)**2*Derivative(kappa(s), s) + 2*k*kappa(s)*Derivative(kappa(s), s) + kappa(s)**2*Derivative(sigma(s), (s, 2)) + 3*kappa(s)*Derivative(kappa(s), s)*Derivative(sigma(s), s))/(2*eta**2)
+   O(r) coefficient of Y in (S B)_B: ((-k*Derivative(sigma(s), s) + c0(s))*kappa(s)**2 + (-2*k*sigma(s)*Derivative(kappa(s), s) + Derivative(kappa(s), (s, 2)))*kappa(s) + Derivative(kappa(s), s)**2)/(2*kappa(s)**2)
+
+T-component O(r) equations (contain no u2): [0, 0]
+
+N,B-components: do they involve u2_N, u2_B (a1,b1,c1,a2,b2,c2)? False
+   a0 = (eta**4*(2*k*sigma(s)*Derivative(kappa(s), s) + Derivative(kappa(s), (s, 2)))*kappa(s) - 3*eta**4*Derivative(kappa(s), s)**2 - (k*sigma(s)**2 + k + Derivative(sigma(s), s))*kappa(s)**6*Derivative(sigma(s), s))/(eta**4*kappa(s)**2)
+   b0 = (-2*eta**4*k*Derivative(kappa(s), s) + eta**2*kappa(s)**3*Derivative(tau(s), s) + (k*kappa(s)*sigma(s) - Derivative(kappa(s), s))*kappa(s)**4*Derivative(sigma(s), s))/(eta**2*kappa(s)**3)
+   c0 = k*Derivative(sigma(s), s) + 2*k*sigma(s)*Derivative(kappa(s), s)/kappa(s) - Derivative(kappa(s), (s, 2))/kappa(s) - Derivative(kappa(s), s)**2/kappa(s)**2
+   consistency (B,X) after substituting b0 from (N,Y): (-eta**4*k*Derivative(kappa(s), s) + eta**2*kappa(s)**3*Derivative(tau(s), s) + k*kappa(s)**5*sigma(s)*Derivative(sigma(s), s) + k*kappa(s)**4*sigma(s)**2*Derivative(kappa(s), s) + k*kappa(s)**4*Derivative(kappa(s), s) + kappa(s)**5*Derivative(sigma(s), (s, 2))/2 + kappa(s)**4*Derivative(kappa(s), s)*Derivative(sigma(s), s))/(eta**2*kappa(s)**3)
+   constraint in jet symbols: -(2*eta**4*k*kappa1 - 2*eta**2*kappa**3*tau1 - 2*k*kappa**5*sigma0*sigma1 - 2*k*kappa**4*kappa1*sigma0**2 - 2*k*kappa**4*kappa1 - kappa**5*sigma2 - 2*kappa**4*kappa1*sigma1)/(2*eta**2*kappa**3)
+   dj/ds in jet symbols: -(2*eta**4*k*kappa1 - 2*eta**2*kappa**3*tau1 - 2*k*kappa**5*sigma0*sigma1 - 2*k*kappa**4*kappa1*sigma0**2 - 2*k*kappa**4*kappa1 - kappa**5*sigma2 - 2*kappa**4*kappa1*sigma1)/(eta**2*kappa**3)
+   constraint / (dj/ds) = 1/2    (a nonzero function => constraint <=> j = const, i.e. the Riccati compatibility; NO new identity)
+
+S(u)/G0 on the axis (Frenet components):
+⎡0        0               0       ⎤
+⎢                                 ⎥
+⎢      d             2    d       ⎥
+⎢     -──(κ(s))     κ (s)⋅──(σ(s))⎥
+⎢      ds                 ds      ⎥
+⎢0    ──────────    ──────────────⎥
+⎢        κ(s)               2     ⎥
+⎢                        2⋅η      ⎥
+⎢                                 ⎥
+⎢    2    d            d          ⎥
+⎢   κ (s)⋅──(σ(s))     ──(κ(s))   ⎥
+⎢         ds           ds         ⎥
+⎢0  ──────────────     ────────   ⎥
+⎢           2            κ(s)     ⎥
+⎣        2⋅η                      ⎦
+   det S0 = 0   (must be 0: B in ker S)
+   S0_NN + S0_BB = 0
+   eigenvalues of the transverse block (+-mu):  mu^2 = (4*eta**4*Derivative(kappa(s), s)**2 + kappa(s)**6*Derivative(sigma(s), s)**2)/(4*eta**4*kappa(s)**2)

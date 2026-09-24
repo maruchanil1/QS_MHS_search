@@ -1,0 +1,44 @@
+================ (A) Solov'ev equilibrium from the 1:1:2 congruence ================
+
+--- sign(F) = +1 ---
+   E = B^2/2 + V = S**2/(2*rho**2) + rho**2/2 + 2*z**2 + (S*kappa_ - kappa_*rho**2 + 2*z*cos(delta))**2/(2*sin(delta)**2) - (S - rho**2)**2/(2*rho**2)   -> depends on (rho,z) only through m^2: True
+   force balance (B.grad)B - grad Pi = 0: [True, True, True]
+   axis rho = sqrt(S), z = 0: B_rho, B_z, B_phi = [0, 0, sqrt(S)] ; B0 = sqrt(S)
+   first-order ellipse: sigma = -cos(delta)*Abs(sin(delta))/sin(delta)**2 ,  eta^2/kappa^2 = Abs(sin(delta))/(sqrt(S)*kappa_*sin(delta)**2)
+   grad B / B0 transverse block M = [[-2/(sqrt(S)*tan(delta)), -2/(S*kappa_*sin(delta))], [2*kappa_/sin(delta), 2/(sqrt(S)*tan(delta))]] ; T-row: d_X B_T/B0 = 1/sqrt(S) (= kappa)  d_Y B_T/B0 = 0
+   det M = 4/S  (= k^2 = 4/S )  tr M = 0 ;  k = 2*sign(1/sin(delta))/sqrt(S)
+   j = (curl B).T/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ;  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ; match: False
+   tautology check j = M_BN - M_NB: True
+   TRUE  P_NN, P_NB, P_BB (units B0^2) = -1/S, 0, -4/S
+   CLOSED P_NN = -1/S, P_BB = -4/S  ->  agreement: True, True
+   Riccati residual (sigma' = 0) = 0  -> True
+   P_BB WITHOUT the j-term would be -4/S + 8/(S*sin(delta)**2) + 8/(S**2*kappa_**2*sin(delta)**2) (!= true): the j-term is essential
+
+--- sign(F) = -1 ---
+   E = B^2/2 + V = S**2/(2*rho**2) + rho**2/2 + 2*z**2 + (S*kappa_ - kappa_*rho**2 + 2*z*cos(delta))**2/(2*sin(delta)**2) - (S - rho**2)**2/(2*rho**2)   -> depends on (rho,z) only through m^2: True
+   force balance (B.grad)B - grad Pi = 0: [True, True, True]
+   axis rho = sqrt(S), z = 0: B_rho, B_z, B_phi = [0, 0, -sqrt(S)] ; B0 = sqrt(S)
+   first-order ellipse: sigma = cos(delta)*Abs(sin(delta))/sin(delta)**2 ,  eta^2/kappa^2 = Abs(sin(delta))/(sqrt(S)*kappa_*sin(delta)**2)
+   grad B / B0 transverse block M = [[-2/(sqrt(S)*tan(delta)), 2/(S*kappa_*sin(delta))], [-2*kappa_/sin(delta), 2/(sqrt(S)*tan(delta))]] ; T-row: d_X B_T/B0 = 1/sqrt(S) (= kappa)  d_Y B_T/B0 = 0
+   det M = 4/S  (= k^2 = 4/S )  tr M = 0 ;  k = -2*sign(1/sin(delta))/sqrt(S)
+   j = (curl B).T/B0 = 2*(-S*kappa_**2 - 1)/(S*kappa_*sin(delta)) ;  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ; match: False
+   tautology check j = M_BN - M_NB: True
+   TRUE  P_NN, P_NB, P_BB (units B0^2) = -1/S, 0, -4/S
+   CLOSED P_NN = -1/S, P_BB = -4/S  ->  agreement: True, True
+   Riccati residual (sigma' = 0) = 0  -> True
+   P_BB WITHOUT the j-term would be -4/S + 8/(S*sin(delta)**2) + 8/(S**2*kappa_**2*sin(delta)**2) (!= true): the j-term is essential
+
+
+================ (B) Kepler force-free family (axis: circle of radius a, iota = 1) ================
+   axis: x0 = Matrix([[a*cos(eta + s), a*sin(eta + s), 0]])  B0 = Matrix([[-sqrt(mu)*sin(eta + s)/sqrt(a), sqrt(mu)*cos(eta + s)/sqrt(a), 0]])  |B0| = sqrt(mu)/sqrt(a)
+   first-order displacement (per eps): angle shift = sin(eta) , X = a*cos(eta) , Y = a*sin(eta)/C
+   first-order field (per eps, Frenet comps): B_N = -sqrt(mu)*sin(eta)/sqrt(a) , B_Bn = sqrt(mu)*cos(eta)/(C*sqrt(a)) , B_T = sqrt(mu)*cos(eta)/sqrt(a)
+   => B/B0 - T =  X/a T + ( -C*Y/a ) N + ( X/(C*a) ) Bn      [T-part should be kappa X = X/a]
+   grad B / B0 transverse block M = [[0, -C/a], [1/(C*a), 0]] ; det M = a**(-2) ; tr M = 0
+   j = (curl B).T/B0 = d_X B_Bn - d_Y B_N = (C**2 + 1)/(C*a)
+   first-order ellipse: sigma = 0 , eta^2/kappa^2 = C  (semi-axes a eps along N, a eps/C along Bn)
+   k = 2 pi (iota0 - N)/L = 1/a ;  k^2 = det M: True
+   TRUE  P_TT, P_NN, P_NB, P_BB (units B0^2) = -1/a**2 (= -kappa^2), 2/a**2, 0, -1/a**2
+   CLOSED P_NN = 2/a**2, P_BB = -1/a**2  ->  agreement: True, True
+   Riccati residual (sigma' = 0) = 0
+   P_BB without the j-term would be (2*C**2 + 1)/a**2: the j-term is essential; j = (C + 1/C)/a = -lambda B0 with lambda = dF/dPsi

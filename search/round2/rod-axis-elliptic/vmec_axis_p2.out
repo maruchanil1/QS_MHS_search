@@ -1,0 +1,83 @@
+
+################ (A) handoff 7-harmonic axis (n <= 6) ################
+axis: L = 6.67753, kappa in [0.4660, 1.4558], tau in [-0.4920, 2.0827]  (handoff: 6.6776, [0.488,1.468], [-0.513,1.565])
+screw fit: alpha = -0.56277, l2 = T.I = 0.96456 (std 8.0e-04), l3 = Bn.I/kappa = -0.62869 (std 9.0e-03), N.I rms 6.3e-03
+   companion check kappa(l2 - l3 tau) = e_z.Bn: rms mismatch 4.9e-02 (scale 0.89)
+(R2) c = z_s + l3 kappa^2/2 = -0.35413 (std 5.7e-03)
+(R3) moduli: tau0 = l2/(2 l3) = -0.76712, C = (l2 c - alpha)/l3^2 = 0.55963;  tau - (tau0 + C/q): rms 1.1e-01 (tau scale 0.69)
+(E1) p2 = 4c/l3 - l2^2/l3^2 = -0.1008 +- 0.0507 (linear propagation of the pointwise stds; dp2/dl3 = -3.90, dp2/dc = -6.36);  pointwise p2: mean -0.1013, std 0.0262
+     4 c l3 - l2^2 = -0.03982 (+- 0.02002);   p1 = 5.4166, p0 = -1.2527
+     roots of the cubic: q3 = -2.4842, q1 = 0.2347 (kappa_min^2 = 0.2172), q2 = 2.1487 (kappa_max^2 = 2.1194)
+(E2) tau = tau0 + C/q fit: tau0 = -0.77243, C = 0.56331 (rms resid 1.1e-01; C from high-/low-kappa halves 0.3763/0.5492);  q1 = 0.21715, q2 = 2.11941
+     p2 = q1 + q2 - 4C^2/(q1 q2) = -0.4213 +- 0.8465    (q3 = -4C^2/(q1 q2) = -2.7579)
+(E3) q'^2 + q^3 = p2 q^2 + p1 q + p0 fit: p2 = -0.8374 +- 1.9132 (halves +1.087/+4.913), p1 = 7.0691, p0 = -1.8421 (rms resid 3.3e-01, scale max q'^2 = 4.194)
+     free-leading-coefficient fit (rod test T1): q'^2 = -1.8935 q^3 +2.2928 q^2 +4.0103 q -1.1034   (rod: leading coefficient -1)
+(E4) p2 = q1 + q2 - 4 C_mod^2/(q1 q2) (exact extrema, moduli C) = -0.3854 +- 0.0358
+==== (A) handoff 7-harmonic axis (n <= 6): p2 estimates E1 -0.1008 (+-0.051), E2 -0.4213 (+-0.846), E3 -0.8374 (+-1.913), E4 -0.3854 (+-0.036); scale q1+q2 = 2.337; p2/(q1+q2): [-0.043 -0.18  -0.358 -0.165] ====
+     S=1 branch on this axis (k^2 = -p2/4, E1): k = 0.1587, iota0 - N = kL/2pi = +-0.1687  (QA: iota0 = 0.4232)
+
+full axis harmonics from wout: R_n = {0: '1.004e+00', 2: '1.840e-01', 4: '2.169e-02', 6: '2.589e-03', 8: '3.038e-04', 10: '3.465e-05', 12: '3.800e-06', 14: '5.098e-07', 16: '2.250e-07'} 
+                              Zc_n = {2: '-1.580e-01', 4: '-2.057e-02', 6: '-2.548e-03', 8: '-3.031e-04', 10: '-3.509e-05', 12: '-3.992e-06', 14: '-3.530e-07', 16: '-5.558e-07'}
+
+################ (B) full 9-harmonic wout axis (n <= 16) ################
+axis: L = 6.67757, kappa in [0.4883, 1.4675], tau in [-0.5134, 1.5652]  (handoff: 6.6776, [0.488,1.468], [-0.513,1.565])
+screw fit: alpha = -0.56263, l2 = T.I = 0.96456 (std 3.8e-04), l3 = Bn.I/kappa = -0.62855 (std 3.5e-03), N.I rms 1.6e-03
+   companion check kappa(l2 - l3 tau) = e_z.Bn: rms mismatch 4.7e-03 (scale 0.89)
+(R2) c = z_s + l3 kappa^2/2 = -0.35396 (std 2.0e-03)
+(R3) moduli: tau0 = l2/(2 l3) = -0.76729, C = (l2 c - alpha)/l3^2 = 0.55993;  tau - (tau0 + C/q): rms 7.0e-03 (tau scale 0.66)
+(E1) p2 = 4c/l3 - l2^2/l3^2 = -0.1024 +- 0.0185 (linear propagation of the pointwise stds; dp2/dl3 = -3.91, dp2/dc = -6.36);  pointwise p2: mean -0.1025, std 0.0043
+     4 c l3 - l2^2 = -0.04045 (+- 0.00730);   p1 = 5.4192, p0 = -1.2541
+     roots of the cubic: q3 = -2.4856, q1 = 0.2348 (kappa_min^2 = 0.2385), q2 = 2.1484 (kappa_max^2 = 2.1537)
+(E2) tau = tau0 + C/q fit: tau0 = -0.76316, C = 0.55857 (rms resid 6.5e-03; C from high-/low-kappa halves 0.5981/0.5537);  q1 = 0.23846, q2 = 2.15370
+     p2 = q1 + q2 - 4C^2/(q1 q2) = -0.0379 +- 0.1935    (q3 = -4C^2/(q1 q2) = -2.4301)
+(E3) q'^2 + q^3 = p2 q^2 + p1 q + p0 fit: p2 = -0.0610 +- 0.1129 (halves -0.178/+0.047), p1 = 5.3745, p0 = -1.2815 (rms resid 1.4e-02, scale max q'^2 = 3.422)
+     free-leading-coefficient fit (rod test T1): q'^2 = -1.0879 q^3 +0.2514 q^2 +5.0650 q -1.2064   (rod: leading coefficient -1)
+(E4) p2 = q1 + q2 - 4 C_mod^2/(q1 q2) (exact extrema, moduli C) = -0.0497 +- 0.0118
+==== (B) full 9-harmonic wout axis (n <= 16): p2 estimates E1 -0.1024 (+-0.018), E2 -0.0379 (+-0.193), E3 -0.0610 (+-0.113), E4 -0.0497 (+-0.012); scale q1+q2 = 2.392; p2/(q1+q2): [-0.043 -0.016 -0.026 -0.021] ====
+     S=1 branch on this axis (k^2 = -p2/4, E1): k = 0.1600, iota0 - N = kL/2pi = +-0.1700  (QA: iota0 = 0.4232)
+
+################ (C) wout axis truncated at n <= 12 (truncation sensitivity) ################
+axis: L = 6.67757, kappa in [0.4884, 1.4675], tau in [-0.5125, 1.5688]  (handoff: 6.6776, [0.488,1.468], [-0.513,1.565])
+screw fit: alpha = -0.56263, l2 = T.I = 0.96456 (std 3.8e-04), l3 = Bn.I/kappa = -0.62855 (std 3.5e-03), N.I rms 1.6e-03
+   companion check kappa(l2 - l3 tau) = e_z.Bn: rms mismatch 4.6e-03 (scale 0.89)
+(R2) c = z_s + l3 kappa^2/2 = -0.35396 (std 2.0e-03)
+(R3) moduli: tau0 = l2/(2 l3) = -0.76729, C = (l2 c - alpha)/l3^2 = 0.55993;  tau - (tau0 + C/q): rms 6.8e-03 (tau scale 0.66)
+(E1) p2 = 4c/l3 - l2^2/l3^2 = -0.1024 +- 0.0185 (linear propagation of the pointwise stds; dp2/dl3 = -3.91, dp2/dc = -6.36);  pointwise p2: mean -0.1025, std 0.0043
+     4 c l3 - l2^2 = -0.04045 (+- 0.00730);   p1 = 5.4192, p0 = -1.2541
+     roots of the cubic: q3 = -2.4856, q1 = 0.2348 (kappa_min^2 = 0.2385), q2 = 2.1484 (kappa_max^2 = 2.1535)
+(E2) tau = tau0 + C/q fit: tau0 = -0.76318, C = 0.55858 (rms resid 6.2e-03; C from high-/low-kappa halves 0.5968/0.5537);  q1 = 0.23851, q2 = 2.15345
+     p2 = q1 + q2 - 4C^2/(q1 q2) = -0.0379 +- 0.1877    (q3 = -4C^2/(q1 q2) = -2.4299)
+(E3) q'^2 + q^3 = p2 q^2 + p1 q + p0 fit: p2 = -0.0614 +- 0.1513 (halves -0.238/+0.064), p1 = 5.3754, p0 = -1.2818 (rms resid 1.5e-02, scale max q'^2 = 3.409)
+     free-leading-coefficient fit (rod test T1): q'^2 = -1.0925 q^3 +0.2672 q^2 +5.0499 q -1.2029   (rod: leading coefficient -1)
+(E4) p2 = q1 + q2 - 4 C_mod^2/(q1 q2) (exact extrema, moduli C) = -0.0497 +- 0.0117
+==== (C) wout axis truncated at n <= 12 (truncation sensitivity): p2 estimates E1 -0.1024 (+-0.018), E2 -0.0379 (+-0.188), E3 -0.0614 (+-0.151), E4 -0.0497 (+-0.012); scale q1+q2 = 2.392; p2/(q1+q2): [-0.043 -0.016 -0.026 -0.021] ====
+     S=1 branch on this axis (k^2 = -p2/4, E1): k = 0.1600, iota0 - N = kL/2pi = +-0.1700  (QA: iota0 = 0.4232)
+
+################ (D) reactor-scale QA axis rescaled by 0.09874 to R_00 = 1.00396 (ns=50, independent VMEC run) ################
+axis: L = 6.67725, kappa in [0.4884, 1.4673], tau in [-0.5122, 1.5626]  (handoff: 6.6776, [0.488,1.468], [-0.513,1.565])
+screw fit: alpha = -0.56287, l2 = T.I = 0.96460 (std 3.5e-04), l3 = Bn.I/kappa = -0.62878 (std 3.3e-03), N.I rms 1.5e-03
+   companion check kappa(l2 - l3 tau) = e_z.Bn: rms mismatch 4.5e-03 (scale 0.89)
+(R2) c = z_s + l3 kappa^2/2 = -0.35407 (std 1.8e-03)
+(R3) moduli: tau0 = l2/(2 l3) = -0.76704, C = (l2 c - alpha)/l3^2 = 0.55983;  tau - (tau0 + C/q): rms 6.9e-03 (tau scale 0.66)
+(E1) p2 = 4c/l3 - l2^2/l3^2 = -0.1010 +- 0.0174 (linear propagation of the pointwise stds; dp2/dl3 = -3.90, dp2/dc = -6.36);  pointwise p2: mean -0.1010, std 0.0040
+     4 c l3 - l2^2 = -0.03992 (+- 0.00687);   p1 = 5.4136, p0 = -1.2536
+     roots of the cubic: q3 = -2.4838, q1 = 0.2350 (kappa_min^2 = 0.2385), q2 = 2.1478 (kappa_max^2 = 2.1530)
+(E2) tau = tau0 + C/q fit: tau0 = -0.76307, C = 0.55850 (rms resid 6.4e-03; C from high-/low-kappa halves 0.5950/0.5537);  q1 = 0.23852, q2 = 2.15304
+     p2 = q1 + q2 - 4C^2/(q1 q2) = -0.0380 +- 0.1795    (q3 = -4C^2/(q1 q2) = -2.4296)
+(E3) q'^2 + q^3 = p2 q^2 + p1 q + p0 fit: p2 = -0.0617 +- 0.0902 (halves -0.177/+0.003), p1 = 5.3709, p0 = -1.2792 (rms resid 1.5e-02, scale max q'^2 = 3.422)
+     free-leading-coefficient fit (rod test T1): q'^2 = -1.0831 q^3 +0.2336 q^2 +5.0784 q -1.2083   (rod: leading coefficient -1)
+(E4) p2 = q1 + q2 - 4 C_mod^2/(q1 q2) (exact extrema, moduli C) = -0.0496 +- 0.0116
+==== (D) reactor-scale QA axis rescaled by 0.09874 to R_00 = 1.00396 (ns=50, independent VMEC run): p2 estimates E1 -0.1010 (+-0.017), E2 -0.0380 (+-0.179), E3 -0.0617 (+-0.090), E4 -0.0496 (+-0.012); scale q1+q2 = 2.392; p2/(q1+q2): [-0.042 -0.016 -0.026 -0.021] ====
+     S=1 branch on this axis (k^2 = -p2/4, E1): k = 0.1589, iota0 - N = kL/2pi = +-0.1689  (QA: iota0 = 0.4232)
+
+
+==================== SUMMARY ====================
+A n<=6   : p2 (E1,E2,E3,E4) = [-0.1008 -0.4213 -0.8374 -0.3854], sigmas [0.051 0.846 1.913 0.036]; p2/(q1+q2) = [-0.043 -0.18  -0.358 -0.165]; N.I rms 6.3e-03, std(l3)/l3 1.4e-02; l2=0.9646 l3=-0.6287 c=-0.3541 alpha=-0.5628 C=0.5596; 4cl3-l2^2 = -0.0398
+B n<=16  : p2 (E1,E2,E3,E4) = [-0.1024 -0.0379 -0.061  -0.0497], sigmas [0.018 0.193 0.113 0.012]; p2/(q1+q2) = [-0.043 -0.016 -0.026 -0.021]; N.I rms 1.6e-03, std(l3)/l3 5.5e-03; l2=0.9646 l3=-0.6285 c=-0.3540 alpha=-0.5626 C=0.5599; 4cl3-l2^2 = -0.0404
+C n<=12  : p2 (E1,E2,E3,E4) = [-0.1024 -0.0379 -0.0614 -0.0497], sigmas [0.018 0.188 0.151 0.012]; p2/(q1+q2) = [-0.043 -0.016 -0.026 -0.021]; N.I rms 1.6e-03, std(l3)/l3 5.5e-03; l2=0.9646 l3=-0.6285 c=-0.3540 alpha=-0.5626 C=0.5599; 4cl3-l2^2 = -0.0404
+D reactor: p2 (E1,E2,E3,E4) = [-0.101  -0.038  -0.0617 -0.0496], sigmas [0.017 0.179 0.09  0.012]; p2/(q1+q2) = [-0.042 -0.016 -0.026 -0.021]; N.I rms 1.5e-03, std(l3)/l3 5.2e-03; l2=0.9646 l3=-0.6288 c=-0.3541 alpha=-0.5629 C=0.5598; 4cl3-l2^2 = -0.0399
+
+Full lowres axis: E1 (moduli formula) p2 = -0.1024 +- 0.018 (formal); all estimators in [-0.1024, -0.0379], mean -0.0628, half-spread 0.032; scale q1+q2 = 2.392
+   => p2/(q1+q2) = -0.026 +- 0.013 (systematic: estimator spread reflects the 0.1-0.3% non-rod-ness of the axis)
+   Exact zero is disfavoured (all four estimators negative; E1 5 sigma formal, ~2 sigma against the systematic spread) but the lowres axis cannot exclude |p2| < 0.03.
+Reference: exact (1,2) rod matched to this axis (rod_exact.py): p2 = -0.0131, l2 = 0.9551, l3 = 0.6283 (mirror), c = 0.3609, C = -0.5495 (its l2 differs by 1% from the fit -> shifts l2^2/l3^2 by 0.05).

@@ -1,0 +1,15 @@
+Solov'ev: m = 1  B^2(t) = 17*(17*lam**4*sin(2*tau + atan(4/3))**2 + (lam**4 + 1)*(lam**4 + 4*lam**2*sin(tau)**2 - 2*lam**2 + 1))/(4*(lam**4 + 1)**2)  Lambda = G + iota I = 17*(2*lam**8 + 21*lam**4 + 2)/(8*(lam**8 + 2*lam**4 + 1))  J = 289*lam**3*(lam**4 - 1)/(5*(lam**12 + 3*lam**8 + 3*lam**4 + 1))
+
+===== (i) Solov'ev via 1:1:2 (iota = 2) =====
+  Fint exact: True
+  J const in (s,tau): True
+  G flux function (d_s, d_tau): (True, True)
+  K s-independent: True
+  sqrt g - Lam/B^2: 0
+  (1) W.x_phi - G sqrt g: 0
+  (2) W.x_theta - I sqrt g: 0
+  (4') W.x_psi - K sqrt g: 0
+  (4) iota d_theta K - (G'+iota I'+p' sqrt g): 0
+  B = W/sqrt g: [0, 0, 0]
+  values: {'G': -15/4, 'I': 5, 'K': -6/5, 'iota': 2, 'Gp': 4/3, 'Ip': 11/6, 'pp': -5, 'sqrtg': 1, 'B2': 25/4, 'psi_prime': -12/17}
+  (34.7 s)

@@ -1,0 +1,31 @@
+
+=== d=2, e3=0, m=0 (e0=-2): 5 equations in (K, s0, s1); degrees in s0 [0, 2, 2, 3, 3], in s1 [1, 4, 5, 4, 3], in K [1, 1, 1, 1, 1]; contains sqrt(K)? False
+   after eliminating s0 (pivot degree 0 in s0): 4 polynomials in (K, s1), degrees in s1 [2, 2, 3, 3]
+   after eliminating s1: 3 polynomials in K
+   gcd over K of the final resultants (factored): 0
+   [0.0s]
+
+=== d=2, e3=0, m=-1/2 (e0=-5/2): 5 equations in (K, s0, s1); degrees in s0 [0, 2, 2, 3, 3], in s1 [1, 4, 5, 4, 3], in K [1, 1, 1, 1, 1]; contains sqrt(K)? False
+   after eliminating s0 (pivot degree 0 in s0): 4 polynomials in (K, s1), degrees in s1 [2, 2, 3, 3]
+   after eliminating s1: 3 polynomials in K
+   gcd over K of the final resultants (factored): 0
+   [0.1s]
+
+=== d=2, e3=1/2, m=0 (e0=-5/2): 6 equations in (K, s0, s1); degrees in s0 [0, 2, 2, 3, 3, 3], in s1 [1, 4, 5, 5, 4, 3], in K [1, 1, 1, 1, 1, 1]; contains sqrt(K)? False
+   after eliminating s0 (pivot degree 0 in s0): 5 polynomials in (K, s1), degrees in s1 [2, 2, 3, 3, 3]
+   after eliminating s1: 4 polynomials in K
+   gcd over K of the final resultants (factored): 0
+   [0.1s]
+
+=== d=2, e3=1/2, m=-1/2 (e0=-3): 6 equations in (K, s0, s1); degrees in s0 [0, 2, 2, 3, 3, 3], in s1 [1, 4, 5, 5, 4, 3], in K [1, 1, 1, 1, 1, 1]; contains sqrt(K)? False
+   after eliminating s0 (pivot degree 0 in s0): 5 polynomials in (K, s1), degrees in s1 [2, 2, 3, 3, 3]
+   after eliminating s1: 4 polynomials in K
+   gcd over K of the final resultants (factored): 0
+   [0.2s]
+
+
+#### SUMMARY deg S = 2 ####
+d=2, e3=0, m=0 (e0=-2) -> []
+d=2, e3=0, m=-1/2 (e0=-5/2) -> []
+d=2, e3=1/2, m=0 (e0=-5/2) -> []
+d=2, e3=1/2, m=-1/2 (e0=-3) -> []
