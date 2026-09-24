@@ -1,0 +1,158 @@
+(symbolic d = 0 part skipped; run with third argument sym; saved results in kovacic_case2_sym.out)
+
+######## rod QA-matched (1,2) rod: q1 = 111421/500000, q2 = 2212881/1000000, q3 = -19591/8000  (C = -0.5495, tau0 = 0.7601, L = 6.6570) ########
+   n=2 e=(1,1,1,3) d=0: K undetermined (A = 0): the trivial a = b = 0 family, sigma = +-i, unphysical
+   n=3 e=(1,1,1,2) d=0: K = 0.000822 (k = +0.02867, iota0-N = +0.0304), A = ka = +1.025936, Bb = kb = +0.377374, P_K = 1;  Floquet tr M = +1.331328 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [47.91101], j = [2.2671]
+   n=3 e=(1,1,1,2) d=0: K = 0.000822 (k = -0.02867, iota0-N = -0.0304), A = ka = +1.025936, Bb = kb = +0.377374, P_K = 1;  Floquet tr M = +1.331328 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [9.58219], j = [-2.2142]
+   n=3 e=(1,1,2,3) d=0: K = -0.0117634 (not positive: unphysical), A = +1.08758, P_K = 1
+   n=3 e=(1,2,1,3) d=0: K = -0.0145909 (not positive: unphysical), A = +0.957722, P_K = 1
+   n=3 e=(2,1,1,3) d=0: K = -1.51905 (not positive: unphysical), A = +0.348552, P_K = 1
+   n=4 e=(1,1,1,1) d=0: K = 0.003288 (k = +0.05734, iota0-N = +0.0608), A = ka = +2.735829, Bb = kb = +0.905697, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [28.7466], j = [3.1799]
+   n=4 e=(1,1,1,1) d=0: K = 0.003288 (k = -0.05734, iota0-N = -0.0608), A = ka = +2.735829, Bb = kb = +0.905697, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [9.58219], j = [-3.459]
+   n=4 e=(1,1,1,3) d=1: c0 FREE, K = -(-105216000*c0*(500000*c0 - 107037) - 21897895340284000*c0 - 4830384659734491)/(16000000000000000*c0**2), A = -11*(-1989693939572000*c0 - 439125878157681)/(8000000000000000*c0)
+   n=4 e=(1,1,3,3) d=0: K = 0.612219 (k = +0.78244, iota0-N = +0.8290), A = ka = +2.982391, Bb = kb = +0.905697, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.10668], j = [3.3295]
+   n=4 e=(1,1,3,3) d=0: K = 0.612219 (k = -0.78244, iota0-N = -0.8290), A = ka = +2.982391, Bb = kb = +0.905697, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [0.70223], j = [-3.9077]
+   n=4 e=(1,3,1,3) d=0: K = -0.55322 (not positive: unphysical), A = +2.46297, P_K = 1
+   n=4 e=(3,1,1,3) d=0: K = -0.0557105 (not positive: unphysical), A = +0.0262947, P_K = 1
+   n=5 e=(1,1,1,2) d=1: K = -0.964382 (not positive: unphysical), A = +4.7778, P_K = q - 2.57387716150009
+   n=5 e=(1,1,1,2) d=1: K = -0.08255 (not positive: unphysical), A = +1.05593, P_K = q - 0.222325314863636
+   n=5 e=(1,1,1,2) d=1: K = 1.055974 (k = +1.02761, iota0-N = +1.0887), A = ka = +5.451564, Bb = kb = +1.584970, P_K = q + 2.81373847636373;  Floquet tr M = +1.931222 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.87143], j = [4.355]
+   n=5 e=(1,1,1,2) d=1: K = 1.055974 (k = -1.02761, iota0-N = -1.0887), A = ka = +5.451564, Bb = kb = +1.584970, P_K = q + 2.81373847636373;  Floquet tr M = +1.931222 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [0.80204], j = [-5.0944]
+   n=5 e=(1,1,2,3) d=1: K = -0.955845 (not positive: unphysical), A = +4.74488, P_K = q - 1.58970995365391
+   n=5 e=(1,1,2,3) d=1: K = -0.128597 (not positive: unphysical), A = +1.27205, P_K = q - 0.224040841737845
+   n=5 e=(1,1,2,3) d=1: K = 1.055728 (k = +1.02749, iota0-N = +1.0886), A = ka = +5.453293, Bb = kb = +1.584970, P_K = q + 6.53025093786403;  Floquet tr M = +2.071299 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.87164], j = [4.3559]
+   n=5 e=(1,1,2,3) d=1: K = 1.055728 (k = -1.02749, iota0-N = -1.0886), A = ka = +5.453293, Bb = kb = +1.584970, P_K = q + 6.53025093786403;  Floquet tr M = +2.071299 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [0.80213], j = [-5.0964]
+   n=5 e=(1,2,1,3) d=1: K = -0.963932 (not positive: unphysical), A = +4.78052, P_K = q - 6.26689285737314
+   n=5 e=(1,2,1,3) d=1: K = -0.120831 (not positive: unphysical), A = +0.877029, P_K = q - 0.223738944309142
+   n=5 e=(1,2,1,3) d=1: K = 1.047567 (k = +1.02351, iota0-N = +1.0844), A = ka = +5.423107, Bb = kb = +1.584970, P_K = q + 1.81841437453719;  Floquet tr M = +0.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.87892], j = [4.3402]
+   n=5 e=(1,2,1,3) d=1: K = 1.047567 (k = -1.02351, iota0-N = -1.0844), A = ka = +5.423107, Bb = kb = +1.584970, P_K = q + 1.81841437453719;  Floquet tr M = +0.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [0.80525], j = [-5.0598]
+   n=5 e=(2,1,1,3) d=1: K = -0.612111 (not positive: unphysical), A = +0.520235, P_K = q - 0.351414029145636
+   n=6 e=(1,1,1,1) d=1: K = -1.65637 (not positive: unphysical), A = +7.66178, P_K = q - 2.212881
+   n=6 e=(1,1,1,1) d=1: K = -0.163844 (not positive: unphysical), A = +2.78842, P_K = q - 0.222842
+   n=6 e=(1,1,1,1) d=1: K = 1.839944 (k = +1.35645, iota0-N = +1.4371), A = ka = +8.700610, Bb = kb = +2.415192, P_K = q + 2.448875;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.62027], j = [5.4789]
+   n=6 e=(1,1,1,1) d=1: K = 1.839944 (k = -1.35645, iota0-N = -1.4371), A = ka = +8.700610, Bb = kb = +2.415192, P_K = q + 2.448875;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [0.81014], j = [-6.3973]
+   n=6 e=(1,1,3,1) d=0: K = 1.839944 (k = +1.35645, iota0-N = +1.4371), A = ka = +8.700610, Bb = kb = +2.415192, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.62027], j = [5.4789]
+   n=6 e=(1,1,3,1) d=0: K = 1.839944 (k = -1.35645, iota0-N = -1.4371), A = ka = +8.700610, Bb = kb = +2.415192, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [0.81014], j = [-6.3973]
+   n=6 e=(1,1,3,3) d=1: K = 0.058998 (k = +0.24290, iota0-N = +0.2573), A = ka = +8.154898, Bb = kb = +2.415192, P_K = q - 2.212881;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [9.04837], j = [5.2306]
+   n=6 e=(1,1,3,3) d=1: K = 0.058998 (k = -0.24290, iota0-N = -0.2573), A = ka = +8.154898, Bb = kb = +2.415192, P_K = q - 2.212881;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.52418], j = [-5.9007]
+   n=6 e=(1,1,3,3) d=1: K = 0.556508 (k = +0.74599, iota0-N = +0.7904), A = ka = +3.281541, Bb = kb = +2.415192, P_K = q - 0.222842;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.94615], j = [3.0133]
+   n=6 e=(1,1,3,3) d=1: K = 0.556508 (k = -0.74599, iota0-N = -0.7904), A = ka = +3.281541, Bb = kb = +2.415192, P_K = q - 0.222842;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.47308], j = [-1.466]
+   n=6 e=(1,3,1,1) d=0: K = -1.65637 (not positive: unphysical), A = +7.66178, P_K = 1
+   n=6 e=(1,3,1,3) d=1: K = -0.608931 (not positive: unphysical), A = +2.24271, P_K = q - 0.222842
+   n=6 e=(1,3,1,3) d=1: K = 0.058998 (k = +0.24290, iota0-N = +0.2573), A = ka = +8.154898, Bb = kb = +2.415192, P_K = q + 2.448875;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [9.04837], j = [5.2306]
+   n=6 e=(1,3,1,3) d=1: K = 0.058998 (k = -0.24290, iota0-N = -0.2573), A = ka = +8.154898, Bb = kb = +2.415192, P_K = q + 2.448875;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.52418], j = [-5.9007]
+   n=6 e=(1,3,3,3) d=0: K = 0.058999 (k = +0.24290, iota0-N = +0.2573), A = ka = +8.154898, Bb = kb = +2.415192, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [9.04837], j = [5.2306]
+   n=6 e=(1,3,3,3) d=0: K = 0.058999 (k = -0.24290, iota0-N = -0.2573), A = ka = +8.154898, Bb = kb = +2.415192, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.52418], j = [-5.9007]
+   n=6 e=(3,1,1,1) d=0: K = -0.163844 (not positive: unphysical), A = +2.78842, P_K = 1
+   n=6 e=(3,1,1,3) d=1: K = -0.608931 (not positive: unphysical), A = +2.24271, P_K = q - 2.212881
+   n=6 e=(3,1,1,3) d=1: K = 0.556508 (k = +0.74599, iota0-N = +0.7904), A = ka = +3.281541, Bb = kb = +2.415192, P_K = q + 2.448875;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.94615], j = [3.0133]
+   n=6 e=(3,1,1,3) d=1: K = 0.556508 (k = -0.74599, iota0-N = -0.7904), A = ka = +3.281541, Bb = kb = +2.415192, P_K = q + 2.448875;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.47308], j = [-1.466]
+   n=6 e=(3,1,3,3) d=0: K = 0.556508 (k = +0.74599, iota0-N = +0.7904), A = ka = +3.281541, Bb = kb = +2.415192, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.94615], j = [3.0133]
+   n=6 e=(3,1,3,3) d=0: K = 0.556508 (k = -0.74599, iota0-N = -0.7904), A = ka = +3.281541, Bb = kb = +2.415192, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.47308], j = [-1.466]
+   n=6 e=(3,3,1,3) d=0: K = -0.608931 (not positive: unphysical), A = +2.24271, P_K = 1
+   n=8 e=(1,1,3,1) d=1: K = 0.180284 (k = +0.42460, iota0-N = +0.4499), A = ka = +16.336091, Bb = kb = +4.528486, P_K = q - 2.212881;  Floquet tr M = -1.999999 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.47028], j = [7.4665]
+   n=8 e=(1,1,3,1) d=1: K = 0.180284 (k = -0.42460, iota0-N = -0.4499), A = ka = +16.336091, Bb = kb = +4.528486, P_K = q - 2.212881;  Floquet tr M = -1.999999 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.88217], j = [-8.3903]
+   n=8 e=(1,1,3,1) d=1: K = 1.672813 (k = +1.29337, iota0-N = +1.3703), A = ka = +9.026056, Bb = kb = +4.528486, P_K = q - 0.222842;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.12411], j = [4.8056]
+   n=8 e=(1,1,3,1) d=1: K = 1.672813 (k = -1.29337, iota0-N = -1.3703), A = ka = +9.026056, Bb = kb = +4.528486, P_K = q - 0.222842;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.27447], j = [-3.9556]
+   n=8 e=(1,3,1,1) d=1: K = -1.8235 (not positive: unphysical), A = +7.4678, P_K = q - 0.222842
+   n=8 e=(1,3,1,1) d=1: K = 0.180284 (k = +0.42460, iota0-N = +0.4499), A = ka = +16.336091, Bb = kb = +4.528486, P_K = q + 2.448875;  Floquet tr M = -1.999999 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.47028], j = [7.4665]
+   n=8 e=(1,3,1,1) d=1: K = 0.180284 (k = -0.42460, iota0-N = -0.4499), A = ka = +16.336091, Bb = kb = +4.528486, P_K = q + 2.448875;  Floquet tr M = -1.999999 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.88217], j = [-8.3903]
+   n=8 e=(1,3,3,1) d=0: K = 0.180283 (k = +0.42460, iota0-N = +0.4499), A = ka = +16.336091, Bb = kb = +4.528486, P_K = 1;  Floquet tr M = -1.999999 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.47028], j = [7.4665]
+   n=8 e=(1,3,3,1) d=0: K = 0.180283 (k = -0.42460, iota0-N = -0.4499), A = ka = +16.336091, Bb = kb = +4.528486, P_K = 1;  Floquet tr M = -1.999999 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.88217], j = [-8.3903]
+   n=8 e=(1,3,3,3) d=1: K = 0.003288 (k = +0.05734, iota0-N = +0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = q - 0.222842;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [47.91098], j = [4.5077]
+   n=8 e=(1,3,3,3) d=1: K = 0.003288 (k = -0.05734, iota0-N = -0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = q - 0.222842;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [28.74657], j = [-3.459]
+   n=8 e=(3,1,1,1) d=1: K = -1.8235 (not positive: unphysical), A = +7.4678, P_K = q - 2.212881
+   n=8 e=(3,1,1,1) d=1: K = 1.672813 (k = +1.29337, iota0-N = +1.3703), A = ka = +9.026056, Bb = kb = +4.528486, P_K = q + 2.448875;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.12411], j = [4.8056]
+   n=8 e=(3,1,1,1) d=1: K = 1.672813 (k = -1.29337, iota0-N = -1.3703), A = ka = +9.026056, Bb = kb = +4.528486, P_K = q + 2.448875;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.27447], j = [-3.9556]
+   n=8 e=(3,1,3,1) d=0: K = 1.672813 (k = +1.29337, iota0-N = +1.3703), A = ka = +9.026056, Bb = kb = +4.528486, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.12411], j = [4.8056]
+   n=8 e=(3,1,3,1) d=0: K = 1.672813 (k = -1.29337, iota0-N = -1.3703), A = ka = +9.026056, Bb = kb = +4.528486, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.27447], j = [-3.9556]
+   n=8 e=(3,1,3,3) d=1: K = 0.003288 (k = +0.05734, iota0-N = +0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = q - 2.212881;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [47.91098], j = [4.5077]
+   n=8 e=(3,1,3,3) d=1: K = 0.003288 (k = -0.05734, iota0-N = -0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = q - 2.212881;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [28.74657], j = [-3.459]
+   n=8 e=(3,3,1,1) d=0: K = -1.8235 (not positive: unphysical), A = +7.4678, P_K = 1
+   n=8 e=(3,3,1,3) d=1: K = 0.003288 (k = +0.05734, iota0-N = +0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = q + 2.448875;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [47.91098], j = [4.5077]
+   n=8 e=(3,3,1,3) d=1: K = 0.003288 (k = -0.05734, iota0-N = -0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = q + 2.448875;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [28.74657], j = [-3.459]
+   n=8 e=(3,3,3,3) d=0: K = 0.003288 (k = +0.05734, iota0-N = +0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [47.91098], j = [4.5077]
+   n=8 e=(3,3,3,3) d=0: K = 0.003288 (k = -0.05734, iota0-N = -0.0608), A = ka = +8.207488, Bb = kb = +4.528486, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [28.74657], j = [-3.459]
+   => case-2 patterns with a solution K > 0 on this rod: 24   [296s]
+
+######## rod lamODE = -0.5 (1,2) rod: q1 = 171197/250000, q2 = 353953/200000, q3 = -3388971/1000000  (C = -1.0133, tau0 = 0.9161, L = 5.8640) ########
+   n=2 e=(1,1,1,3) d=0: K undetermined (A = 0): the trivial a = b = 0 family, sigma = +-i, unphysical
+   n=3 e=(1,1,1,2) d=0: K = 0.058401 (k = +0.24166, iota0-N = +0.2255), A = ka = +1.332468, Bb = kb = +1.283482, P_K = 1;  Floquet tr M = +1.398833 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [10.4826], j = [2.3582]
+   n=3 e=(1,1,1,2) d=0: K = 0.058401 (k = -0.24166, iota0-N = -0.2255), A = ka = +1.332468, Bb = kb = +1.283482, P_K = 1;  Floquet tr M = +1.398833 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.09652], j = [-0.7977]
+   n=3 e=(1,1,2,3) d=0: K = 0.036051 (k = +0.18987, iota0-N = +0.1772), A = ka = +1.483957, Bb = kb = +1.283482, P_K = 1;  Floquet tr M = +2.908960 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [13.34204], j = [2.418]
+   n=3 e=(1,1,2,3) d=0: K = 0.036051 (k = -0.18987, iota0-N = -0.1772), A = ka = +1.483957, Bb = kb = +1.283482, P_K = 1;  Floquet tr M = +2.908960 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.66841], j = [-1.0967]
+   n=3 e=(1,2,1,3) d=0: K = -0.0235563 (not positive: unphysical), A = +1.04238, P_K = 1
+   n=3 e=(2,1,1,3) d=0: K = -0.489002 (not positive: unphysical), A = +0.582758, P_K = 1
+   n=4 e=(1,1,1,1) d=0: K = 0.233604 (k = +0.48333, iota0-N = +0.4511), A = ka = +3.553248, Bb = kb = +3.080356, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.28956], j = [3.0011]
+   n=4 e=(1,1,1,1) d=0: K = 0.233604 (k = -0.48333, iota0-N = -0.4511), A = ka = +3.553248, Bb = kb = +3.080356, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.09652], j = [-1.6744]
+   n=4 e=(1,1,1,3) d=1: c0 FREE, K = -(-373767200000*c0*(375000*c0 - 23191) - 1074642300156650000*c0 - 616071126105565533)/(600000000000000000*c0**2), A = -(-355324755007150000*c0 - 205357042035188511)/(100000000000000000*c0)
+   n=4 e=(1,1,3,3) d=0: K = 0.847243 (k = +0.92046, iota0-N = +0.8591), A = ka = +4.159204, Bb = kb = +3.080356, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.30261], j = [3.2004]
+   n=4 e=(1,1,3,3) d=0: K = 0.847243 (k = -0.92046, iota0-N = -0.8591), A = ka = +4.159204, Bb = kb = +3.080356, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.10087], j = [-2.2724]
+   n=4 e=(1,3,1,3) d=0: K = -0.442441 (not positive: unphysical), A = +2.39288, P_K = 1
+   n=4 e=(3,1,1,3) d=0: K = -0.171197 (not positive: unphysical), A = +0.554406, P_K = 1
+   n=5 e=(1,1,1,2) d=1: K = -0.714729 (not positive: unphysical), A = +5.16824, P_K = q - 2.06167929545723
+   n=5 e=(1,1,1,2) d=1: K = -0.192139 (not positive: unphysical), A = +2.05177, P_K = q - 0.668107147050302
+   n=5 e=(1,1,1,2) d=1: K = 1.549280 (k = +1.24470, iota0-N = +1.1617), A = ka = +7.437139, Bb = kb = +5.390622, P_K = q + 3.9756771091742;  Floquet tr M = +1.964016 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.84933], j = [3.9292]
+   n=5 e=(1,1,1,2) d=1: K = 1.549280 (k = -1.24470, iota0-N = -1.1617), A = ka = +7.437139, Bb = kb = +5.390622, P_K = q + 3.9756771091742;  Floquet tr M = +1.964016 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.22114], j = [-3.0608]
+   n=5 e=(1,1,2,3) d=1: K = -0.638081 (not positive: unphysical), A = +4.73031, P_K = q - 1.2907441759849
+   n=5 e=(1,1,2,3) d=1: K = -0.335177 (not positive: unphysical), A = +2.93806, P_K = q - 0.737148041526149
+   n=5 e=(1,1,2,3) d=1: K = 1.548619 (k = +1.24444, iota0-N = +1.1614), A = ka = +7.443244, Bb = kb = +5.390622, P_K = q + 9.43630056937346;  Floquet tr M = +2.036742 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.84994], j = [3.9309]
+   n=5 e=(1,1,2,3) d=1: K = 1.548619 (k = -1.24444, iota0-N = -1.1614), A = ka = +7.443244, Bb = kb = +5.390622, P_K = q + 9.43630056937346;  Floquet tr M = +2.036742 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.2214], j = [-3.0648]
+   n=5 e=(1,2,1,3) d=1: K = -0.698908 (not positive: unphysical), A = +5.2405, P_K = q - 5.58471911209678
+   n=5 e=(1,2,1,3) d=1: K = -0.326508 (not positive: unphysical), A = +1.43221, P_K = q - 0.706526838072774
+   n=5 e=(1,2,1,3) d=1: K = 1.421956 (k = +1.19246, iota0-N = +1.1129), A = ka = +7.114165, Bb = kb = +5.390622, P_K = q + 2.32989826268003;  Floquet tr M = +0.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.97416], j = [3.8381]
+   n=5 e=(1,2,1,3) d=1: K = 1.421956 (k = -1.19246, iota0-N = -1.1129), A = ka = +7.114165, Bb = kb = +5.390622, P_K = q + 2.32989826268003;  Floquet tr M = +0.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.27464], j = [-2.8483]
+   n=5 e=(2,1,1,3) d=1: K = -0.417522 (not positive: unphysical), A = +1.31892, P_K = q - 0.995497507689163
+   n=6 e=(1,1,1,1) d=1: K = -1.09372 (not positive: unphysical), A = +8.33902, P_K = q - 1.769765
+   n=6 e=(1,1,1,1) d=1: K = -0.279986 (not positive: unphysical), A = +4.66206, P_K = q - 0.684788
+   n=6 e=(1,1,1,1) d=1: K = 2.775333 (k = +1.66593, iota0-N = +1.5548), A = ka = +11.871656, Bb = kb = +8.214282, P_K = q + 3.388971;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.433], j = [4.7612]
+   n=6 e=(1,1,1,1) d=1: K = 2.775333 (k = -1.66593, iota0-N = -1.5548), A = ka = +11.871656, Bb = kb = +8.214282, P_K = q + 3.388971;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.2165], j = [-4.0257]
+   n=6 e=(1,1,3,1) d=0: K = 2.775333 (k = +1.66593, iota0-N = +1.5548), A = ka = +11.871656, Bb = kb = +8.214282, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.433], j = [4.7612]
+   n=6 e=(1,1,3,1) d=0: K = 2.775333 (k = -1.66593, iota0-N = -1.5548), A = ka = +11.871656, Bb = kb = +8.214282, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [1.2165], j = [-4.0257]
+   n=6 e=(1,1,3,3) d=1: K = 0.404801 (k = +0.63624, iota0-N = +0.5938), A = ka = +9.550930, Bb = kb = +8.214282, P_K = q - 1.769765;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.37058], j = [4.1886]
+   n=6 e=(1,1,3,3) d=1: K = 0.404801 (k = -0.63624, iota0-N = -0.5938), A = ka = +9.550930, Bb = kb = +8.214282, P_K = q - 1.769765;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.18529], j = [-2.8806]
+   n=6 e=(1,1,3,3) d=1: K = 0.676046 (k = +0.82222, iota0-N = +0.7674), A = ka = +5.873974, Bb = kb = +8.214282, P_K = q - 0.684788;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.9296], j = [3.2814]
+   n=6 e=(1,1,3,3) d=1: K = 0.676046 (k = -0.82222, iota0-N = -0.7674), A = ka = +5.873974, Bb = kb = +8.214282, P_K = q - 0.684788;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.4648], j = [-1.0662]
+   n=6 e=(1,3,1,1) d=0: K = -1.09372 (not positive: unphysical), A = +8.33902, P_K = 1
+   n=6 e=(1,3,1,3) d=1: K = -0.613638 (not positive: unphysical), A = +2.34133, P_K = q - 0.684788
+   n=6 e=(1,3,1,3) d=1: K = 0.404801 (k = +0.63624, iota0-N = +0.5938), A = ka = +9.550930, Bb = kb = +8.214282, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.37058], j = [4.1886]
+   n=6 e=(1,3,1,3) d=1: K = 0.404801 (k = -0.63624, iota0-N = -0.5938), A = ka = +9.550930, Bb = kb = +8.214282, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.18529], j = [-2.8806]
+   n=6 e=(1,3,3,3) d=0: K = 0.404801 (k = +0.63624, iota0-N = +0.5938), A = ka = +9.550930, Bb = kb = +8.214282, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.37058], j = [4.1886]
+   n=6 e=(1,3,3,3) d=0: K = 0.404801 (k = -0.63624, iota0-N = -0.5938), A = ka = +9.550930, Bb = kb = +8.214282, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.18529], j = [-2.8806]
+   n=6 e=(3,1,1,1) d=0: K = -0.279987 (not positive: unphysical), A = +4.66206, P_K = 1
+   n=6 e=(3,1,1,3) d=1: K = -0.613638 (not positive: unphysical), A = +2.34133, P_K = q - 1.769765
+   n=6 e=(3,1,1,3) d=1: K = 0.676046 (k = +0.82222, iota0-N = +0.7674), A = ka = +5.873974, Bb = kb = +8.214282, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.9296], j = [3.2814]
+   n=6 e=(3,1,1,3) d=1: K = 0.676046 (k = -0.82222, iota0-N = -0.7674), A = ka = +5.873974, Bb = kb = +8.214282, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.4648], j = [-1.0662]
+   n=6 e=(3,1,3,3) d=0: K = 0.676046 (k = +0.82222, iota0-N = +0.7674), A = ka = +5.873974, Bb = kb = +8.214282, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.9296], j = [3.2814]
+   n=6 e=(3,1,3,3) d=0: K = 0.676046 (k = -0.82222, iota0-N = -0.7674), A = ka = +5.873974, Bb = kb = +8.214282, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.4648], j = [-1.0662]
+   n=6 e=(3,3,1,3) d=0: K = -0.613638 (not positive: unphysical), A = +2.34133, P_K = 1
+   n=8 e=(1,1,3,1) d=1: K = 1.448009 (k = +1.20333, iota0-N = +1.1231), A = ka = +19.656266, Bb = kb = +15.401778, P_K = q - 1.769765;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.21041], j = [5.7118]
+   n=8 e=(1,1,3,1) d=1: K = 1.448009 (k = -1.20333, iota0-N = -1.1231), A = ka = +19.656266, Bb = kb = +15.401778, P_K = q - 1.769765;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.52624], j = [-4.6339]
+   n=8 e=(1,1,3,1) d=1: K = 2.261742 (k = +1.50391, iota0-N = +1.4036), A = ka = +14.140833, Bb = kb = +15.401778, P_K = q - 0.684788;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.3689], j = [4.6232]
+   n=8 e=(1,1,3,1) d=1: K = 2.261742 (k = -1.50391, iota0-N = -1.4036), A = ka = +14.140833, Bb = kb = +15.401778, P_K = q - 0.684788;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.02134], j = [-2.8195]
+   n=8 e=(1,3,1,1) d=1: K = -1.60731 (not positive: unphysical), A = +8.84187, P_K = q - 0.684788
+   n=8 e=(1,3,1,1) d=1: K = 1.448009 (k = +1.20333, iota0-N = +1.1231), A = ka = +19.656266, Bb = kb = +15.401778, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.21041], j = [5.7118]
+   n=8 e=(1,3,1,1) d=1: K = 1.448009 (k = -1.20333, iota0-N = -1.1231), A = ka = +19.656266, Bb = kb = +15.401778, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.52624], j = [-4.6339]
+   n=8 e=(1,3,3,1) d=0: K = 1.448009 (k = +1.20333, iota0-N = +1.1231), A = ka = +19.656266, Bb = kb = +15.401778, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [4.21041], j = [5.7118]
+   n=8 e=(1,3,3,1) d=0: K = 1.448009 (k = -1.20333, iota0-N = -1.1231), A = ka = +19.656266, Bb = kb = +15.401778, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.52624], j = [-4.6339]
+   n=8 e=(1,3,3,3) d=1: K = 0.233605 (k = +0.48333, iota0-N = +0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = q - 0.684788;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [10.4826], j = [3.9362]
+   n=8 e=(1,3,3,3) d=1: K = 0.233605 (k = -0.48333, iota0-N = -0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = q - 0.684788;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.28956], j = [-1.6744]
+   n=8 e=(3,1,1,1) d=1: K = -1.60731 (not positive: unphysical), A = +8.84187, P_K = q - 1.769765
+   n=8 e=(3,1,1,1) d=1: K = 2.261742 (k = +1.50391, iota0-N = +1.4036), A = ka = +14.140833, Bb = kb = +15.401778, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.3689], j = [4.6232]
+   n=8 e=(3,1,1,1) d=1: K = 2.261742 (k = -1.50391, iota0-N = -1.4036), A = ka = +14.140833, Bb = kb = +15.401778, P_K = q + 3.388971;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.02134], j = [-2.8195]
+   n=8 e=(3,1,3,1) d=0: K = 2.261742 (k = +1.50391, iota0-N = +1.4036), A = ka = +14.140833, Bb = kb = +15.401778, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [3.3689], j = [4.6232]
+   n=8 e=(3,1,3,1) d=0: K = 2.261742 (k = -1.50391, iota0-N = -1.4036), A = ka = +14.140833, Bb = kb = +15.401778, P_K = 1;  Floquet tr M = -2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [2.02134], j = [-2.8195]
+   n=8 e=(3,1,3,3) d=1: K = 0.233604 (k = +0.48333, iota0-N = +0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = q - 1.769765;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [10.4826], j = [3.9362]
+   n=8 e=(3,1,3,3) d=1: K = 0.233604 (k = -0.48333, iota0-N = -0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = q - 1.769765;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.28956], j = [-1.6744]
+   n=8 e=(3,3,1,1) d=0: K = -1.60731 (not positive: unphysical), A = +8.84187, P_K = 1
+   n=8 e=(3,3,1,3) d=1: K = 0.233605 (k = +0.48333, iota0-N = +0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = q + 3.388971;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [10.4826], j = [3.9362]
+   n=8 e=(3,3,1,3) d=1: K = 0.233605 (k = -0.48333, iota0-N = -0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = q + 3.388971;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.28956], j = [-1.6744]
+   n=8 e=(3,3,3,3) d=0: K = 0.233604 (k = +0.48333, iota0-N = +0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [10.4826], j = [3.9362]
+   n=8 e=(3,3,3,3) d=0: K = 0.233604 (k = -0.48333, iota0-N = -0.4511), A = ka = +10.659743, Bb = kb = +15.401778, P_K = 1;  Floquet tr M = +2.000000 (|tr| >= 2 needed for real sigma; = 2 for case-1 points);  eta^2 = [6.28956], j = [-1.6744]
+   => case-2 patterns with a solution K > 0 on this rod: 25   [538s]
+
+[total 538s]
+
+real	9m1.832s
+user	4m14.594s
+sys	0m0.289s

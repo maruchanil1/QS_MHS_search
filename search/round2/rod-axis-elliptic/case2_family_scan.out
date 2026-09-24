@@ -1,0 +1,41 @@
+
+######## QA-matched (1,2) rod ########
+   K(c0) = (52608000000000*c0**2 + 21886633335292000*c0 + 4830384659734491)/(16000000000000000*c0**2)
+   A(c0) = 11*(1989693939572000*c0 + 439125878157681)/(8000000000000000*c0)
+   k b = 14491153979203473/16000000000000000 = 0.905697;  K -> 0.003288 = -p2/4 = 0.003288 as c0 -> inf (S=1 point)
+   structure of the radical: R P (q+c0)^2 / q^2 = (8000*c0 - 19591)*(500000*c0 + 111421)*(1000000*c0 + 2212881)/(4000000000000000*c0**2)  (independent of q => sqrt(R) = c q/((q+c0) q'), the radical is q' itself: sigma is in C(q, q'))
+   => sigma(s) = q' (theta + 1/(q+c0) - P'/(2P))/(2k)  +  c q/(2k (q+c0)),   c^2 = the constant above (>= 0 needed for real sigma); the second (even) term breaks stellarator symmetry
+     c0        K        k(+)   iota0-N     Rmin      tr M    eta^2(k>0)  j(k>0)   eta^2(k<0)  j(k<0)   sigma dev  mean(sigma)
+      1.200   1.35287   1.1631   1.2323  -1.91e+06   +0.1440  [np.float64(1.4172)] [np.float64(3.485)] [np.float64(0.4724)] [np.float64(-4.375)]        nan       +nan   complex sigma
+      1.500   1.04941   1.0244   1.0853  -1.03e+06   +0.9623  [np.float64(1.6091)] [np.float64(3.424)] [np.float64(0.5364)] [np.float64(-4.192)]        nan       +nan   complex sigma
+      1.800   0.85642   0.9254   0.9805  -5.33e+05   +1.4644  [np.float64(1.7812)] [np.float64(3.383)] [np.float64(0.5937)] [np.float64(-4.07)]        nan       +nan   complex sigma
+      2.000   0.76272   0.8733   0.9253  -3.13e+05   +1.6880  [np.float64(1.8874)] [np.float64(3.363)] [np.float64(0.6291)] [np.float64(-4.008)]        nan       +nan   complex sigma
+      2.200   0.68744   0.8291   0.8784  -1.49e+05   +1.8526  [np.float64(1.9881)] [np.float64(3.346)] [np.float64(0.6627)] [np.float64(-3.959)]        nan       +nan   complex sigma
+      2.500   0.59876   0.7738   0.8198   +0.00208   +2.0243  [np.float64(2.1302)] [np.float64(3.326)] [np.float64(0.7101)] [np.float64(-3.899)]    3.8e-10    -0.0604   physical (real sigma)
+      3.000   0.49280   0.7020   0.7438     +0.015   +2.1893  [np.float64(2.3481)] [np.float64(3.302)] [np.float64(0.7827)] [np.float64(-3.825)]    1.6e-10    -0.1847   physical (real sigma)
+      4.000   0.36414   0.6034   0.6393    +0.0224   +2.3143  [np.float64(2.7316)] [np.float64(3.271)] [np.float64(0.9105)] [np.float64(-3.734)]    1.5e-10    -0.2755   physical (real sigma)
+      5.000   0.28895   0.5375   0.5695    +0.0226   +2.3398  [np.float64(3.0665)] [np.float64(3.253)] [np.float64(1.0222)] [np.float64(-3.679)]    1.6e-10    -0.3212   physical (real sigma)
+      7.000   0.20487   0.4526   0.4795    +0.0194   +2.3183  [np.float64(3.6418)] [np.float64(3.232)] [np.float64(1.2139)] [np.float64(-3.616)]    1.8e-10    -0.3695   physical (real sigma)
+     10.000   0.14310   0.3783   0.4008    +0.0151   +2.2641  [np.float64(4.3575)] [np.float64(3.217)] [np.float64(1.4525)] [np.float64(-3.569)]    2.2e-10    -0.4036   physical (real sigma)
+     20.000   0.07244   0.2691   0.2852   +0.00821   +2.1570  [np.float64(6.1245)] [np.float64(3.198)] [np.float64(2.0415)] [np.float64(-3.514)]    3.3e-10    -0.4392   physical (real sigma)
+     50.000   0.03077   0.1754   0.1858   +0.00341   +2.0690  [np.float64(9.3974)] [np.float64(3.187)] [np.float64(3.1325)] [np.float64(-3.481)]    5.6e-10    -0.4483   physical (real sigma)
+    200.000   0.01014   0.1007   0.1067  +0.000866   +2.0180  [np.float64(16.3734)] [np.float64(3.182)] [np.float64(5.4578)] [np.float64(-3.464)]    1.2e-09    -0.4001   physical (real sigma)
+   => physical part of the family: c0 in [2.500, inf); |j| in [3.182, 3.899]; sign changes of j(k>0): False, of j(k<0): False
+
+######## lamODE = -0.5 (1,2) rod ########
+   K(c0) = (46720900000000000*c0**2 + 355324755007150000*c0 + 205357042035188511)/(200000000000000000*c0**2)
+   A(c0) = (355324755007150000*c0 + 205357042035188511)/(100000000000000000*c0)
+   k b = 616071126105565533/200000000000000000 = 3.080356;  K -> 0.233604 = -p2/4 = 0.233604 as c0 -> inf (S=1 point)
+   structure of the radical: R P (q+c0)^2 / q^2 = (200000*c0 + 353953)*(250000*c0 + 171197)*(1000000*c0 - 3388971)/(50000000000000000*c0**2)  (independent of q => sqrt(R) = c q/((q+c0) q'), the radical is q' itself: sigma is in C(q, q'))
+   => sigma(s) = q' (theta + 1/(q+c0) - P'/(2P))/(2k)  +  c q/(2k (q+c0)),   c^2 = the constant above (>= 0 needed for real sigma); the second (even) term breaks stellarator symmetry
+     c0        K        k(+)   iota0-N     Rmin      tr M    eta^2(k>0)  j(k>0)   eta^2(k<0)  j(k<0)   sigma dev  mean(sigma)
+      3.500   0.82503   0.9083   0.8477   +0.00912   +2.0274  [np.float64(3.3468)] [np.float64(3.194)] [np.float64(1.1156)] [np.float64(-2.253)]    1.6e-11    -0.0620   physical (real sigma)
+      4.000   0.74193   0.8614   0.8039    +0.0382   +2.1167  [np.float64(3.5292)] [np.float64(3.17)] [np.float64(1.1764)] [np.float64(-2.181)]    8.8e-12    -0.1346   physical (real sigma)
+      4.500   0.67912   0.8241   0.7691    +0.0547   +2.1690  [np.float64(3.6888)] [np.float64(3.151)] [np.float64(1.2296)] [np.float64(-2.125)]    8.1e-12    -0.1689   physical (real sigma)
+      5.000   0.63000   0.7937   0.7408     +0.064   +2.1996  [np.float64(3.8299)] [np.float64(3.136)] [np.float64(1.2766)] [np.float64(-2.08)]    7.9e-12    -0.1904   physical (real sigma)
+      6.000   0.55823   0.7471   0.6973    +0.0716   +2.2262  [np.float64(4.0687)] [np.float64(3.114)] [np.float64(1.3562)] [np.float64(-2.012)]    8.0e-12    -0.2151   physical (real sigma)
+      8.000   0.47173   0.6868   0.6410    +0.0705   +2.2262  [np.float64(4.426)] [np.float64(3.086)] [np.float64(1.4753)] [np.float64(-1.928)]    8.7e-12    -0.2339   physical (real sigma)
+     12.000   0.38879   0.6235   0.5819    +0.0578   +2.1885  [np.float64(4.8753)] [np.float64(3.057)] [np.float64(1.6251)] [np.float64(-1.843)]    1.0e-11    -0.2356   physical (real sigma)
+     30.000   0.29397   0.5422   0.5060    +0.0281   +2.0933  [np.float64(5.6068)] [np.float64(3.024)] [np.float64(1.8689)] [np.float64(-1.742)]    1.5e-11    -0.1914   physical (real sigma)
+    200.000   0.24251   0.4925   0.4596   +0.00462   +2.0155  [np.float64(6.173)] [np.float64(3.004)] [np.float64(2.0577)] [np.float64(-1.685)]    3.8e-11    -0.0862   physical (real sigma)
+   => physical part of the family: c0 in [3.500, inf); |j| in [1.685, 3.194]; sign changes of j(k>0): False, of j(k<0): False

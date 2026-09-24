@@ -76,7 +76,7 @@ for sF in (+1, -1):
     # here p = -E => dp/dPsi = -dE/dm2 / (dPsi/dm2) = -(2 kp^2)/(-kp sin dl) = 2 kp/sin dl ; F F' = d(F^2/2)/dPsi = (-2)/(-kp sin dl)
     pprime = 2 * kp / sp.sin(dl); FFp = 2 / (kp * sp.sin(dl))
     J_GS = sp.sqrt(S) * pprime + FFp / sp.sqrt(S)
-    print("   j = (curl B).T/B0 =", j, ";  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 =", sp.simplify(J_GS / B0), "; match:", sp.simplify(sp.Abs(j) - J_GS / B0) == 0)
+    print("   j = (curl B).T/B0 =", j, ";  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 =", sp.simplify(J_GS / B0), "; match (j^2 = J_GS^2/B0^2):", sp.simplify(j**2 - (J_GS / B0)**2) == 0)
     print("   tautology check j = M_BN - M_NB:", sp.simplify(j - (M[1, 0] - M[0, 1])) == 0)
     # (5) true Hessian of Pi in Frenet components (units B0^2)
     HessPi = sp.hessian(Pi.subs(sub_XY), (X, Y)).subs({X: 0, Y: 0}) / B0**2

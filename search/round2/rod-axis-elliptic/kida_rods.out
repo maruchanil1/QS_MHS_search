@@ -1,0 +1,164 @@
+
+#### alpha = 0 (Kida) closed (1,2) rods with R_max = 1: 3 found  [197s] ####
+  lamODE=-1.23930 beta=+0.76876 L=17.4244 l2=0.7188 l3=1.2393 c=0.8903 C=0.4166 tau0=0.2900 p2=+2.5371 p1=1.5068 p0=-0.6943 roots=[-0.7438  0.3147  2.9661] closure=1e-10  (q1-kmin^2=+7.5e-12, q2-kmax^2=+7.3e-05)
+      d=0,e3=1/2,e0=-1/2                 k=+0.4312 iota0-N=+1.1958 eta^2=0.9662 j=+3.5086  sign(j)=sign(k): True
+      d=0,e3=1/2,e0=-1/2                 k=-0.4312 iota0-N=-1.1958 eta^2=2.8985 j=-0.3962  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=+0.7505 iota0-N=+2.0813 eta^2=1.1102 j=+4.7717  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=-0.7505 iota0-N=-2.0813 eta^2=2.2205 j=-1.5159  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=+0.8714 iota0-N=+2.4166 eta^2=1.4344 j=+5.9903  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=-0.8714 iota0-N=-2.4166 eta^2=2.3906 j=-2.6662  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=+1.0972 iota0-N=+3.0428 eta^2=1.1391 j=+6.1354  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=-1.0972 iota0-N=-3.0428 eta^2=1.8986 j=-2.7533  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=+1.3787 iota0-N=+3.8234 eta^2=1.2088 j=+7.4853  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=-1.3787 iota0-N=-3.8234 eta^2=1.8132 j=-4.0236  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=+0.7505 iota0-N=+2.0813 eta^2=1.1102 j=+4.7717  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=-0.7505 iota0-N=-2.0813 eta^2=2.2205 j=-1.5159  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=+1.4749 iota0-N=+4.0901 eta^2=1.1299 j=+7.5475  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=-1.4749 iota0-N=-4.0901 eta^2=1.6949 j=-4.0650  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=+0.8714 iota0-N=+2.4166 eta^2=1.4344 j=+5.9903  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=-0.8714 iota0-N=-2.4166 eta^2=2.3906 j=-2.6662  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=+1.8356 iota0-N=+5.0906 eta^2=1.1348 j=+8.9577  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=-1.8356 iota0-N=-5.0906 eta^2=1.5888 j=-5.4041  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=+0.4312 iota0-N=+1.1958 eta^2=0.9662 j=+3.5086  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=-0.4312 iota0-N=-1.1958 eta^2=2.8985 j=-0.3962  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=+1.0972 iota0-N=+3.0428 eta^2=1.1391 j=+6.1354  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=-1.0972 iota0-N=-3.0428 eta^2=1.8986 j=-2.7533  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=+1.8769 iota0-N=+5.2049 eta^2=1.1099 j=+8.9842  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=-1.8769 iota0-N=-5.2049 eta^2=1.5539 j=-5.4231  sign(j)=sign(k): True
+      => 24 points, all with sign j = sign k: True, min|j| = 0.396
+  lamODE=+1.23930 beta=-0.76876 L=17.4244 l2=0.7188 l3=-1.2393 c=-0.8903 C=-0.4166 tau0=-0.2900 p2=+2.5371 p1=1.5068 p0=-0.6943 roots=[-0.7438  0.3147  2.9661] closure=1e-10  (q1-kmin^2=+7.5e-12, q2-kmax^2=+7.3e-05)
+      d=0,e3=1/2,e0=-1/2                 k=+0.4312 iota0-N=+1.1958 eta^2=2.8985 j=+0.3962  sign(j)=sign(k): True
+      d=0,e3=1/2,e0=-1/2                 k=-0.4312 iota0-N=-1.1958 eta^2=0.9662 j=-3.5086  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=+0.7505 iota0-N=+2.0813 eta^2=2.2205 j=+1.5159  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=-0.7505 iota0-N=-2.0813 eta^2=1.1102 j=-4.7717  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=+0.8714 iota0-N=+2.4166 eta^2=2.3906 j=+2.6662  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=-0.8714 iota0-N=-2.4166 eta^2=1.4344 j=-5.9903  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=+1.0972 iota0-N=+3.0428 eta^2=1.8986 j=+2.7533  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=-1.0972 iota0-N=-3.0428 eta^2=1.1391 j=-6.1354  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=+1.3787 iota0-N=+3.8234 eta^2=1.8132 j=+4.0236  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=-1.3787 iota0-N=-3.8234 eta^2=1.2088 j=-7.4853  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=+0.7505 iota0-N=+2.0813 eta^2=2.2205 j=+1.5159  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=-0.7505 iota0-N=-2.0813 eta^2=1.1102 j=-4.7717  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=+1.4749 iota0-N=+4.0901 eta^2=1.6949 j=+4.0650  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=-1.4749 iota0-N=-4.0901 eta^2=1.1299 j=-7.5475  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=+0.8714 iota0-N=+2.4166 eta^2=2.3906 j=+2.6662  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=-0.8714 iota0-N=-2.4166 eta^2=1.4344 j=-5.9903  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=+1.8356 iota0-N=+5.0906 eta^2=1.5888 j=+5.4041  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=-1.8356 iota0-N=-5.0906 eta^2=1.1348 j=-8.9577  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=+0.4312 iota0-N=+1.1958 eta^2=2.8985 j=+0.3962  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=-0.4312 iota0-N=-1.1958 eta^2=0.9662 j=-3.5086  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=+1.0972 iota0-N=+3.0428 eta^2=1.8986 j=+2.7533  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=-1.0972 iota0-N=-3.0428 eta^2=1.1391 j=-6.1354  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=+1.8769 iota0-N=+5.2049 eta^2=1.5539 j=+5.4231  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=-1.8769 iota0-N=-5.2049 eta^2=1.1099 j=-8.9842  sign(j)=sign(k): True
+      => 24 points, all with sign j = sign k: True, min|j| = 0.396
+  lamODE=-0.52420 beta=+0.81614 L=14.3120 l2=0.6850 l3=0.5242 c=1.2347 C=3.0782 tau0=0.6534 p2=+7.7140 p1=8.4551 p0=-37.9012 roots=[-2.3986  1.9314  8.1812] closure=1e-10  (q1-kmin^2=+1.5e-10, q2-kmax^2=+1.3e-03)
+      d=0,e3=1/2,e0=-1/2                 k=+0.7744 iota0-N=+1.7639 eta^2=3.9751 j=+5.2469  sign(j)=sign(k): True
+      d=0,e3=1/2,e0=-1/2                 k=-0.7744 iota0-N=-1.7639 eta^2=11.9252 j=-0.0065  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=+1.3361 iota0-N=+3.0434 eta^2=4.6078 j=+6.8156  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=-1.3361 iota0-N=-3.0434 eta^2=9.2156 j=-1.4476  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=+1.5942 iota0-N=+3.6312 eta^2=5.7927 j=+8.1855  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=-1.5942 iota0-N=-3.6312 eta^2=9.6545 j=-2.8204  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=+1.9511 iota0-N=+4.4443 eta^2=4.7330 j=+8.5398  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=-1.9511 iota0-N=-4.4443 eta^2=7.8884 j=-3.0330  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=+2.4867 iota0-N=+5.6644 eta^2=4.9514 j=+10.2323  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=-2.4867 iota0-N=-5.6644 eta^2=7.4270 j=-4.6435  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=+1.3361 iota0-N=+3.0434 eta^2=4.6078 j=+6.8156  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=-1.3361 iota0-N=-3.0434 eta^2=9.2156 j=-1.4476  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=+2.6296 iota0-N=+5.9898 eta^2=4.6824 j=+10.3753  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=-2.6296 iota0-N=-5.9898 eta^2=7.0235 j=-4.7388  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=+1.5942 iota0-N=+3.6312 eta^2=5.7927 j=+8.1855  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=-1.5942 iota0-N=-3.6312 eta^2=9.6545 j=-2.8204  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=+3.2986 iota0-N=+7.5136 eta^2=4.6659 j=+12.2206  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=-3.2986 iota0-N=-7.5136 eta^2=6.5323 j=-6.4887  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=+0.7744 iota0-N=+1.7639 eta^2=3.9751 j=+5.2469  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=-0.7744 iota0-N=-1.7639 eta^2=11.9252 j=-0.0065  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=+1.9511 iota0-N=+4.4443 eta^2=4.7330 j=+8.5398  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=-1.9511 iota0-N=-4.4443 eta^2=7.8884 j=-3.0330  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=+3.3554 iota0-N=+7.6431 eta^2=4.5869 j=+12.2769  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=-3.3554 iota0-N=-7.6431 eta^2=6.4216 j=-6.5289  sign(j)=sign(k): True
+      => 24 points, all with sign j = sign k: True, min|j| = 0.007
+
+#### alpha = 0 (Kida) closed (1,3) rods with R_max = 1: 3 found  [661s] ####
+  lamODE=-3.26583 beta=+0.73596 L=23.4485 l2=0.7412 l3=3.2658 c=0.7403 C=0.0514 tau0=0.1135 p2=+0.8552 p1=0.2162 p0=-0.0106 roots=[-0.2383  0.0423  1.0513] closure=2e-10  (q1-kmin^2=-6.9e-18, q2-kmax^2=+2.8e-04)
+      d=0,e3=1/2,e0=-1/2                 k=+0.2441 iota0-N=+0.9110 eta^2=0.2108 j=+2.7600  sign(j)=sign(k): True
+      d=0,e3=1/2,e0=-1/2                 k=-0.2441 iota0-N=-0.9110 eta^2=0.6323 j=-0.6174  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=+0.4287 iota0-N=+1.5999 eta^2=0.2400 j=+3.9387  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=-0.4287 iota0-N=-1.5999 eta^2=0.4800 j=-1.6289  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=+0.4851 iota0-N=+1.8103 eta^2=0.3182 j=+5.1169  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=-0.4851 iota0-N=-1.8103 eta^2=0.5303 j=-2.7070  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=+0.6266 iota0-N=+2.3383 eta^2=0.2463 j=+5.1703  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=-0.6266 iota0-N=-2.3383 eta^2=0.4105 j=-2.7390  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=+0.7775 iota0-N=+2.9017 eta^2=0.2647 j=+6.3945  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=-0.7775 iota0-N=-2.9017 eta^2=0.3970 j=-3.8848  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=+0.4287 iota0-N=+1.5999 eta^2=0.2400 j=+3.9387  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=-0.4287 iota0-N=-1.5999 eta^2=0.4800 j=-1.6289  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=+0.8400 iota0-N=+3.1347 eta^2=0.2450 j=+6.4187  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=-0.8400 iota0-N=-3.1347 eta^2=0.3675 j=-3.9009  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=+0.4851 iota0-N=+1.8103 eta^2=0.3182 j=+5.1169  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=-0.4851 iota0-N=-1.8103 eta^2=0.5303 j=-2.7070  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=+1.0385 iota0-N=+3.8757 eta^2=0.2477 j=+7.6644  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=-1.0385 iota0-N=-3.8757 eta^2=0.3468 j=-5.0855  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=+0.2441 iota0-N=+0.9110 eta^2=0.2108 j=+2.7600  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=-0.2441 iota0-N=-0.9110 eta^2=0.6323 j=-0.6174  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=+0.6266 iota0-N=+2.3383 eta^2=0.2463 j=+5.1703  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=-0.6266 iota0-N=-2.3383 eta^2=0.4105 j=-2.7390  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=+1.0665 iota0-N=+3.9800 eta^2=0.2412 j=+7.6752  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=-1.0665 iota0-N=-3.9800 eta^2=0.3377 j=-5.0933  sign(j)=sign(k): True
+      => 24 points, all with sign j = sign k: True, min|j| = 0.617
+  lamODE=-0.52420 beta=+0.81614 L=14.3120 l2=0.6850 l3=0.5242 c=1.2347 C=3.0782 tau0=0.6534 p2=+7.7140 p1=8.4551 p0=-37.9012 roots=[-2.3986  1.9314  8.1812] closure=1e-10  (q1-kmin^2=+1.5e-10, q2-kmax^2=+1.3e-03)
+      d=0,e3=1/2,e0=-1/2                 k=+0.7744 iota0-N=+1.7639 eta^2=3.9751 j=+5.2469  sign(j)=sign(k): True
+      d=0,e3=1/2,e0=-1/2                 k=-0.7744 iota0-N=-1.7639 eta^2=11.9252 j=-0.0065  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=+1.3361 iota0-N=+3.0434 eta^2=4.6078 j=+6.8156  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=-1.3361 iota0-N=-3.0434 eta^2=9.2156 j=-1.4476  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=+1.5942 iota0-N=+3.6312 eta^2=5.7927 j=+8.1855  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=-1.5942 iota0-N=-3.6312 eta^2=9.6545 j=-2.8204  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=+1.9511 iota0-N=+4.4443 eta^2=4.7330 j=+8.5398  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=-1.9511 iota0-N=-4.4443 eta^2=7.8884 j=-3.0330  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=+2.4867 iota0-N=+5.6644 eta^2=4.9514 j=+10.2323  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=-2.4867 iota0-N=-5.6644 eta^2=7.4270 j=-4.6435  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=+1.3361 iota0-N=+3.0434 eta^2=4.6078 j=+6.8156  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=-1.3361 iota0-N=-3.0434 eta^2=9.2156 j=-1.4476  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=+2.6296 iota0-N=+5.9898 eta^2=4.6824 j=+10.3753  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=-2.6296 iota0-N=-5.9898 eta^2=7.0235 j=-4.7388  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=+1.5942 iota0-N=+3.6312 eta^2=5.7927 j=+8.1855  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=-1.5942 iota0-N=-3.6312 eta^2=9.6545 j=-2.8204  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=+3.2986 iota0-N=+7.5136 eta^2=4.6659 j=+12.2206  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=-3.2986 iota0-N=-7.5136 eta^2=6.5323 j=-6.4887  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=+0.7744 iota0-N=+1.7639 eta^2=3.9751 j=+5.2469  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=-0.7744 iota0-N=-1.7639 eta^2=11.9252 j=-0.0065  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=+1.9511 iota0-N=+4.4443 eta^2=4.7330 j=+8.5398  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=-1.9511 iota0-N=-4.4443 eta^2=7.8884 j=-3.0330  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=+3.3554 iota0-N=+7.6431 eta^2=4.5869 j=+12.2769  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=-3.3554 iota0-N=-7.6431 eta^2=6.4216 j=-6.5289  sign(j)=sign(k): True
+      => 24 points, all with sign j = sign k: True, min|j| = 0.007
+  lamODE=+3.26583 beta=-0.73596 L=23.4485 l2=0.7412 l3=-3.2658 c=-0.7403 C=-0.0514 tau0=-0.1135 p2=+0.8552 p1=0.2162 p0=-0.0106 roots=[-0.2383  0.0423  1.0513] closure=1e-10  (q1-kmin^2=+0.0e+00, q2-kmax^2=+2.8e-04)
+      d=0,e3=1/2,e0=-1/2                 k=+0.2441 iota0-N=+0.9110 eta^2=0.6323 j=+0.6174  sign(j)=sign(k): True
+      d=0,e3=1/2,e0=-1/2                 k=-0.2441 iota0-N=-0.9110 eta^2=0.2108 j=-2.7600  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=+0.4287 iota0-N=+1.5999 eta^2=0.4800 j=+1.6289  sign(j)=sign(k): True
+      d=1,e3=0,e0=-1                     k=-0.4287 iota0-N=-1.5999 eta^2=0.2400 j=-3.9387  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=+0.4851 iota0-N=+1.8103 eta^2=0.5303 j=+2.7070  sign(j)=sign(k): True
+      d=1,e3=0,e0=-3/2                   k=-0.4851 iota0-N=-1.8103 eta^2=0.3182 j=-5.1169  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=+0.6266 iota0-N=+2.3383 eta^2=0.4105 j=+2.7390  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-3/2                 k=-0.6266 iota0-N=-2.3383 eta^2=0.2463 j=-5.1703  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=+0.7775 iota0-N=+2.9017 eta^2=0.3970 j=+3.8848  sign(j)=sign(k): True
+      d=1,e3=1/2,e0=-2                   k=-0.7775 iota0-N=-2.9017 eta^2=0.2647 j=-6.3945  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=+0.4287 iota0-N=+1.5999 eta^2=0.4800 j=+1.6289  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f1(deg3)    k=-0.4287 iota0-N=-1.5999 eta^2=0.2400 j=-3.9387  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=+0.8400 iota0-N=+3.1347 eta^2=0.3675 j=+3.9009  sign(j)=sign(k): True
+      d=2, e3=0, m=0 (e0=-2)#f2(deg6)    k=-0.8400 iota0-N=-3.1347 eta^2=0.2450 j=-6.4187  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=+0.4851 iota0-N=+1.8103 eta^2=0.5303 j=+2.7070  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f1(deg3) k=-0.4851 iota0-N=-1.8103 eta^2=0.3182 j=-5.1169  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=+1.0385 iota0-N=+3.8757 eta^2=0.3468 j=+5.0855  sign(j)=sign(k): True
+      d=2, e3=0, m=-1/2 (e0=-5/2)#f2(deg6) k=-1.0385 iota0-N=-3.8757 eta^2=0.2477 j=-7.6644  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=+0.2441 iota0-N=+0.9110 eta^2=0.6323 j=+0.6174  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f0(deg1) k=-0.2441 iota0-N=-0.9110 eta^2=0.2108 j=-2.7600  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=+0.6266 iota0-N=+2.3383 eta^2=0.4105 j=+2.7390  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f1(deg3) k=-0.6266 iota0-N=-2.3383 eta^2=0.2463 j=-5.1703  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=+1.0665 iota0-N=+3.9800 eta^2=0.3377 j=+5.0933  sign(j)=sign(k): True
+      d=2, e3=1/2, m=0 (e0=-5/2)#f2(deg6) k=-1.0665 iota0-N=-3.9800 eta^2=0.2412 j=-7.6752  sign(j)=sign(k): True
+      => 24 points, all with sign j = sign k: True, min|j| = 0.617
+
+real	11m11.332s
+user	5m37.567s
+sys	0m1.571s

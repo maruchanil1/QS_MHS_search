@@ -50,3 +50,7 @@ S(u)/G0 on the axis (Frenet components):
    det S0 = 0   (must be 0: B in ker S)
    S0_NN + S0_BB = 0
    eigenvalues of the transverse block (+-mu):  mu^2 = (4*eta**4*Derivative(kappa(s), s)**2 + kappa(s)**6*Derivative(sigma(s), s)**2)/(4*eta**4*kappa(s)**2)
+
+real	0m4.699s
+user	0m4.417s
+sys	0m0.192s

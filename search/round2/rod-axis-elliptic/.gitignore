@@ -1,0 +1,3 @@
+# VMEC wout files (2.6 MB, downloadable: handoff section 10.1); not committed
+*.nc
+__pycache__/

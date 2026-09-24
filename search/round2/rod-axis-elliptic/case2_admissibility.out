@@ -1,0 +1,69 @@
+
+######## QA-matched (1,2) rod ########
+   n=3 e=(1,1,1,2) d=0: K = 0.000822 (k = +-0.02867, iota0-N = +-0.0304), A = +1.025936, Bb = +0.377374, P_K = 1; tr M = +1.331328; R on (q1,q2): [-5.963e+04, -0.07536]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=4 e=(1,1,1,1) d=0: K = 0.003288 (k = +-0.05734, iota0-N = +-0.0608), A = +2.735829, Bb = +0.905697, P_K = 1; tr M = +2.000000; R on (q1,q2): [+0, +0]  -> REAL Floquet multipliers
+        rho=+0.99997: zeros of phi per period=0, max|sigma|=20.9, dev(sigma_num, closed form sign +1)=1.2e-05, oddness residual=6.1e-06
+        rho=+1.00003: zeros of phi per period=0, max|sigma|=20.9, dev(sigma_num, closed form sign +1)=1.2e-05, oddness residual=6.1e-06
+        eta^2, j for (sign k): [(1, np.float64(28.7466), np.float64(3.1799)), (-1, np.float64(9.58219), np.float64(-3.459))]   sign j = sign k: True
+   n=4 e=(1,1,3,3) d=0: K = 0.612219 (k = +-0.78244, iota0-N = +-0.8290), A = +2.982391, Bb = +0.905697, P_K = 1; tr M = +2.000000; R on (q1,q2): [+0, +0]  -> REAL Floquet multipliers
+        rho=+0.99998: zeros of phi per period=0, max|sigma|=1.31, dev(sigma_num, closed form sign +1)=5.6e-06, oddness residual=4.3e-06
+        rho=+1.00002: zeros of phi per period=0, max|sigma|=1.31, dev(sigma_num, closed form sign +1)=5.6e-06, oddness residual=4.3e-06
+        eta^2, j for (sign k): [(1, np.float64(2.10668), np.float64(3.3295)), (-1, np.float64(0.70223), np.float64(-3.9077))]   sign j = sign k: True
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = -0.419139 <= 0: unphysical
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = -1.06273 <= 0: unphysical
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = 3.946713 (k = +-1.98663, iota0-N = +-2.1048), A = +3.943425, Bb = +0.905697, P_K = q + 1/2; tr M = -1.186486; R on (q1,q2): [-1.096e+06, -2.084]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = 1.673102 (k = +-1.29348, iota0-N = +-1.3704), A = +3.339627, Bb = +0.905697, P_K = q + 1; tr M = -0.646569; R on (q1,q2): [-2.911e+05, -0.4238]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = 0.492804 (k = +-0.70200, iota0-N = +-0.7438), A = +2.937095, Bb = +0.905697, P_K = q + 3; tr M = +2.189349; R on (q1,q2): [+0.01499, +1.998e+04]  -> REAL Floquet multipliers
+        rho=+0.64935: zeros of phi per period=0, max|sigma|=1.59, dev(sigma_num, closed form sign +1)=2.4e-01, oddness residual=8.6e-02
+        rho=+1.54000: zeros of phi per period=0, max|sigma|=1.59, dev(sigma_num, closed form sign +1)=2.4e-01, oddness residual=9.2e-02
+        eta^2, j for (sign k): [(1, np.float64(2.34809), np.float64(3.302)), (-1, np.float64(0.7827), np.float64(-3.8253))]   sign j = sign k: True
+   n=5 e=(1,1,1,2) d=1: K = -0.964382 <= 0: unphysical
+   n=5 e=(1,1,1,2) d=1: K = -0.08255 <= 0: unphysical
+   n=5 e=(1,1,1,2) d=1: K = 1.055974 (k = +-1.02761, iota0-N = +-1.0887), A = +5.451564, Bb = +1.584970, P_K = q + 2.81373847636372885704924057094; tr M = +1.931222; R on (q1,q2): [-1.156e+04, -0.001614]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=5 e=(1,1,2,3) d=1: K = -0.955845 <= 0: unphysical
+   n=5 e=(1,1,2,3) d=1: K = -0.128597 <= 0: unphysical
+<lambdifygenerated-29>:2: RuntimeWarning: divide by zero encountered in divide
+  return (-2.26033766299520382723376582717e+32*q**7 + 5.50555643352366685168130980184e+32*q**6 - 1.11462410016355900444888766396e+32*q**5 - 47616.0*q**4 + 4096.0*q**3 - 38912.0*q**2 + 9984.0*q - 2048.0)/(q**2*(6.4e+31*q**8 + 8.37555576046596290461489384106e+32*q**7 + 2.05085293185735938830294368077e+33*q**6 - 8.9299181090400753267983362428e+33*q**5 - 2.60497074443162649915361663793e+34*q**4 + 3.04047980544612383028996194581e+34*q**3 + 7.08443437723377133507849753752e+34*q**2 - 3.48480893858410187020007556569e+34*q + 3.98000084872536668813665288074e+33))
+   n=5 e=(1,1,2,3) d=1: K = 1.055728 (k = +-1.02749, iota0-N = +-1.0886), A = +5.453293, Bb = +1.584970, P_K = q + 6.53025093786403351923038581333; tr M = +2.071299; R on (q1,q2): [+0.001723, +1.157e+04]  -> REAL Floquet multipliers
+        rho=+0.76626: zeros of phi per period=0, max|sigma|=1.62, dev(sigma_num, closed form sign +1)=inf, oddness residual=2.3e-02
+        rho=+1.30504: zeros of phi per period=0, max|sigma|=1.62, dev(sigma_num, closed form sign +1)=inf, oddness residual=2.4e-02
+        eta^2, j for (sign k): [(1, np.float64(1.87164), np.float64(4.3559)), (-1, np.float64(0.80213), np.float64(-5.0964))]   sign j = sign k: True
+   n=5 e=(1,2,1,3) d=1: K = -0.963932 <= 0: unphysical
+   n=5 e=(1,2,1,3) d=1: K = -0.120831 <= 0: unphysical
+   n=5 e=(1,2,1,3) d=1: K = 1.047567 (k = +-1.02351, iota0-N = +-1.0844), A = +5.423107, Bb = +1.584970, P_K = q + 1.81841437453718510170946081431; tr M = +0.000000; R on (q1,q2): [+0.0256, +2.5e+11]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=5 e=(2,1,1,3) d=1: K = -0.612111 <= 0: unphysical
+
+######## lamODE = -0.5 (1,2) rod ########
+   n=3 e=(1,1,1,2) d=0: K = 0.058401 (k = +-0.24166, iota0-N = +-0.2255), A = +1.332468, Bb = +1.283482, P_K = 1; tr M = +1.398833; R on (q1,q2): [-7.905e+04, -0.2195]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=4 e=(1,1,1,1) d=0: K = 0.233604 (k = +-0.48333, iota0-N = +-0.4511), A = +3.553248, Bb = +3.080356, P_K = 1; tr M = +2.000000; R on (q1,q2): [+0, +0]  -> REAL Floquet multipliers
+        rho=+1.00000: zeros of phi per period=0, max|sigma|=1.07, dev(sigma_num, closed form sign +1)=2.2e-06, oddness residual=2.3e-06
+        rho=+1.00000: zeros of phi per period=0, max|sigma|=1.07, dev(sigma_num, closed form sign +1)=2.2e-06, oddness residual=2.3e-06
+        eta^2, j for (sign k): [(1, np.float64(6.28956), np.float64(3.0011)), (-1, np.float64(2.09652), np.float64(-1.6744))]   sign j = sign k: True
+   n=4 e=(1,1,3,3) d=0: K = 0.847243 (k = +-0.92046, iota0-N = +-0.8591), A = +4.159204, Bb = +3.080356, P_K = 1; tr M = +2.000000; R on (q1,q2): [+0, +0]  -> REAL Floquet multipliers
+        rho=+1.00000: zeros of phi per period=0, max|sigma|=0.434, dev(sigma_num, closed form sign +1)=1.3e-06, oddness residual=1.7e-06
+        rho=+1.00000: zeros of phi per period=0, max|sigma|=0.434, dev(sigma_num, closed form sign +1)=1.3e-06, oddness residual=1.7e-06
+        eta^2, j for (sign k): [(1, np.float64(3.30261), np.float64(3.2004)), (-1, np.float64(1.10087), np.float64(-2.2724))]   sign j = sign k: True
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = -0.244516 <= 0: unphysical
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = -0.516234 <= 0: unphysical
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = 7.893993 (k = +-2.80963, iota0-N = +-2.6222), A = +7.660388, Bb = +3.080356, P_K = q + 1/2; tr M = +1.620269; R on (q1,q2): [-3.375e+06, -11.49]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = 3.037013 (k = +-1.74270, iota0-N = +-1.6264), A = +5.606818, Bb = +3.080356, P_K = q + 1; tr M = -1.726320; R on (q1,q2): [-8.132e+05, -2.437]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=4 e=(1,1,1,3) d=1 [c0 free family, sample]: K = 0.939900 (k = +-0.96948, iota0-N = +-0.9048), A = +4.237771, Bb = +3.080356, P_K = q + 3; tr M = +1.871863; R on (q1,q2): [-1.868e+04, -0.04368]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=5 e=(1,1,1,2) d=1: K = -0.714729 <= 0: unphysical
+   n=5 e=(1,1,1,2) d=1: K = -0.192139 <= 0: unphysical
+   n=5 e=(1,1,1,2) d=1: K = 1.549280 (k = +-1.24470, iota0-N = +-1.1617), A = +7.437139, Bb = +5.390622, P_K = q + 3.97567710917420009350913748105; tr M = +1.964016; R on (q1,q2): [-7497, -0.009365]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=5 e=(1,1,2,3) d=1: K = -0.638081 <= 0: unphysical
+   n=5 e=(1,1,2,3) d=1: K = -0.335177 <= 0: unphysical
+<lambdifygenerated-65>:2: RuntimeWarning: divide by zero encountered in divide
+  return (-4.93630928314381395465072081989e+34*q**7 + 1.21164327598684979738297907405e+35*q**6 - 5.98238151319238475534138464262e+34*q**5 + 23592960.0*q**4 - 52428800.0*q**3 - 8388608.0*q**2 - 22020096.0*q + 4194304.0)/(q**2*(1.0e+34*q**8 + 2.07414371387469197413027048688e+35*q**7 + 1.10973711655727121442648700786e+36*q**6 - 9.04161208900447956639719218911e+35*q**5 - 1.22527272781524249662954435319e+37*q**4 + 5.88444054125515057436543878084e+36*q**3 + 4.09555976717119832467286473339e+37*q**2 - 4.87955347524286852211031119785e+37*q + 1.50204423628818708842882951586e+37))
+   n=5 e=(1,1,2,3) d=1: K = 1.548619 (k = +-1.24444, iota0-N = +-1.1614), A = +7.443244, Bb = +5.390622, P_K = q + 9.4363005693734598706513524344; tr M = +2.036742; R on (q1,q2): [+0.009584, +7546]  -> REAL Floquet multipliers
+        rho=+0.82581: zeros of phi per period=0, max|sigma|=0.576, dev(sigma_num, closed form sign +1)=inf, oddness residual=4.8e-02
+        rho=+1.21093: zeros of phi per period=0, max|sigma|=0.576, dev(sigma_num, closed form sign +1)=inf, oddness residual=5.1e-02
+        eta^2, j for (sign k): [(1, np.float64(2.84994), np.float64(3.9309)), (-1, np.float64(1.2214), np.float64(-3.0648))]   sign j = sign k: True
+   n=5 e=(1,2,1,3) d=1: K = -0.698908 <= 0: unphysical
+   n=5 e=(1,2,1,3) d=1: K = -0.326508 <= 0: unphysical
+   n=5 e=(1,2,1,3) d=1: K = 1.421956 (k = +-1.19246, iota0-N = +-1.1129), A = +7.114165, Bb = +5.390622, P_K = q + 2.32989826268002944645772506116; tr M = +0.000000; R on (q1,q2): [+0.4244, +2.5e+11]  -> complex Floquet multipliers: sigma complex, UNPHYSICAL
+   n=5 e=(2,1,1,3) d=1: K = -0.417522 <= 0: unphysical
+
+real	1m5.840s
+user	0m27.413s
+sys	0m0.149s

@@ -4,9 +4,10 @@
 Unknowns: (k, a, b, s0, s1) with (q1, q2, q3) free rod moduli.  a, b eliminated linearly; then K = k^2; s0 eliminated by
 resultants against the equation linear in s0 (if any) or pairwise; then s1; the gcd of the resulting polynomials in K is
 the K-polynomial of the branch (a rod-independent branch exists iff the final resultants have a common factor in K).
-Run: python3 kovacic_deg2.py     (time-boxed per case)
+Run: python3 kovacic_deg2.py     (~75 s; writes deg2_branches.pkl used by deg2_branches_eval.py)
 """
-import sympy as sp, time, signal
+import sympy as sp, time, signal, pickle
+DUMP = {}
 
 q = sp.symbols('q'); q1, q2, q3, k, a, b, s0, s1, K = sp.symbols('q1 q2 q3 k a b s0 s1 K')
 P = -(q - q1) * (q - q2) * (q - q3); Q = k + b / q**2 - a / q
@@ -75,12 +76,17 @@ for e3 in (sp.Integer(0), sp.Rational(1, 2)):
             for fac, ok in common:
                 print(f"      factor {fac}  -> common to all resultants: {ok}")
             summary.append((tag, [f for f, ok in common if ok]))
+            Aexpr = sp.expand(sp.numer(sp.together((k * sol_ab[a]).subs(k**2, K).subs(k, sp.sqrt(K))))) / sp.expand(sp.denom(sp.together((k * sol_ab[a]).subs(k**2, K).subs(k, sp.sqrt(K)))))
+            Bexpr = sp.expand(sp.numer(sp.together((k * sol_ab[b]).subs(k**2, K).subs(k, sp.sqrt(K))))) / sp.expand(sp.denom(sp.together((k * sol_ab[b]).subs(k**2, K).subs(k, sp.sqrt(K)))))
+            DUMP[tag] = dict(e3=str(e3), m=str(m), e0=str(e0), s1=sp.srepr(s1_sol), pivots=[sp.srepr(r) for r in rest1],
+                             Kfactors=[sp.srepr(f) for f, ok in common if ok], A=sp.srepr(sp.simplify(Aexpr)), B=sp.srepr(sp.simplify(Bexpr)))
         except TO:
             print("   [time-boxed out]"); summary.append((tag, 'timeout'))
         finally:
             signal.alarm(0)
         print(f"   [{time.time()-t0:.1f}s]")
 
+pickle.dump(DUMP, open('deg2_branches.pkl', 'wb'))
 print("\n\n#### SUMMARY deg S = 2 ####")
 for tag, fs in summary:
     print(tag, "->", fs)

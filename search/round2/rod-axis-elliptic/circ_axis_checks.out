@@ -7,7 +7,7 @@
    first-order ellipse: sigma = -cos(delta)*Abs(sin(delta))/sin(delta)**2 ,  eta^2/kappa^2 = Abs(sin(delta))/(sqrt(S)*kappa_*sin(delta)**2)
    grad B / B0 transverse block M = [[-2/(sqrt(S)*tan(delta)), -2/(S*kappa_*sin(delta))], [2*kappa_/sin(delta), 2/(sqrt(S)*tan(delta))]] ; T-row: d_X B_T/B0 = 1/sqrt(S) (= kappa)  d_Y B_T/B0 = 0
    det M = 4/S  (= k^2 = 4/S )  tr M = 0 ;  k = 2*sign(1/sin(delta))/sqrt(S)
-   j = (curl B).T/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ;  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ; match: False
+   j = (curl B).T/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ;  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ; match (j^2 = J_GS^2/B0^2): True
    tautology check j = M_BN - M_NB: True
    TRUE  P_NN, P_NB, P_BB (units B0^2) = -1/S, 0, -4/S
    CLOSED P_NN = -1/S, P_BB = -4/S  ->  agreement: True, True
@@ -21,7 +21,7 @@
    first-order ellipse: sigma = cos(delta)*Abs(sin(delta))/sin(delta)**2 ,  eta^2/kappa^2 = Abs(sin(delta))/(sqrt(S)*kappa_*sin(delta)**2)
    grad B / B0 transverse block M = [[-2/(sqrt(S)*tan(delta)), 2/(S*kappa_*sin(delta))], [-2*kappa_/sin(delta), 2/(sqrt(S)*tan(delta))]] ; T-row: d_X B_T/B0 = 1/sqrt(S) (= kappa)  d_Y B_T/B0 = 0
    det M = 4/S  (= k^2 = 4/S )  tr M = 0 ;  k = -2*sign(1/sin(delta))/sqrt(S)
-   j = (curl B).T/B0 = 2*(-S*kappa_**2 - 1)/(S*kappa_*sin(delta)) ;  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ; match: False
+   j = (curl B).T/B0 = 2*(-S*kappa_**2 - 1)/(S*kappa_*sin(delta)) ;  |J_phi| from Grad-Shafranov (rho p' + FF'/rho)/B0 = 2*(S*kappa_**2 + 1)/(S*kappa_*sin(delta)) ; match (j^2 = J_GS^2/B0^2): True
    tautology check j = M_BN - M_NB: True
    TRUE  P_NN, P_NB, P_BB (units B0^2) = -1/S, 0, -4/S
    CLOSED P_NN = -1/S, P_BB = -4/S  ->  agreement: True, True

@@ -1,0 +1,24 @@
+branch A: j k - (k/(-alpha + c*lambda2)) f_A = 0
+branch B: j k - (-k/(3*(-alpha + c*lambda2))) f_B = 0
+f_A - l3^2 (p1/2 + 2 tau0 C) = 0
+f_B - l3^2 (p1/2 - 6 tau0 C) = 0
+rank of d(p2,p1,p0,tau0)/d(l2,l3,c,alpha) at a generic point: 4
+
+QA cubic: p2 = -0.01315, p1 = 5.4717, p0 = -1.2076; branch A: k = -0.05734, eta^2 = C/k = 9.5822
+   tau0 = +0.76009: j = -3.45900, sign(j) = sign(k): True   (QA rod's tau0)
+   tau0 = +3.00000: j = +1.02082, sign(j) = sign(k): False
+   tau0 = +2.48959: j = +0.00000, sign(j) = sign(k): False   (j = 0 exactly: tau0 = -p1/(4C))
+   => branch A: sign j = sign k  <=>  p1 + 4 tau0 C > 0, i.e. (tau0 C < 0 on the closed rods) 4|tau0 C| < p1;  j = 0 iff tau0 = -p1/(4C).
+   margin 4|tau0 C|/p1 along the closed families (sign law <=> ratio < 1 on branch A; branch B: 12 tau0 C < p1 automatically when tau0 C < 0):
+      (1,2): 17 rods, lamODE in [-0.571,-0.331], sign(tau0 C) = {np.float64(-1.0)}, 4|tau0 C|/p1 in [0.025, 0.600], p1 in [5.11,23.59]
+      (1,3): 10 rods, lamODE in [-0.755,-0.435], sign(tau0 C) = {np.float64(1.0), np.float64(-1.0)}, 4|tau0 C|/p1 in [0.007, 0.203], p1 in [6.93,14.09]
+
+deg S = 0 branches (k a, k b as functions of the roots):
+   e3=0, e0=-1/2: k^2 = -(q1 + q2 + q3)/4,  k a = -(q1*q2 + q1*q3 + q2*q3)/2,  k b = -3*q1*q2*q3/4
+   e3=1/2, e0=-1/2: k^2 = -q3/4,  k a = -q3*(q1 + q2)/2,  k b = -3*q1*q2*q3/4
+   e3=1/2, e0=-1: k^2 = -(q1 + q2 + 4*q3)/4,  k a = -(q1*q2 + 3*q1*q3 + 3*q2*q3)/2,  k b = -2*q1*q2*q3
+   j = (k a)/(k eta^2) + 2 tau0 with eta^2 from k^2 eta^4 + 2 C k eta^2 - k b = 0: tau0 enters j only through the additive 2 tau0 => for fixed cubic, j runs over all reals as tau0 varies; a j = 0 rod exists for every branch (non-closed in general).
+
+real	0m26.892s
+user	0m26.527s
+sys	0m0.270s
